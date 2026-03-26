@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Block specific heavy backend assets if any
+Disallow: /src/
+Disallow: /node_modules/
+
+# Explicitly map the main sitemap XML
+Sitemap: https://nexoltech.com/sitemap.xml
