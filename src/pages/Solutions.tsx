@@ -396,7 +396,7 @@ const Solutions = () => {
               onClick={() => navigate('/portfolio')}
               className="group relative bg-[#0a0a0f] rounded-[3rem] overflow-hidden border border-white/5 aspect-[4/3] flex flex-col justify-end p-12 cursor-pointer shadow-2xl"
            >
-             <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all duration-[1.5s] ease-out" style={{ backgroundImage: "url('/case-ecommerce.png')" }}></div>
+            <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all ease-out" style={{ backgroundImage: "url('/case-ecommerce.png')", transitionDuration: '1.5s' }}></div>
              <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/80 to-transparent"></div>
              <div className="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                <span className="px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">E-Commerce Architecture</span>
@@ -420,7 +420,7 @@ const Solutions = () => {
               onClick={() => navigate('/portfolio')}
               className="group relative bg-[#0a0a0f] rounded-[3rem] overflow-hidden border border-white/5 aspect-[4/3] flex flex-col justify-end p-12 cursor-pointer shadow-2xl"
            >
-             <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all duration-[1.5s] ease-out" style={{ backgroundImage: "url('/case-trading.png')" }}></div>
+            <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all ease-out" style={{ backgroundImage: "url('/case-trading.png')", transitionDuration: '1.5s' }}></div>
              <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/80 to-transparent"></div>
              <div className="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                <span className="px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">Enterprise AI Node</span>
