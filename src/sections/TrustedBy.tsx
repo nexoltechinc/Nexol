@@ -79,7 +79,7 @@ const TrustedBy = () => {
           <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl">
             <span className="h-2 w-2 rounded-full bg-cyan-400" />
             <span className="text-[10px] font-black uppercase tracking-[0.35em] text-slate-300">
-              What Clinics Hire Nexol To Fix
+              What Dental And Medical Clinics Hire Nexol To Fix
             </span>
           </div>
           <h2 className="mx-auto mb-6 max-w-4xl text-3xl font-black tracking-tighter text-white sm:text-4xl lg:text-6xl">
