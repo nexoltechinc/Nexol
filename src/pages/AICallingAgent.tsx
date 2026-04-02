@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Bot, ChevronDown, CheckCircle2, ShieldCheck, CalendarHeart, Clock, TrendingDown, Users, Lock, Activity, ArrowRight, ActivitySquare, Sparkles, Cpu, Fingerprint, Network } from 'lucide-react';
+import { Bot, CheckCircle2, ShieldCheck, CalendarHeart, Clock, TrendingDown, Users, Lock, Activity, ArrowRight, ActivitySquare, Sparkles, Cpu, Fingerprint, Network } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { motion, useScroll, useTransform, type Variants } from 'framer-motion';
 import usePageTitle from '../hooks/usePageTitle';
@@ -42,10 +42,10 @@ const AICallingAgent = () => {
   ];
 
   const features = [
-    { title: "24/7 Appointment Handling", desc: "Answer calls, confirm visits, reschedule appointments, and manage common patient requests even when your front desk is busy.", icon: CalendarHeart, size: "col-span-12 lg:col-span-8", color: "from-[#6F3DFF]/20 to-[#6F3DFF]/5" },
-    { title: "Smart Call Routing", desc: "Route urgent calls, new patient inquiries, and scheduling requests to the right workflow or staff member faster.", icon: Fingerprint, size: "col-span-12 lg:col-span-4", color: "from-cyan-500/20 to-blue-500/5" },
-    { title: "EHR / PMS Integration", desc: "Connect with systems like Open Dental, Dentrix, Epic, Athena, and modern schedulers to keep appointment data aligned.", icon: ActivitySquare, size: "col-span-12 lg:col-span-5", color: "from-emerald-500/20 to-emerald-900/10" },
-    { title: "Natural Human-Like Voice", desc: "Deliver clear, empathetic patient conversations that sound professional, easy to follow, and aligned with your clinic experience.", icon: Sparkles, size: "col-span-12 lg:col-span-7", color: "from-[#141423] to-[#6F3DFF]/10" }
+    { title: "24/7 Appointment Handling", desc: "Answer calls, confirm visits, reschedule appointments, and manage common patient requests even when your front desk is busy.", icon: CalendarHeart, color: "from-[#6F3DFF]/20 to-[#6F3DFF]/5" },
+    { title: "Smart Call Routing", desc: "Route urgent calls, new patient inquiries, and scheduling requests to the right workflow or staff member faster.", icon: Fingerprint, color: "from-cyan-500/20 to-blue-500/5" },
+    { title: "EHR / PMS Integration", desc: "Connect with systems like Open Dental, Dentrix, Epic, Athena, and modern schedulers to keep appointment data aligned.", icon: ActivitySquare, color: "from-emerald-500/20 to-emerald-900/10" },
+    { title: "Natural Human-Like Voice", desc: "Deliver clear, empathetic patient conversations that sound professional, easy to follow, and aligned with your clinic experience.", icon: Sparkles, color: "from-[#141423] to-[#6F3DFF]/10" }
   ];
 
   const processStages = [
@@ -56,11 +56,31 @@ const AICallingAgent = () => {
   ];
 
   const faqs = [
-    { q: "Is this HIPAA compliant?", a: "The system is designed with HIPAA-ready workflows, encrypted data handling, controlled access, and secure integration practices to support healthcare operations safely." },
-    { q: "Can it connect with our existing EHR or scheduling system?", a: "Yes. We can integrate with common systems such as Dentrix, Open Dental, Epic, AthenaHealth, and other scheduling platforms depending on access and workflow requirements." },
-    { q: "Will patients know they are speaking with AI?", a: "The voice experience is designed to sound natural, clear, and professional. The goal is to make patient communication easy to follow and comfortable, not robotic." },
-    { q: "Can calls transfer to a human receptionist?", a: "Yes. Calls can be routed to staff based on urgency, call type, time of day, or any workflow rules your clinic needs." },
-    { q: "How long does implementation take?", a: "Most deployments take about 2 to 4 weeks depending on integrations, call complexity, and how much customization your clinic needs." }
+    {
+      category: "Compliance",
+      q: "Is this HIPAA compliant?",
+      a: "The system is designed with HIPAA-ready workflows, encrypted data handling, controlled access, and secure integration practices to support healthcare operations safely."
+    },
+    {
+      category: "Integrations",
+      q: "Can it connect with our existing EHR or scheduling system?",
+      a: "Yes. We can integrate with common systems such as Dentrix, Open Dental, Epic, AthenaHealth, and other scheduling platforms depending on access and workflow requirements."
+    },
+    {
+      category: "Patient Experience",
+      q: "Will patients know they are speaking with AI?",
+      a: "The voice experience is designed to sound natural, clear, and professional. The goal is to make patient communication easy to follow and comfortable, not robotic."
+    },
+    {
+      category: "Escalation",
+      q: "Can calls transfer to a human receptionist?",
+      a: "Yes. Calls can be routed to staff based on urgency, call type, time of day, or any workflow rules your clinic needs."
+    },
+    {
+      category: "Timeline",
+      q: "How long does implementation take?",
+      a: "Most deployments take about 2 to 4 weeks depending on integrations, call complexity, and how much customization your clinic needs."
+    }
   ];
 
   const containerVariants: Variants = {
@@ -235,14 +255,14 @@ const AICallingAgent = () => {
              whileInView={{ opacity: 1, x: 0 }}
              viewport={{ once: true }}
              transition={{ duration: 0.8 }}
-             className="mb-24 lg:w-2/3"
+             className="mb-14 sm:mb-16 lg:mb-18 max-w-4xl"
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-6">
               <Cpu className="w-3 h-3 text-cyan-400" />
               <span className="text-[10px] font-bold text-cyan-400 tracking-[0.2em] uppercase">Calling System Capabilities</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-7xl font-black text-white mb-6 sm:mb-8 tracking-tighter">Built for High-Volume <br/>Patient Communication.</h2>
-            <p className="text-base sm:text-xl text-slate-400 font-light leading-relaxed">From appointment confirmations to call routing and scheduling support, the system is designed to help clinics respond faster without growing front-desk workload.</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-5 sm:mb-6 tracking-tighter leading-[1.05]">Built for High-Volume <br/>Patient Communication.</h2>
+            <p className="max-w-3xl text-base sm:text-lg lg:text-xl text-slate-400 font-light leading-relaxed">From appointment confirmations to call routing and scheduling support, the system is designed to help clinics respond faster without growing front-desk workload.</p>
           </motion.div>
 
           <motion.div 
@@ -250,23 +270,21 @@ const AICallingAgent = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-12 gap-6"
+            className="grid gap-5 sm:gap-6 md:grid-cols-2"
           >
             {features.map((block, i) => (
-              <motion.div key={i} variants={itemVariants} className={`${block.size} group relative bg-[#0a0a0f] border border-white/[0.05] rounded-3xl p-6 sm:p-10 lg:p-12 overflow-hidden hover:border-white/[0.1] transition-all duration-700 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] cursor-default will-change-transform`}>
+              <motion.div key={i} variants={itemVariants} className="group relative h-full min-h-[240px] sm:min-h-[260px] bg-[#0a0a0f] border border-white/[0.05] rounded-3xl p-6 sm:p-8 lg:p-9 overflow-hidden hover:border-white/[0.1] transition-all duration-700 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] cursor-default will-change-transform">
                 <div className={`absolute inset-0 bg-gradient-to-br ${block.color} opacity-0 group-hover:opacity-100 transition-opacity duration-1000`}></div>
                 
                 {/* Micro-interaction float elements */}
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/[0.02] rounded-full blur-2xl group-hover:bg-white/[0.05] transition-colors duration-1000" />
                 
-                <div className="relative z-10 h-full flex flex-col justify-between">
-                  <div>
-                    <div className="w-14 h-14 rounded-2xl bg-black/50 border border-white/10 flex items-center justify-center mb-10 backdrop-blur-xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500 shadow-2xl">
+                <div className="relative z-10 flex h-full flex-col items-start">
+                  <div className="w-14 h-14 rounded-2xl bg-black/50 border border-white/10 flex items-center justify-center mb-6 backdrop-blur-xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500 shadow-2xl">
                       <block.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 tracking-tight leading-tight">{block.title}</h3>
                   </div>
-                  <p className="text-slate-400 text-base sm:text-lg font-light leading-relaxed mt-4 group-hover:text-slate-300 transition-colors">{block.desc}</p>
+                  <h3 className="text-xl sm:text-2xl lg:text-[1.75rem] font-bold text-white mb-4 tracking-tight leading-tight">{block.title}</h3>
+                  <p className="max-w-[34rem] text-sm sm:text-base lg:text-[1.02rem] text-slate-400 font-light leading-relaxed group-hover:text-slate-300 transition-colors">{block.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -442,61 +460,140 @@ const AICallingAgent = () => {
       </section>
 
       {/* 6. FAQ */}
-      <section className="py-16 sm:py-20 lg:py-28 max-w-4xl mx-auto px-6 lg:px-12">
+      <section className="py-16 sm:py-20 lg:py-28 relative z-10 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[640px] h-[420px] bg-[radial-gradient(ellipse_at_top,_rgba(111,61,255,0.08),_transparent_70%)] blur-[70px]" />
+          <div className="absolute bottom-0 right-1/4 w-[420px] h-[320px] bg-[radial-gradient(ellipse_at_bottom,_rgba(34,211,238,0.05),_transparent_70%)] blur-[90px]" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-24"
+          className="text-center mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">Frequently Asked Questions</h2>
-          <p className="text-base sm:text-xl text-slate-400 font-light">The questions clinic teams usually ask before moving forward.</p>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#6F3DFF]/10 border border-[#6F3DFF]/20 mb-8 backdrop-blur-xl">
+            <span className="flex h-1.5 w-1.5 rounded-full bg-[#6F3DFF] animate-pulse" />
+            <span className="text-[10px] font-black text-[#9f7aea] tracking-[0.35em] uppercase">Common Questions</span>
+          </div>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tighter drop-shadow-xl relative inline-block">
+            Common Questions.
+            <motion.span 
+              animate={{ x: ["0%", "100%", "0%"] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+              className="absolute bottom-0 left-0 w-1/3 h-[3px] bg-[#6F3DFF] blur-[2px] opacity-70"
+            />
+          </h2>
+          <p className="text-base sm:text-lg text-slate-400 font-light max-w-2xl mx-auto">Straight answers about compliance, integrations, rollout, patient experience, and call handling.</p>
         </motion.div>
         
-        <div className="space-y-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-4">
           {faqs.map((faq, i) => (
             <motion.div 
               key={i} 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className={`border border-white/5 rounded-2xl bg-[#0a0a0f] overflow-hidden transition-all duration-500 ${activeFAQ === i ? 'border-[#6F3DFF]/30 shadow-[0_10px_30px_-10px_rgba(111,61,255,0.2)]' : 'hover:border-white/10'}`}
+              transition={{ delay: i * 0.06 }}
+              className={`group relative border rounded-2xl overflow-hidden transition-all duration-500 ${
+                activeFAQ === i
+                  ? 'border-[#6F3DFF]/50 bg-gradient-to-br from-[#0e0b1f] to-[#0a0a0f] shadow-[0_0_50px_-10px_rgba(111,61,255,0.35)]'
+                  : 'border-white/[0.06] bg-[#0a0a0f] hover:border-white/[0.12] hover:bg-[#0d0d14]'
+              }`}
             >
+              {activeFAQ === i && (
+                <div className="absolute top-0 right-0 w-40 h-40 bg-[#6F3DFF]/20 blur-[60px] rounded-full pointer-events-none" />
+              )}
+
               <button 
                 onClick={() => setActiveFAQ(activeFAQ === i ? null : i)}
-                className="w-full text-left p-5 sm:p-8 flex items-center justify-between gap-4 focus:outline-none"
+                className="w-full text-left p-6 flex items-start justify-between gap-4 focus:outline-none"
               >
-                <h4 className="text-base sm:text-lg lg:text-xl font-bold text-white pr-2 sm:pr-8 tracking-tight">{faq.q}</h4>
-                <div className={`w-10 h-10 rounded-full border border-white/10 flex items-center justify-center shrink-0 transition-transform duration-500 ${activeFAQ === i ? 'rotate-180 bg-[#6F3DFF] border-[#6F3DFF]' : 'bg-transparent hover:bg-white/5'}`}>
-                  <ChevronDown className={`w-5 h-5 transition-colors ${activeFAQ === i ? 'text-white' : 'text-slate-400'}`} />
+                <div className="flex items-start gap-4">
+                  <span className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-black tracking-wider transition-all duration-300 ${
+                    activeFAQ === i ? 'bg-[#6F3DFF] text-white shadow-[0_0_20px_rgba(111,61,255,0.5)]' : 'bg-white/5 text-slate-500'
+                  }`}>
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <div>
+                    <span className={`text-[9px] font-black uppercase tracking-[0.3em] block mb-2 transition-colors duration-300 ${
+                      activeFAQ === i ? 'text-[#9f7aea]' : 'text-slate-600'
+                    }`}>
+                      {faq.category}
+                    </span>
+                    <h4 className={`text-sm sm:text-base font-bold pr-4 tracking-tight leading-snug transition-colors duration-300 ${
+                      activeFAQ === i ? 'text-white' : 'text-slate-300 group-hover:text-white'
+                    }`}>
+                      {faq.q}
+                    </h4>
+                  </div>
+                </div>
+                <div className={`shrink-0 w-8 h-8 rounded-xl border flex items-center justify-center transition-all duration-500 mt-1 ${
+                  activeFAQ === i
+                    ? 'bg-[#6F3DFF] border-[#6F3DFF] rotate-45 shadow-[0_0_15px_rgba(111,61,255,0.5)]'
+                    : 'bg-[#141423] border-white/10 hover:border-white/20'
+                }`}>
+                  <svg className={`w-3.5 h-3.5 transition-colors ${activeFAQ === i ? 'text-white' : 'text-slate-400'}`} viewBox="0 0 12 12" fill="none">
+                    <path d="M6 2v8M2 6h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
                 </div>
               </button>
-              <div className={`transition-all duration-500 ease-in-out ${activeFAQ === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                <div className="p-5 sm:p-8 pt-0 text-slate-400 font-light leading-relaxed text-base sm:text-lg border-t border-white/5 mt-2">
-                  {faq.a}
+
+              <div className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                activeFAQ === i ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+              }`}>
+                <div className="px-6 pb-6">
+                  <div className="pl-12 border-l-2 border-[#6F3DFF]/30">
+                    <p className="text-slate-400 font-light leading-relaxed text-sm sm:text-base">
+                      {faq.a}
+                    </p>
+                  </div>
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6 p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
+        >
+          <div>
+            <p className="text-white font-bold text-lg tracking-tight mb-1">Need help reviewing your clinic workflow?</p>
+            <p className="text-slate-500 text-sm font-light">We can walk through your call flow and show where automation will help first.</p>
+          </div>
+          <button 
+            onClick={() => navigate('/contact')}
+            className="shrink-0 h-12 inline-flex items-center gap-3 bg-[#6F3DFF] hover:bg-[#7C52FF] text-white px-8 rounded-full font-black text-[12px] uppercase tracking-widest transition-all hover:shadow-[0_0_30px_rgba(111,61,255,0.4)] hover:scale-105"
+          >
+            Book a Demo <ArrowRight className="w-4 h-4" />
+          </button>
+        </motion.div>
+        </div>
       </section>
 
       {/* 7. Final CTA */}
-      <section className="py-16 sm:py-20 lg:py-24 max-w-7xl mx-auto px-6 lg:px-12 pb-16 sm:pb-24 lg:pb-28">
+      <section className="py-16 sm:py-20 lg:py-24 max-w-7xl mx-auto px-6 lg:px-12 pb-16 sm:pb-24 lg:pb-28 relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(circle,_rgba(111,61,255,0.12)_0%,_transparent_70%)] blur-[90px]" />
+          <div className="absolute bottom-0 right-[18%] h-[280px] w-[280px] bg-[radial-gradient(circle,_rgba(34,211,238,0.08)_0%,_transparent_70%)] blur-[90px]" />
+        </div>
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="bg-[#0a0a0f] border border-white/10 rounded-[2rem] sm:rounded-[3rem] p-8 sm:p-12 md:p-20 lg:p-32 text-center relative overflow-hidden group shadow-[0_30px_100px_rgba(0,0,0,0.8)]"
+          className="relative mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10 md:px-10 md:py-14 lg:px-12 lg:py-16 text-center group"
         >
           {/* Kinetic background system */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#6F3DFF]/20 via-transparent to-cyan-500/10 opacity-40 group-hover:opacity-80 transition-opacity duration-1000" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#6F3DFF]/12 via-transparent to-cyan-500/8 opacity-60 group-hover:opacity-90 transition-opacity duration-1000" />
           <motion.div 
             animate={{ rotate: 360 }}
             transition={{ duration: 100, repeat: Infinity, ease: "linear" }}
-            className="absolute -inset-x-40 -inset-y-40 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPgo8L3N2Zz4=')] opacity-30 z-0 mix-blend-overlay"
+            className="absolute -inset-x-24 -inset-y-24 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPgo8L3N2Zz4=')] opacity-20 z-0 mix-blend-overlay"
           />
           
           <div className="relative z-10 max-w-4xl mx-auto">

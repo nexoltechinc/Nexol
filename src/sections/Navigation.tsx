@@ -64,7 +64,7 @@ const Navigation = () => {
         className="fixed top-0 left-0 right-0 z-[60] px-3 py-3 sm:px-6"
       >
         <div 
-          className={`max-w-[100rem] mx-auto h-16 sm:h-[72px] transition-all duration-500 rounded-full px-4 sm:px-8 flex items-center justify-between gap-3 border ${
+          className={`max-w-7xl mx-auto h-16 sm:h-[72px] transition-all duration-500 rounded-full px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 border ${
             isScrolled 
             ? 'bg-[#0B0B12]/70 backdrop-blur-3xl border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]' 
             : 'bg-transparent border-transparent'

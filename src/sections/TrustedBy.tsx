@@ -38,14 +38,14 @@ const TrustedBy = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative overflow-hidden border-y border-white/5 bg-[#020205] py-14 sm:py-16">
+    <section className="relative overflow-hidden border-y border-white/5 bg-[#020205] py-12 sm:py-14">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute left-1/4 top-0 h-[420px] w-[420px] rounded-full bg-cyan-500/5 blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 h-[420px] w-[420px] rounded-full bg-[#6F3DFF]/5 blur-[120px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <div className="mb-10 text-center">
+        <div className="mb-8 sm:mb-10 text-center">
           <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl">
             <span className="h-2 w-2 rounded-full bg-cyan-400" />
             <span className="text-[10px] font-black uppercase tracking-[0.35em] text-slate-300">
