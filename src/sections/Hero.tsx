@@ -50,19 +50,19 @@ const Hero = () => {
              className="col-span-1 lg:col-span-6 xl:col-span-7 flex flex-col"
           >
             
-            <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-10 w-fit backdrop-blur-xl shadow-[0_0_30px_rgba(34,211,238,0.1)] relative overflow-hidden group">
+            <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-4 sm:px-5 py-2.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-8 sm:mb-10 w-fit backdrop-blur-xl shadow-[0_0_30px_rgba(34,211,238,0.1)] relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent -translate-x-[100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
               <div className="relative flex h-2 w-2">
                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                  <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </div>
-              <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase drop-shadow-md">Premium Software Partner</span>
+              <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase drop-shadow-md">AI Automation For Clinics</span>
             </motion.div>
 
-            <motion.h1 variants={itemVariants} className="text-3xl sm:text-4xl lg:text-5xl xl:text-[4rem] font-black text-white mb-8 leading-[1.05] tracking-tighter drop-shadow-2xl">
-              Architecting Your <br className="hidden md:block"/> 
+            <motion.h1 variants={itemVariants} className="text-[2rem] sm:text-4xl lg:text-5xl xl:text-[4rem] font-black text-white mb-6 sm:mb-8 leading-[1.05] tracking-tighter drop-shadow-2xl">
+              Custom Software And <br className="hidden md:block"/> 
               <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">
-                 Competitive Advantage.
+                 AI Workflows For Clinics.
                  <motion.span 
                    animate={{ x: ["0%", "100%", "0%"] }}
                    transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
@@ -71,8 +71,8 @@ const Hero = () => {
               </span>
             </motion.h1>
 
-            <motion.p variants={itemVariants} className="text-base sm:text-lg lg:text-xl text-slate-300 font-light mb-8 max-w-xl leading-relaxed drop-shadow-md">
-              We engineer hyper-scalable digital ecosystems, autonomous AI calling agents, and enterprise-grade automation infrastructure for businesses that demand precision, efficiency, and measurable ROI.
+            <motion.p variants={itemVariants} className="text-[15px] sm:text-lg lg:text-xl text-slate-300 font-light mb-8 max-w-xl leading-relaxed drop-shadow-md">
+              Nexol helps dental, medical, and multi-location practices reduce no-shows, speed up patient response, and remove manual admin with AI calling agents, custom dashboards, and workflow systems built around your staff.
             </motion.p>
 
             {/* CTAs */}
@@ -83,22 +83,34 @@ const Hero = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#6F3DFF]/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out" />
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                   Initiate Protocol
+                   Book Automation Audit
                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </button>
               
               <button
-                onClick={() => navigate('/solutions')}
+                onClick={() => navigate('/portfolio')}
                 className="w-full sm:w-auto h-14 sm:h-16 px-8 sm:px-10 rounded-full font-bold text-sm uppercase tracking-widest text-slate-400 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all flex items-center justify-center gap-3 group"
               >
-                Explore Capabilities
+                See Clinic Use Cases
                 <span className="w-6 h-px bg-slate-600 group-hover:w-10 group-hover:bg-cyan-400 transition-all duration-500 block" />
               </button>
             </motion.div>
 
-
-            
+            <motion.div variants={itemVariants} className="grid gap-3 sm:grid-cols-3">
+              <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <Brain className="h-4 w-4 text-cyan-400" />
+                <span className="text-xs font-semibold text-slate-200">AI calling and follow-up</span>
+              </div>
+              <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <ShieldCheck className="h-4 w-4 text-emerald-400" />
+                <span className="text-xs font-semibold text-slate-200">HIPAA-aware workflow design</span>
+              </div>
+              <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                <Server className="h-4 w-4 text-blue-400" />
+                <span className="text-xs font-semibold text-slate-200">Custom dashboards for staff</span>
+              </div>
+            </motion.div>
           </motion.div>
 
           {/* Right Column - Physics Simulation Data Nodes */}
@@ -170,7 +182,7 @@ const Hero = () => {
                        <Server className="w-3 h-3 text-cyan-400" />
                        <span className="absolute inset-0 rounded-full bg-cyan-400 opacity-20 group-hover:animate-ping" />
                     </div>
-                    <span className="text-xs font-black text-white tracking-[0.2em] uppercase drop-shadow-md">System Online</span>
+                    <span className="text-xs font-black text-white tracking-[0.2em] uppercase drop-shadow-md">Clinic Ops Online</span>
                     <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_10px_rgba(34,211,238,0.8)]" />
                  </div>
               </motion.div>

@@ -4,8 +4,11 @@ import TrustedBy from '../sections/TrustedBy';
 import { ServicesHighlight } from '../sections/Teasers';
 import Industries from '../sections/Industries';
 import GlobalCTA from '../sections/GlobalCTA';
+import usePageTitle from '../hooks/usePageTitle';
 
 const Home = () => {
+    usePageTitle('AI Automation & Custom Software For Clinics');
+
     useEffect(() => {
         const observerOptions = {
           threshold: 0.1,

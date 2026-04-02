@@ -32,7 +32,7 @@ const GlobalCTA = () => {
                             className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 backdrop-blur-xl"
                         >
                             <Zap className="w-3.5 h-3.5 text-cyan-400 group-hover:animate-pulse" />
-                            <span className="text-[10px] font-black text-slate-300 uppercase tracking-[0.4em]">Strategic Intervention</span>
+                            <span className="text-[10px] font-black text-slate-300 uppercase tracking-[0.4em]">Clinic Automation Audit</span>
                         </motion.div>
                         
                         <motion.h2 
@@ -40,10 +40,10 @@ const GlobalCTA = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
-                            className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter leading-[1.05] drop-shadow-2xl"
+                            className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 sm:mb-8 tracking-tighter leading-[1.05] drop-shadow-2xl"
                         >
-                            Initiate Your <br/> 
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">Competitive Advantage.</span>
+                            Book A Workflow Audit <br/> 
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">For Your Clinic.</span>
                         </motion.h2>
                         
                         <motion.p 
@@ -51,10 +51,9 @@ const GlobalCTA = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
-                            className="text-lg md:text-xl text-slate-400 font-light mb-12 leading-relaxed max-w-2xl mx-auto"
+                            className="text-base sm:text-lg md:text-xl text-slate-400 font-light mb-10 sm:mb-12 leading-relaxed max-w-2xl mx-auto"
                         >
-                            Stop managing technical debt and start engineering strategic growth. Our directors 
-                            personally lead all initial architectural discovery sessions to guarantee absolute alignment with your ROI targets.
+                            We will map where no-shows, missed calls, slow response time, and manual admin are costing your clinic time and revenue, then show you where automation or custom software can help first.
                         </motion.p>
                         
                         <motion.div 
@@ -68,7 +67,7 @@ const GlobalCTA = () => {
                                 onClick={() => navigate('/contact')}
                                 className="w-full sm:w-auto h-16 bg-white text-black px-10 py-5 rounded-full font-black text-[12px] uppercase tracking-widest hover:shadow-[0_0_50px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-3 group"
                             >
-                                Start Discovery Session
+                                Book Free Consultation
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </button>
                             
@@ -76,7 +75,7 @@ const GlobalCTA = () => {
                                 onClick={() => navigate('/portfolio')}
                                 className="w-full sm:w-auto h-16 bg-transparent text-white border border-white/10 hover:bg-white/5 px-10 py-5 rounded-full font-black text-[12px] uppercase tracking-widest transition-all hover:border-white/30"
                             >
-                                Review Case Studies
+                                Review Clinic Use Cases
                             </button>
                         </motion.div>
                     </div>

@@ -1,8 +1,15 @@
 import { useEffect } from 'react';
 
-const usePageTitle = (title: string) => {
+const defaultTitle = 'AI Automation & Custom Software For Clinics | Nexol Tech';
+
+const usePageTitle = (title?: string) => {
   useEffect(() => {
-    document.title = `${title} | Nexol Tech Solutions - Senior Technical Architects`;
+    if (!title) {
+      document.title = defaultTitle;
+    } else {
+      document.title = title.includes('Nexol') ? title : `${title} | Nexol Tech`;
+    }
+
     window.scrollTo(0, 0);
   }, [title]);
 };

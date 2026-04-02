@@ -35,10 +35,23 @@
   }
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+  #root {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
   }
 }
 

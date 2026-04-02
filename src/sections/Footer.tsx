@@ -18,26 +18,26 @@ const Footer = () => {
   const links = {
     company: [
       { name: 'About Nexol', href: '/about' },
-      { name: 'Careers', href: '/contact' },
-      { name: 'Portfolio', href: '/portfolio' },
-      { name: 'Methodology', href: '/solutions' },
+      { name: 'Book Audit', href: '/contact' },
+      { name: 'Clinic Use Cases', href: '/portfolio' },
+      { name: 'How We Work', href: '/solutions' },
     ],
     intelligence: [
-      { name: 'AI Automations', href: '/solutions' },
-      { name: 'CRM Architecture', href: '/solutions' },
-      { name: 'Data Integrations', href: '/solutions' },
-      { name: 'Custom Stacks', href: '/solutions' },
+      { name: 'AI Calling Agents', href: '/solutions' },
+      { name: 'Appointment Automation', href: '/solutions' },
+      { name: 'Custom Dashboards', href: '/solutions' },
+      { name: 'CRM & Intake Workflows', href: '/solutions' },
     ],
     industries: [
-      { name: 'Healthcare Cloud', href: '/#industries' },
-      { name: 'Fintech Processing', href: '/#industries' },
-      { name: 'E-commerce Scale', href: '/#industries' },
-      { name: 'Logistics ML', href: '/#industries' },
+      { name: 'Dental Practices', href: '/industries' },
+      { name: 'Specialty Clinics', href: '/industries' },
+      { name: 'Multi-Location Groups', href: '/industries' },
+      { name: 'Patient Ops Teams', href: '/industries' },
     ],
   };
 
   return (
-    <footer className="relative pt-48 pb-20 bg-[#020205] border-t border-white/[0.05] overflow-hidden">
+    <footer className="relative pt-24 sm:pt-32 lg:pt-48 pb-16 sm:pb-20 bg-[#020205] border-t border-white/[0.05] overflow-hidden">
       {/* Deep Space Background / Grid */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBoMjB2MjBIMHoiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPgo8L3N2Zz4=')] opacity-20 pointer-events-none mix-blend-screen" />
       
@@ -53,7 +53,7 @@ const Footer = () => {
       />
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 lg:gap-12 pb-24 border-b border-white/[0.05]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 sm:gap-16 lg:gap-12 pb-12 sm:pb-24 border-b border-white/[0.05]">
           
           {/* Brand Column */}
           <motion.div 
@@ -67,15 +67,15 @@ const Footer = () => {
               <img 
                 src="/logo-transparent.png" 
                 alt="Nexol Tech Solutions Logo" 
-                className="h-20 w-auto object-contain group-hover:scale-105 transition-transform duration-500 relative z-10 drop-shadow-[0_0_20px_rgba(111,61,255,0.4)]" 
+                className="h-14 sm:h-20 w-auto object-contain group-hover:scale-105 transition-transform duration-500 relative z-10 drop-shadow-[0_0_20px_rgba(111,61,255,0.4)]" 
               />
               <div className="text-left relative z-10">
-                <span className="text-white font-black text-4xl tracking-tighter drop-shadow-lg leading-none">NEXOL</span>
-                <span className="block text-xs text-slate-400 font-bold tracking-[0.3em] uppercase mt-1 group-hover:text-cyan-400 transition-colors">Tech Solutions</span>
+                <span className="text-white font-black text-2xl sm:text-4xl tracking-tighter drop-shadow-lg leading-none">NEXOL</span>
+                <span className="block text-[10px] sm:text-xs text-slate-400 font-bold tracking-[0.3em] uppercase mt-1 group-hover:text-cyan-400 transition-colors">Tech Solutions</span>
               </div>
             </button>
-            <p className="text-slate-400 text-lg font-light leading-relaxed mb-12 max-w-md">
-              We engineer, build, and deploy premium enterprise software and highly sovereign cognitive AI infrastructures. We define the future of operational ROI through architectural precision.
+            <p className="text-slate-400 text-base sm:text-lg font-light leading-relaxed mb-8 sm:mb-12 max-w-md">
+              Nexol helps clinics reduce no-shows, recover missed calls, and streamline patient operations with AI calling agents, custom dashboards, and workflow automation.
             </p>
             
             {/* Social Footprint (Glassmorphism) */}
@@ -84,10 +84,10 @@ const Footer = () => {
                 <a 
                   key={idx} 
                   href="#" 
-                  className="group relative w-16 h-16 rounded-3xl bg-[#0a0a0f] border border-white/5 flex items-center justify-center text-slate-400 hover:border-cyan-400/50 hover:text-white transition-all duration-500 overflow-hidden shadow-2xl"
+                  className="group relative w-12 h-12 sm:w-16 sm:h-16 rounded-2xl sm:rounded-3xl bg-[#0a0a0f] border border-white/5 flex items-center justify-center text-slate-400 hover:border-cyan-400/50 hover:text-white transition-all duration-500 overflow-hidden shadow-2xl"
                 >
                   <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/10 to-transparent translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500" />
-                  <Icon className="w-6 h-6 relative z-10 group-hover:scale-110 transition-transform duration-500 drop-shadow-md" />
+                  <Icon className="w-5 h-5 sm:w-6 sm:h-6 relative z-10 group-hover:scale-110 transition-transform duration-500 drop-shadow-md" />
                 </a>
               ))}
             </div>
@@ -105,7 +105,7 @@ const Footer = () => {
             >
               <h4 className="text-white font-bold text-sm tracking-[0.25em] uppercase mb-10 flex items-center gap-3">
                  <div className="w-2 h-2 bg-[#6F3DFF] rounded-full animate-pulse shadow-[0_0_10px_rgba(111,61,255,0.8)]" /> 
-                 Corporate
+                 Company
               </h4>
               <ul className="space-y-5">
                 {links.company.map((link, index) => (
@@ -119,7 +119,7 @@ const Footer = () => {
               </ul>
             </motion.div>
 
-            {/* Architecture */}
+             {/* Solutions */}
             <motion.div 
                initial={{ opacity: 0, y: 30 }}
                whileInView={{ opacity: 1, y: 0 }}
@@ -128,7 +128,7 @@ const Footer = () => {
             >
               <h4 className="text-white font-bold text-sm tracking-[0.25em] uppercase mb-10 flex items-center gap-3">
                  <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,211,238,0.8)]" /> 
-                 Architecture
+                 Solutions
               </h4>
               <ul className="space-y-5">
                 {links.intelligence.map((link, index) => (
@@ -152,7 +152,7 @@ const Footer = () => {
             >
               <h4 className="text-white font-bold text-sm tracking-[0.25em] uppercase mb-10 flex items-center gap-3">
                  <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_10px_rgba(52,211,153,0.8)]" /> 
-                 Specialties
+                 Best Fit
               </h4>
               <ul className="space-y-5">
                 {links.industries.map((link, index) => (
@@ -177,7 +177,7 @@ const Footer = () => {
            transition={{ delay: 0.5, duration: 1 }}
            className="flex flex-col md:flex-row items-center justify-between gap-8 pt-12"
         >
-          <p className="text-slate-500 font-medium text-sm tracking-widest uppercase text-center md:text-left flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+          <div className="text-slate-500 font-medium text-sm tracking-widest uppercase text-center md:text-left flex flex-col md:flex-row gap-2 md:gap-4 items-center">
             <span>&copy; {currentYear} Nexol Tech Solutions INC. </span>
             <span className="hidden md:inline-block text-slate-700">|</span> 
             <div className="flex gap-4 items-center">
@@ -185,7 +185,7 @@ const Footer = () => {
               <span className="text-slate-700">|</span> 
               <a href="#" className="hover:text-cyan-400 transition-colors">Terms</a>
             </div>
-          </p>
+          </div>
           
           <div 
              className="flex items-center gap-4 bg-[#0a0a0f] border border-white/10 px-6 py-3 rounded-full shadow-inner hover:border-emerald-500/50 hover:bg-[#141423] transition-all cursor-pointer group"

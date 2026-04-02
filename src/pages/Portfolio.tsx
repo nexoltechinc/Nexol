@@ -5,7 +5,7 @@ import usePageTitle from '../hooks/usePageTitle';
 
 const PortfolioPage = () => {
   const navigate = useNavigate();
-  usePageTitle('Portfolio - Nexol Tech Solutions');
+  usePageTitle('Clinic Automation Use Cases');
   const [filter, setFilter] = useState('All');
 
   useEffect(() => {
@@ -131,7 +131,7 @@ const PortfolioPage = () => {
                 <p.icon className="w-8 h-8 text-[#a98cff]" />
               </div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 uppercase tracking-tight">{p.title}</h2>
-              <p className="text-lg text-slate-400 font-light leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-slate-400 font-light leading-relaxed mb-8">
                 {p.desc}
               </p>
 
@@ -144,7 +144,7 @@ const PortfolioPage = () => {
                  ))}
               </div>
               
-              <div className="p-6 rounded-2xl bg-[#141423] border border-slate-800 border-l-4 border-l-cyan-400 mb-10 inline-block w-fit shadow-xl group hover:border-slate-700 hover:border-l-[#6F3DFF] transition-colors">
+              <div className="p-5 sm:p-6 rounded-2xl bg-[#141423] border border-slate-800 border-l-4 border-l-cyan-400 mb-10 inline-block w-full sm:w-fit shadow-xl group hover:border-slate-700 hover:border-l-[#6F3DFF] transition-colors">
                 <p className="text-xs text-slate-500 font-bold uppercase tracking-widest mb-1">Key Milestone</p>
                 <div className="flex items-center gap-3">
                   <Zap className="w-5 h-5 text-cyan-400 group-hover:text-[#6F3DFF] transition-colors" />
@@ -173,12 +173,12 @@ const PortfolioPage = () => {
       <section className="py-16 sm:py-24 border-t border-slate-800/50 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#141423] to-[#0B0B12]">
         <div className="max-w-4xl mx-auto px-6 text-center">
              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">Your vision could be our next <br className="hidden sm:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 italic font-medium">masterpiece.</span></h2>
-             <p className="text-xl text-slate-400 font-light leading-relaxed mb-12 max-w-2xl mx-auto">
+             <p className="text-base sm:text-xl text-slate-400 font-light leading-relaxed mb-10 sm:mb-12 max-w-2xl mx-auto">
                Every great transformation begins with an architect. Let us analyze your current infrastructure and map out a precise route to scalability.
              </p>
              <button 
                onClick={() => navigate('/contact')}
-               className="h-16 inline-flex items-center gap-3 bg-white text-[#0B0B12] px-10 rounded-full font-bold hover:scale-105 transition-transform shadow-[0_0_30px_rgba(255,255,255,0.2)]"
+               className="w-full sm:w-auto h-14 sm:h-16 inline-flex items-center justify-center gap-3 bg-white text-[#0B0B12] px-6 sm:px-10 rounded-full font-bold hover:scale-105 transition-transform shadow-[0_0_30px_rgba(255,255,255,0.2)]"
              >
                Start A Conversation <ChevronRight className="w-5 h-5" />
              </button>

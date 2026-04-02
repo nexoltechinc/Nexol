@@ -6,7 +6,7 @@ import TrustedBy from '../sections/TrustedBy';
 import usePageTitle from '../hooks/usePageTitle';
 
 const ContactPage = () => {
-  usePageTitle('Initiate Protocol - Nexol Tech Solutions');
+  usePageTitle('Book A Clinic Automation Audit');
   
   const targetRef = useRef<HTMLDivElement>(null);
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -17,7 +17,7 @@ const ContactPage = () => {
 
   const contactMethods = [
     {
-      label: "Strategic Inquiries",
+      label: "Clinic Inquiries",
       val: "solutions@nexol.tech",
       icon: Mail,
       sub: "Average response: < 2 hours",
@@ -28,7 +28,7 @@ const ContactPage = () => {
       shadow: "shadow-[0_0_30px_rgba(34,211,238,0.2)]"
     },
     {
-      label: "Direct Briefing",
+      label: "Direct Call",
       val: "+1 (516) 400-XXXX",
       icon: Phone,
       sub: "Mon - Fri, 9am - 6pm EST",
@@ -39,7 +39,7 @@ const ContactPage = () => {
       shadow: "shadow-[0_0_30px_rgba(59,130,246,0.2)]"
     },
     {
-      label: "Global HQ",
+      label: "Islandia, NY",
       val: "Islandia, NY, United States",
       icon: MapPin,
       sub: "Corporate Hub",
@@ -75,7 +75,7 @@ const ContactPage = () => {
       <div className="pt-28 sm:pt-40 pb-16 sm:pb-24 max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         
         {/* Hero Section */}
-        <div className="mb-24 relative">
+        <div className="mb-16 sm:mb-24 relative">
           {/* Deep Ambient Glow */}
           <motion.div 
              animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -93,7 +93,7 @@ const ContactPage = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
             </div>
-            <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase">Discovery Hub</span>
+            <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase">Clinic Discovery Call</span>
           </motion.div>
           
           <motion.h1 
@@ -102,9 +102,9 @@ const ContactPage = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
             className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-6 leading-[1.1] tracking-tighter drop-shadow-2xl"
           >
-            Initiate Your <br className="hidden lg:block"/> 
+            Book Your <br className="hidden lg:block"/> 
             <span className="relative">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">Architectural Audit.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">Automation Audit.</span>
               {/* Scanline effect on text */}
               <motion.span 
                 animate={{ x: ["0%", "100%", "0%"] }}
@@ -118,10 +118,9 @@ const ContactPage = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="text-lg lg:text-xl text-slate-400 max-w-2xl leading-relaxed font-light"
+            className="text-base sm:text-lg lg:text-xl text-slate-400 max-w-2xl leading-relaxed font-light"
           >
-            Ready to harden your infrastructure or scale your AI ecosystem? Our senior directors personally 
-            oversee every initial discovery briefing to ensure exact technical alignment.
+            Tell us where follow-up, missed calls, scheduling, or reporting is breaking down. We will help you identify the best first automation or custom system to build.
           </motion.p>
         </div>
 
@@ -141,7 +140,7 @@ const ContactPage = () => {
                   variants={itemVariants}
                   onClick={() => setActiveCard(i)}
                   whileTap={{ scale: 0.95 }}
-                  className={`group relative p-8 rounded-3xl border transition-all duration-500 overflow-hidden cursor-pointer ${isActive ? `${m.activeBorder} ${m.shadow} bg-[#141423]` : 'bg-[#0a0a0f] border-white/[0.05] hover:border-cyan-500/30'}`}
+                  className={`group relative p-6 sm:p-8 rounded-3xl border transition-all duration-500 overflow-hidden cursor-pointer ${isActive ? `${m.activeBorder} ${m.shadow} bg-[#141423]` : 'bg-[#0a0a0f] border-white/[0.05] hover:border-cyan-500/30'}`}
                 >
                   {/* Background Active/Hover Flare */}
                   <div className={`absolute -inset-20 bg-gradient-to-br ${m.color} to-transparent blur-3xl transition-opacity duration-1000 ease-in-out ${isActive ? 'opacity-20' : 'opacity-0 group-hover:opacity-10'}`} />
@@ -192,7 +191,7 @@ const ContactPage = () => {
             transition={{ duration: 1, delay: 0.4, type: "spring", stiffness: 40 }}
             className="lg:col-span-8"
           >
-            <div className="bg-[#0a0a0f]/80 backdrop-blur-2xl border border-white/[0.08] rounded-[3rem] p-8 md:p-14 relative overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)]">
+            <div className="bg-[#0a0a0f]/80 backdrop-blur-2xl border border-white/[0.08] rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-8 md:p-14 relative overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)]">
                
                {/* Architectural Form Background */}
                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-b from-[#6F3DFF]/10 to-transparent blur-[120px] -z-10 pointer-events-none transform -translate-y-1/2 translate-x-1/2" />
@@ -203,25 +202,25 @@ const ContactPage = () => {
                     <div className="space-y-3 group">
                       <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.15em] ml-2 flex items-center gap-2 group-focus-within:text-cyan-400 transition-colors">
                         <Terminal className="w-3.5 h-3.5" />
-                        Lead Architect Name
+                        Your Name
                       </label>
                       <div className="relative">
                         <input 
                           type="text" 
                           placeholder="e.g. Dr. Alexander Pierce" 
-                          className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-6 text-white text-lg font-medium focus:outline-none focus:border-cyan-400 focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl"
+                          className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-5 sm:px-6 text-white text-base sm:text-lg font-medium focus:outline-none focus:border-cyan-400 focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl"
                         />
                       </div>
                     </div>
                     <div className="space-y-3 group">
                       <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.15em] ml-2 flex items-center gap-2 group-focus-within:text-cyan-400 transition-colors">
                         <Mail className="w-3.5 h-3.5" />
-                        Enterprise Email
+                        Work Email
                       </label>
                       <input 
                         type="email" 
-                        placeholder="a.pierce@enterprise.com" 
-                        className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-6 text-white text-lg font-medium focus:outline-none focus:border-cyan-400 focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl"
+                          placeholder="ops@yourclinic.com" 
+                        className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-5 sm:px-6 text-white text-base sm:text-lg font-medium focus:outline-none focus:border-cyan-400 focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl"
                       />
                     </div>
                  </div>
@@ -230,23 +229,23 @@ const ContactPage = () => {
                     <div className="space-y-3 group">
                       <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.15em] ml-2 flex items-center gap-2 group-focus-within:text-[#6F3DFF] transition-colors">
                         <Shield className="w-3.5 h-3.5" />
-                        Primary Objective
+                        What Do You Need Help With?
                       </label>
                       <div className="relative">
                         <input 
                           type="text"
                           list="services-list"
-                          placeholder="Search or entry custom service..."
-                          className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-6 text-white text-lg font-medium focus:outline-none focus:border-[#6F3DFF] focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl"
+                          placeholder="Choose a clinic automation need..."
+                          className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-5 sm:px-6 text-white text-base sm:text-lg font-medium focus:outline-none focus:border-[#6F3DFF] focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl"
                         />
                         <datalist id="services-list">
-                          <option value="AI Workflow Automation" />
-                          <option value="Enterprise Software Engineering" />
-                          <option value="Cloud Architecture & Scalability" />
-                          <option value="AI Voice Agent Deployment" />
-                          <option value="E-Commerce Ecosystems" />
-                          <option value="Mobile App Strategy & Engineering" />
-                          <option value="Cognitive Automation Audit" />
+                          <option value="AI calling agent deployment" />
+                          <option value="Missed-call recovery" />
+                          <option value="Appointment reminder automation" />
+                          <option value="Patient intake and routing" />
+                          <option value="Custom clinic dashboard or CRM" />
+                          <option value="HIPAA-aware workflow automation" />
+                          <option value="General automation audit" />
                         </datalist>
                         <ChevronDown className="absolute right-6 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 pointer-events-none opacity-50" />
                       </div>
@@ -254,13 +253,13 @@ const ContactPage = () => {
                     <div className="space-y-3 group">
                       <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.15em] ml-2 flex items-center gap-2 group-focus-within:text-[#6F3DFF] transition-colors">
                         <Clock className="w-3.5 h-3.5" />
-                        Deployment Timeline
+                        How Soon Do You Want To Improve This?
                       </label>
                       <div className="relative">
-                        <select className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-6 text-white text-lg font-medium focus:outline-none focus:border-[#6F3DFF] focus:bg-[#141423] transition-all duration-300 appearance-none cursor-pointer rounded-t-xl">
-                          <option>Immediate Execution (&lt; 1 Month)</option>
-                          <option>Strategic Roadmap (1-3 Months)</option>
-                          <option>Planned Architecture (3+ Months)</option>
+                        <select className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-5 sm:px-6 text-white text-base sm:text-lg font-medium focus:outline-none focus:border-[#6F3DFF] focus:bg-[#141423] transition-all duration-300 appearance-none cursor-pointer rounded-t-xl">
+                          <option>ASAP (Within 30 Days)</option>
+                          <option>This Quarter (1-3 Months)</option>
+                          <option>Planning Ahead (3+ Months)</option>
                         </select>
                         <ChevronDown className="absolute right-6 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 pointer-events-none" />
                       </div>
@@ -270,31 +269,31 @@ const ContactPage = () => {
                  <div className="space-y-3 group">
                     <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.15em] ml-2 flex items-center gap-2 group-focus-within:text-blue-400 transition-colors">
                       <MessageSquare className="w-3.5 h-3.5" />
-                      Project Brief & ROI Targets
+                      What Is Happening In The Clinic Today?
                     </label>
                     <textarea 
                       rows={5}
                       placeholder="Describe your current technical bottleneck, intended operational scale, and target metrics..."
-                      className="w-full bg-[#141423]/50 border-b-2 border-slate-700/50 p-6 text-white text-lg font-medium focus:outline-none focus:border-blue-400 focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl resize-none"
+                      className="w-full bg-[#141423]/50 border-b-2 border-slate-700/50 p-5 sm:p-6 text-white text-base sm:text-lg font-medium focus:outline-none focus:border-blue-400 focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl resize-none"
                     />
                  </div>
 
                  <button 
                    type="button"
-                   className="relative w-full h-16 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-2xl font-black text-lg overflow-hidden group shadow-[0_15px_40px_rgba(34,211,238,0.2)] hover:shadow-[0_20px_50px_rgba(34,211,238,0.4)] transition-all duration-300 outline-none focus:ring-4 focus:ring-cyan-500/50"
+                   className="relative w-full h-14 sm:h-16 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-2xl font-black text-base sm:text-lg overflow-hidden group shadow-[0_15px_40px_rgba(34,211,238,0.2)] hover:shadow-[0_20px_50px_rgba(34,211,238,0.4)] transition-all duration-300 outline-none focus:ring-4 focus:ring-cyan-500/50"
                  >
                     <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-cyan-400 to-[#6F3DFF] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="absolute top-0 -inset-full h-full w-1/2 block z-5 [transform:skewX(-20deg)] bg-white/20 group-hover:animate-[slide_1.5s_ease-in-out_infinite]" />
                     <span className="relative z-10 flex items-center justify-center gap-3 drop-shadow-md">
                        <Send className="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:rotate-12 transition-transform duration-300" />
-                       Initiate Secure Transmission
+                       Request Audit
                     </span>
                  </button>
 
                  <div className="flex items-center justify-center gap-3 pt-6 border-t border-white/5">
                     <Shield className="w-4 h-4 text-emerald-400 drop-shadow-[0_0_10px_rgba(52,211,153,0.8)]" />
                     <p className="text-xs text-slate-400 uppercase tracking-widest font-bold">
-                      All Transmissions heavily encrypted via 256-bit architectural SLA.
+                      Your inquiry stays private and goes directly to Nexol.
                     </p>
                  </div>
                </form>

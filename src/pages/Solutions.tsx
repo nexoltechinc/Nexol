@@ -6,7 +6,7 @@ import usePageTitle from '../hooks/usePageTitle';
 
 const Solutions = () => {
   const navigate = useNavigate();
-  usePageTitle('Enterprise Solutions - Nexol Architectures');
+  usePageTitle('Clinic Automation Solutions');
   const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
   const [activeService, setActiveService] = useState<number>(0);
 
@@ -148,7 +148,7 @@ const Solutions = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="text-xl lg:text-2xl text-slate-400 font-light max-w-3xl mx-auto mb-14 leading-relaxed"
+            className="text-base sm:text-xl lg:text-2xl text-slate-400 font-light max-w-3xl mx-auto mb-10 sm:mb-14 leading-relaxed"
           >
             We move significantly beyond generic development. We build precision-engineered digital ecosystems, highly-sovereign cognitive AI layers, and hyper-available operational infrastructures.
           </motion.p>
@@ -157,11 +157,11 @@ const Solutions = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
           >
              <button 
                 onClick={() => navigate('/contact')}
-                className="group relative h-16 px-10 rounded-full bg-white text-[#020205] font-black tracking-tight text-lg shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.3)] transition-all duration-300 overflow-hidden flex items-center gap-3 hover:pr-8"
+                className="group relative w-full sm:w-auto h-14 sm:h-16 px-6 sm:px-10 rounded-full bg-white text-[#020205] font-black tracking-tight text-base sm:text-lg shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.3)] transition-all duration-300 overflow-hidden flex items-center justify-center gap-3 hover:pr-8"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#6F3DFF]/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out" />
                 <span className="relative z-10 flex items-center justify-center gap-3">
@@ -174,15 +174,15 @@ const Solutions = () => {
       </section>
 
       {/* 2. Signature Solutions Overview: Deep Bento Box */}
-      <section className="py-40 max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+      <section className="py-20 sm:py-28 lg:py-40 max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <motion.div 
            initial={{ opacity: 0, y: 40 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            className="mb-24 text-center lg:text-left"
         >
-          <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-xl">The Core Architectures</h2>
-          <p className="text-xl text-slate-400 font-light max-w-2xl leading-relaxed">High-level strategic domains where we engineer absolute dominance for ambitious enterprises.</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-xl">The Core Architectures</h2>
+          <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl leading-relaxed">High-level strategic domains where we engineer absolute dominance for ambitious enterprises.</p>
         </motion.div>
 
         <motion.div 
@@ -193,19 +193,19 @@ const Solutions = () => {
           className="grid grid-cols-12 gap-6"
         >
           {coreArchitectures.map((block, i) => (
-            <motion.div key={i} variants={itemVariants} className={`${block.span} group relative bg-[#0a0a0f] border border-white/5 rounded-[3rem] p-12 overflow-hidden hover:border-[#6F3DFF]/30 transition-all duration-700 hover:shadow-[0_30px_60px_rgba(0,0,0,0.6)] cursor-default`}>
+            <motion.div key={i} variants={itemVariants} className={`${block.span} group relative bg-[#0a0a0f] border border-white/5 rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-10 lg:p-12 overflow-hidden hover:border-[#6F3DFF]/30 transition-all duration-700 hover:shadow-[0_30px_60px_rgba(0,0,0,0.6)] cursor-default`}>
               <div className={`absolute inset-0 bg-gradient-to-br ${block.color} opacity-0 group-hover:opacity-100 transition-opacity duration-700`}></div>
               
               <div className="absolute -top-20 -right-20 w-64 h-64 bg-white/[0.01] rounded-full blur-3xl group-hover:bg-[#6F3DFF]/10 transition-colors duration-1000" />
               
               <div className="relative z-10 h-full flex flex-col justify-between">
                  <div>
-                   <div className="w-16 h-16 rounded-2xl bg-[#141423] border border-white/10 flex items-center justify-center mb-10 backdrop-blur-xl group-hover:-translate-y-2 group-hover:scale-110 shadow-2xl transition-all duration-500">
+                   <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#141423] border border-white/10 flex items-center justify-center mb-6 sm:mb-10 backdrop-blur-xl group-hover:-translate-y-2 group-hover:scale-110 shadow-2xl transition-all duration-500">
                      <block.icon className="w-8 h-8 text-white group-hover:text-cyan-400 transition-colors" />
                    </div>
-                   <h3 className="text-3xl lg:text-4xl font-black text-white mb-6 tracking-tight leading-tight">{block.title}</h3>
+                   <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 sm:mb-6 tracking-tight leading-tight">{block.title}</h3>
                  </div>
-                 <p className="text-slate-400 text-lg font-light leading-relaxed group-hover:text-slate-300 transition-colors">{block.desc}</p>
+                 <p className="text-slate-400 text-base sm:text-lg font-light leading-relaxed group-hover:text-slate-300 transition-colors">{block.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -213,11 +213,11 @@ const Solutions = () => {
       </section>
 
       {/* 3. Interactive Service Showcase */}
-      <section className="py-40 bg-[#06060A] border-y border-white/[0.03] relative overflow-hidden">
+      <section className="py-20 sm:py-28 lg:py-40 bg-[#06060A] border-y border-white/[0.03] relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBoMjB2MjBIMHoiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPgo8L3N2Zz4=')] opacity-20 pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-           <div className="grid lg:grid-cols-12 gap-16">
+           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
              <motion.div 
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -225,14 +225,14 @@ const Solutions = () => {
                 className="lg:col-span-5 relative"
              >
                <div className="sticky top-40">
-                 <h2 className="text-4xl lg:text-5xl font-black text-white mb-8 tracking-tight drop-shadow-lg">The Engineering Matrix</h2>
-                 <p className="text-xl text-slate-400 font-light mb-12 leading-relaxed">Explore the targeted technical capabilities we deploy to completely eradicate complex enterprise bottlenecks.</p>
+                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 sm:mb-8 tracking-tight drop-shadow-lg">The Engineering Matrix</h2>
+                 <p className="text-base sm:text-xl text-slate-400 font-light mb-8 sm:mb-12 leading-relaxed">Explore the targeted technical capabilities we deploy to completely eradicate complex enterprise bottlenecks.</p>
                  <div className="space-y-4">
                    {specificServices.map((service, i) => (
                      <button 
                        key={i}
                        onClick={() => setActiveService(i)}
-                       className={`w-full text-left p-6 rounded-2xl border transition-all duration-500 group relative overflow-hidden ${activeService === i ? 'bg-[#141423] border-cyan-400/40 shadow-[0_0_40px_rgba(34,211,238,0.15)]' : 'bg-transparent border-transparent hover:border-slate-800 hover:bg-white/5'}`}
+                        className={`w-full text-left p-4 sm:p-6 rounded-2xl border transition-all duration-500 group relative overflow-hidden ${activeService === i ? 'bg-[#141423] border-cyan-400/40 shadow-[0_0_40px_rgba(34,211,238,0.15)]' : 'bg-transparent border-transparent hover:border-slate-800 hover:bg-white/5'}`}
                      >
                        {activeService === i && (
                          <motion.div 
@@ -240,7 +240,7 @@ const Solutions = () => {
                            className="absolute left-0 top-0 bottom-0 w-1 bg-cyan-400" 
                          />
                        )}
-                       <h4 className={`text-xl font-bold ml-2 ${activeService === i ? 'text-white' : 'text-slate-500'} group-hover:text-white transition-colors`}>{service.name}</h4>
+                        <h4 className={`text-lg sm:text-xl font-bold ml-2 ${activeService === i ? 'text-white' : 'text-slate-500'} group-hover:text-white transition-colors`}>{service.name}</h4>
                      </button>
                    ))}
                  </div>
@@ -253,7 +253,7 @@ const Solutions = () => {
                 viewport={{ once: true }}
                 className="lg:col-span-7 flex items-center"
              >
-               <div className="bg-gradient-to-br from-[#141423] to-[#0a0a0f] border border-white/10 rounded-[3rem] p-12 lg:p-16 min-h-[440px] w-full flex flex-col justify-center relative overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)]">
+               <div className="bg-gradient-to-br from-[#141423] to-[#0a0a0f] border border-white/10 rounded-[2rem] sm:rounded-[3rem] p-6 sm:p-10 lg:p-16 min-h-[360px] sm:min-h-[440px] w-full flex flex-col justify-center relative overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)]">
                   {/* Floating Graphic Array */}
                   <div className="absolute top-0 right-0 p-10 opacity-10 blur-[2px]">
                      <motion.div animate={{ rotate: 360 }} transition={{ duration: 60, repeat: Infinity, ease: "linear" }}>
@@ -272,8 +272,8 @@ const Solutions = () => {
                       <Terminal className="w-3 h-3 text-cyan-400" />
                       <span className="text-[10px] font-bold text-cyan-400 tracking-widest uppercase">Kernel Capability</span>
                     </div>
-                    <h3 className="text-4xl lg:text-5xl font-black text-white mb-8 tracking-tighter leading-tight drop-shadow-2xl">{specificServices[activeService].name}</h3>
-                    <p className="text-xl text-slate-300 font-light leading-relaxed mb-12">{specificServices[activeService].detail}</p>
+                    <h3 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white mb-6 sm:mb-8 tracking-tighter leading-tight drop-shadow-2xl">{specificServices[activeService].name}</h3>
+                    <p className="text-base sm:text-xl text-slate-300 font-light leading-relaxed mb-8 sm:mb-12">{specificServices[activeService].detail}</p>
                     <button 
                        onClick={() => navigate('/contact')}
                        className="group flex items-center gap-3 text-white font-bold text-sm uppercase tracking-widest w-fit border-b border-white/30 pb-2 hover:border-cyan-400 hover:text-cyan-400 transition-colors"
@@ -288,15 +288,15 @@ const Solutions = () => {
       </section>
 
       {/* 4. The Nexol Edge */}
-      <section className="py-40 max-w-7xl mx-auto px-6 lg:px-12 relative overflow-hidden">
+      <section className="py-20 sm:py-28 lg:py-40 max-w-7xl mx-auto px-6 lg:px-12 relative overflow-hidden">
         <motion.div 
            initial={{ opacity: 0, y: 30 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            className="text-center mb-32"
         >
-           <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">The Nexol Advantage</h2>
-           <p className="text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">Why Fortune 500s and immensely ambitious scale-ups trust us with their most sensitive, mission-critical infrastructure logic.</p>
+           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">The Nexol Advantage</h2>
+           <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">Why Fortune 500s and immensely ambitious scale-ups trust us with their most sensitive, mission-critical infrastructure logic.</p>
         </motion.div>
 
         <div className="space-y-32 relative">
@@ -315,10 +315,10 @@ const Solutions = () => {
                  className={`flex flex-col lg:flex-row gap-12 lg:gap-24 items-center mb-24 last:mb-0 ${i % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
               >
                 <div className="w-full lg:w-1/2 flex justify-center lg:justify-end group cursor-default">
-                  <div className={`p-12 rounded-[3.5rem] border border-white/5 bg-[#0a0a0f] shadow-2xl relative w-full lg:max-w-lg transition-all duration-700 hover:border-cyan-500/30 hover:shadow-[0_20px_60px_rgba(34,211,238,0.1)] ${i % 2 !== 0 ? 'lg:mr-auto lg:ml-0' : 'lg:ml-auto lg:mr-0'}`}>
+                  <div className={`p-6 sm:p-12 rounded-[2rem] sm:rounded-[3.5rem] border border-white/5 bg-[#0a0a0f] shadow-2xl relative w-full lg:max-w-lg transition-all duration-700 hover:border-cyan-500/30 hover:shadow-[0_20px_60px_rgba(34,211,238,0.1)] ${i % 2 !== 0 ? 'lg:mr-auto lg:ml-0' : 'lg:ml-auto lg:mr-0'}`}>
                     <div className="absolute inset-0 bg-gradient-to-tr from-cyan-400/5 to-transparent rounded-[3.5rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                    <h3 className="text-3xl font-black text-white mb-6 relative z-10 tracking-tight">{diff.title}</h3>
-                    <p className="text-lg text-slate-400 font-light leading-relaxed relative z-10 group-hover:text-slate-300 transition-colors">{diff.text}</p>
+                    <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 sm:mb-6 relative z-10 tracking-tight">{diff.title}</h3>
+                    <p className="text-base sm:text-lg text-slate-400 font-light leading-relaxed relative z-10 group-hover:text-slate-300 transition-colors">{diff.text}</p>
                   </div>
                 </div>
                 
@@ -327,7 +327,7 @@ const Solutions = () => {
                   <motion.div 
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     whileTap={{ scale: 0.9, rotate: -5 }}
-                    className="w-40 h-40 rounded-full border border-slate-800 flex items-center justify-center bg-[#141423]/80 backdrop-blur-3xl relative shadow-[0_30px_80px_rgba(0,0,0,0.8)] group transition-all duration-500 hover:border-cyan-400/50 cursor-pointer"
+                    className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 rounded-full border border-slate-800 flex items-center justify-center bg-[#141423]/80 backdrop-blur-3xl relative shadow-[0_30px_80px_rgba(0,0,0,0.8)] group transition-all duration-500 hover:border-cyan-400/50 cursor-pointer"
                   >
                     <div className="absolute inset-0 rounded-full bg-cyan-400/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     {i === 0 ? <Search className="w-12 h-12 text-slate-400 group-hover:text-cyan-400 transition-colors z-10 relative" /> : i === 1 ? <Network className="w-12 h-12 text-slate-400 group-hover:text-cyan-400 transition-colors z-10 relative" /> : <Activity className="w-12 h-12 text-slate-400 group-hover:text-cyan-400 transition-colors z-10 relative" />}
@@ -340,7 +340,7 @@ const Solutions = () => {
       </section>
 
       {/* 5. Service Delivery Pipeline */}
-      <section className="py-40 bg-[#06060A] border-y border-slate-800/50 relative overflow-hidden">
+      <section className="py-20 sm:py-28 lg:py-40 bg-[#06060A] border-y border-slate-800/50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
           <motion.div 
              initial={{ opacity: 0, y: 30 }}
@@ -348,8 +348,8 @@ const Solutions = () => {
              viewport={{ once: true }}
              className="mb-24 lg:w-2/3"
           >
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight drop-shadow-xl">Method of execution.</h2>
-            <p className="text-xl text-slate-400 font-light leading-relaxed">A completely transparent, fiercely risk-averse methodology precisely architected to guarantee highly scalable operational outcomes.</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight drop-shadow-xl">Method of execution.</h2>
+            <p className="text-base sm:text-xl text-slate-400 font-light leading-relaxed">A completely transparent, fiercely risk-averse methodology precisely architected to guarantee highly scalable operational outcomes.</p>
           </motion.div>
 
           <div className="relative overflow-hidden w-full before:absolute before:left-0 before:top-0 before:w-32 before:h-full before:bg-gradient-to-r before:from-[#06060a] before:to-transparent before:z-10 after:absolute after:right-0 after:top-0 after:w-32 after:h-full after:bg-gradient-to-l after:from-[#06060a] after:to-transparent after:z-10">
@@ -361,14 +361,14 @@ const Solutions = () => {
               {[...timeline, ...timeline].map((step, i) => (
                 <div 
                    key={i} 
-                   className="min-w-[320px] md:min-w-[420px] bg-[#0a0a0f] border border-white/5 p-12 rounded-[3rem] hover:border-[#6F3DFF]/40 transition-all duration-500 relative hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(111,61,255,0.15)] group/card"
+                   className="min-w-[260px] sm:min-w-[320px] md:min-w-[420px] bg-[#0a0a0f] border border-white/5 p-6 sm:p-10 lg:p-12 rounded-[2rem] sm:rounded-[3rem] hover:border-[#6F3DFF]/40 transition-all duration-500 relative hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(111,61,255,0.15)] group/card"
                 >
                   <div className="absolute top-0 right-0 w-32 h-32 bg-[radial-gradient(circle_at_top_right,_rgba(111,61,255,0.15),_transparent)] rounded-bl-full transition-colors duration-500" />
                   <div className="mb-10 w-14 h-14 rounded-2xl bg-[#141423] border border-slate-800 flex items-center justify-center shadow-lg group-hover/card:bg-[#6F3DFF] border-transparent transition-colors duration-500">
                     <span className="text-sm font-black text-slate-400 group-hover/card:text-white transition-colors tracking-widest">{step.phase.split('.')[0]}</span>
                   </div>
-                  <h4 className="text-3xl font-black text-white mb-4 tracking-tight drop-shadow-md">{step.phase.split('.')[1]}</h4>
-                  <p className="text-slate-400 leading-relaxed font-light text-lg group-hover/card:text-slate-300 transition-colors">{step.desc}</p>
+                  <h4 className="text-2xl sm:text-3xl font-black text-white mb-4 tracking-tight drop-shadow-md">{step.phase.split('.')[1]}</h4>
+                  <p className="text-slate-400 leading-relaxed font-light text-base sm:text-lg group-hover/card:text-slate-300 transition-colors">{step.desc}</p>
                 </div>
               ))}
             </motion.div>
@@ -377,15 +377,15 @@ const Solutions = () => {
       </section>
 
       {/* 6. Impact Innovation (Case Studies) */}
-      <section className="py-40 max-w-7xl mx-auto px-6 lg:px-12 relative">
+      <section className="py-20 sm:py-28 lg:py-40 max-w-7xl mx-auto px-6 lg:px-12 relative">
         <motion.div 
            initial={{ opacity: 0, y: 30 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            className="text-center mb-24"
         >
-          <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">Proven Impact Metrics</h2>
-          <p className="text-xl text-slate-400 font-light max-w-3xl mx-auto leading-relaxed">We strictly do not measure success by lines of code deployed; we measure it by total revenue velocity injected and absolute milliseconds saved.</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">Proven Impact Metrics</h2>
+          <p className="text-base sm:text-xl text-slate-400 font-light max-w-3xl mx-auto leading-relaxed">We strictly do not measure success by lines of code deployed; we measure it by total revenue velocity injected and absolute milliseconds saved.</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-10">
@@ -394,14 +394,14 @@ const Solutions = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               onClick={() => navigate('/portfolio')}
-              className="group relative bg-[#0a0a0f] rounded-[3rem] overflow-hidden border border-white/5 aspect-[4/3] flex flex-col justify-end p-12 cursor-pointer shadow-2xl"
+              className="group relative bg-[#0a0a0f] rounded-[2rem] sm:rounded-[3rem] overflow-hidden border border-white/5 aspect-[4/3] flex flex-col justify-end p-6 sm:p-12 cursor-pointer shadow-2xl"
            >
             <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all ease-out" style={{ backgroundImage: "url('/case-ecommerce.png')", transitionDuration: '1.5s' }}></div>
              <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/80 to-transparent"></div>
              <div className="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                <span className="px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">E-Commerce Architecture</span>
-               <h3 className="text-4xl font-black text-white mb-3 tracking-tight">NexolBazzar Scalability</h3>
-               <p className="text-slate-300 font-light mb-8 text-lg">Zero-latency, globally available marketplace search cluster targeting massive holiday demand curves.</p>
+               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">NexolBazzar Scalability</h3>
+               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Zero-latency, globally available marketplace search cluster targeting massive holiday demand curves.</p>
                <div className="inline-flex items-center gap-4 bg-black/50 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-xl">
                  <Zap className="w-6 h-6 text-cyan-400" />
                  <div>
@@ -418,14 +418,14 @@ const Solutions = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
               onClick={() => navigate('/portfolio')}
-              className="group relative bg-[#0a0a0f] rounded-[3rem] overflow-hidden border border-white/5 aspect-[4/3] flex flex-col justify-end p-12 cursor-pointer shadow-2xl"
+              className="group relative bg-[#0a0a0f] rounded-[2rem] sm:rounded-[3rem] overflow-hidden border border-white/5 aspect-[4/3] flex flex-col justify-end p-6 sm:p-12 cursor-pointer shadow-2xl"
            >
             <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all ease-out" style={{ backgroundImage: "url('/case-trading.png')", transitionDuration: '1.5s' }}></div>
              <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/80 to-transparent"></div>
              <div className="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                <span className="px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">Enterprise AI Node</span>
-               <h3 className="text-4xl font-black text-white mb-3 tracking-tight">QuantFlow Security</h3>
-               <p className="text-slate-300 font-light mb-8 text-lg">Predictive sentiment engine running exclusively within isolated VPC architecture.</p>
+               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">QuantFlow Security</h3>
+               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Predictive sentiment engine running exclusively within isolated VPC architecture.</p>
                <div className="inline-flex items-center gap-4 bg-black/50 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-xl">
                  <ShieldCheck className="w-6 h-6 text-emerald-400" />
                  <div>
