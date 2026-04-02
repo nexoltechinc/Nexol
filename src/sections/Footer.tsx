@@ -18,21 +18,21 @@ const Footer = () => {
   const links = {
     company: [
       { name: 'About Nexol', href: '/about' },
-      { name: 'Book Audit', href: '/contact' },
-      { name: 'Clinic Use Cases', href: '/portfolio' },
+      { name: 'Book Consultation', href: '/contact' },
+      { name: 'Use Cases', href: '/portfolio' },
       { name: 'How We Work', href: '/solutions' },
     ],
     intelligence: [
-      { name: 'AI Calling Agents', href: '/solutions' },
-      { name: 'Appointment Automation', href: '/solutions' },
+      { name: 'Web Development', href: '/solutions' },
+      { name: 'AI Automation', href: '/solutions' },
       { name: 'Custom Dashboards', href: '/solutions' },
-      { name: 'CRM & Intake Workflows', href: '/solutions' },
+      { name: 'CRM & E-Commerce Systems', href: '/solutions' },
     ],
     industries: [
-      { name: 'Dental Practices', href: '/industries' },
-      { name: 'Specialty Clinics', href: '/industries' },
-      { name: 'Multi-Location Groups', href: '/industries' },
-      { name: 'Patient Ops Teams', href: '/industries' },
+      { name: 'E-Commerce', href: '/industries' },
+      { name: 'Finance', href: '/industries' },
+      { name: 'Healthcare', href: '/industries' },
+      { name: 'Small Business', href: '/industries' },
     ],
   };
 
@@ -75,7 +75,7 @@ const Footer = () => {
               </div>
             </button>
             <p className="text-slate-400 text-base sm:text-lg font-light leading-relaxed mb-8 sm:mb-12 max-w-md">
-              Nexol helps clinics reduce no-shows, recover missed calls, and streamline patient operations with AI calling agents, custom dashboards, and workflow automation.
+              Nexol builds custom software, automation systems, websites, dashboards, CRM workflows, and e-commerce solutions for modern businesses.
             </p>
             
             {/* Social Footprint (Glassmorphism) */}

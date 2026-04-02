@@ -7,7 +7,7 @@ const AIChatWidget = () => {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: "Hi, I'm NEXA. I can help you explore Nexol's clinic automation services, pricing fit, or the best next step for your practice.",
+      content: "Hi, I'm NEXA. I can help you explore Nexol's software, automation, website, dashboard, CRM, or e-commerce services and the best next step for your business.",
     },
   ]);
   const [input, setInput] = useState('');
@@ -33,15 +33,15 @@ const AIChatWidget = () => {
       let response = '';
 
       if (query === 'hi' || query === 'hello' || query === 'hey') {
-        response = 'Hi, glad you are here. Are you trying to improve missed calls, appointment follow-up, intake workflows, or reporting for your clinic?';
+        response = 'Hi, glad you are here. Are you trying to improve your website, automate operations, build a dashboard, or fix a workflow that is slowing the business down?';
       } else if (query.includes('service') || query.includes('what do you do') || query.includes('offer')) {
-        response = 'We help clinics with AI calling agents, missed-call recovery, appointment reminders, patient intake workflows, and custom dashboards or CRM logic built around staff operations. Tell me which area is slowing your team down.';
+        response = 'We help businesses with custom websites, AI automation, dashboards, CRM workflows, e-commerce systems, internal tools, and industry-specific software. Tell me which area you want to improve.';
       } else if (query.includes('price') || query.includes('cost') || query.includes('budget')) {
-        response = 'Pricing depends on the workflow scope, integrations, and whether you need a focused automation or a full custom system. The fastest next step is a free clinic automation audit so we can recommend the right fit.';
+        response = 'Pricing depends on the scope, integrations, and whether you need a focused build or a larger system. The fastest next step is a free consultation so we can recommend the right fit.';
       } else if (query.includes('contact') || query.includes('call') || query.includes('talk') || query.includes('meet')) {
-        response = 'Absolutely. The best next step is to book a clinic automation audit so we can review your current workflow, where the bottlenecks are, and what to automate first.';
+        response = 'Absolutely. The best next step is to book a free consultation so we can review your goals, bottlenecks, and the right software or automation starting point.';
       } else {
-        response = 'That sounds like something we can help with. Share what is slowing the clinic down, and we will point you toward the right automation or software approach.';
+        response = 'That sounds like something we can help with. Share what is slowing the business down, and we will point you toward the right software, website, or automation approach.';
       }
 
       const assistantMessage = { role: 'assistant', content: response };
@@ -106,7 +106,7 @@ const AIChatWidget = () => {
                   <h3 className="text-white font-black text-base sm:text-lg tracking-tight">NEXA Support</h3>
                   <div className="flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-                    <span className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">Clinic Automation / Online</span>
+                    <span className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">Business Solutions / Online</span>
                   </div>
                 </div>
               </div>
@@ -157,7 +157,7 @@ const AIChatWidget = () => {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-                  placeholder="Ask about missed calls, no-shows, dashboards..."
+                  placeholder="Ask about websites, automation, dashboards..."
                   className="flex-1 min-w-0 bg-[#141423] border border-white/10 text-white text-sm rounded-2xl px-4 sm:px-6 py-3.5 sm:py-4 focus:outline-none focus:ring-2 focus:ring-[#6F3DFF]/40 focus:border-[#6F3DFF]/40 transition-all placeholder:text-slate-600"
                 />
                 <motion.button
@@ -170,7 +170,7 @@ const AIChatWidget = () => {
                 </motion.button>
               </div>
               <p className="text-[10px] text-center text-slate-500 mt-4 font-black uppercase tracking-[0.3em] opacity-40">
-                Nexa for clinic ops
+                Nexa for business ops
               </p>
             </div>
           </motion.div>

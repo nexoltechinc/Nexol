@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const defaultTitle = 'Dental & Medical Clinic Automation Services | Nexol Tech';
+const defaultTitle = 'Custom Software, AI Automation & Web Solutions | Nexol Tech';
 
 const usePageTitle = (title?: string) => {
   useEffect(() => {

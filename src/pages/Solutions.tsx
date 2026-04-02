@@ -6,7 +6,7 @@ import usePageTitle from '../hooks/usePageTitle';
 
 const Solutions = () => {
   const navigate = useNavigate();
-  usePageTitle('Clinic Automation Services | AI Calling Agents, Dashboards & Workflow Automation');
+  usePageTitle('Business Technology Services | Custom Software, AI Automation & Web Development');
   const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
   const [activeService, setActiveService] = useState<number>(0);
 
@@ -17,72 +17,77 @@ const Solutions = () => {
   }, []);
 
   const coreArchitectures = [
-    { title: "AI Calling Agents", desc: "Handle inbound calls, confirm appointments, recover missed calls, and reduce front-desk workload.", icon: Bot, span: "col-span-12 lg:col-span-8", color: "from-[#6F3DFF]/20 to-indigo-900/10" },
-    { title: "Clinic Dashboards", desc: "Track bookings, no-shows, call response, and team workload in one custom view.", icon: Server, span: "col-span-12 lg:col-span-4", color: "from-cyan-500/20 to-blue-900/10" },
-    { title: "Custom CRM & Intake", desc: "Connect forms, follow-up, lead routing, and patient intake so requests stop getting lost.", icon: Database, span: "col-span-12 lg:col-span-4", color: "from-emerald-500/20 to-emerald-900/10" },
-    { title: "Workflow Automation", desc: "Connect scheduling, EHR, phone, email, and internal operations to reduce manual admin work.", icon: Cloud, span: "col-span-12 lg:col-span-8", color: "from-rose-500/20 to-purple-900/10" }
+    { title: "AI Automation & Workflows", desc: "Automate repetitive tasks, customer follow-up, internal routing, and operations that are slowing the business down.", icon: Bot, span: "col-span-12 lg:col-span-8", color: "from-[#6F3DFF]/20 to-indigo-900/10" },
+    { title: "Dashboards & Reporting", desc: "Track performance, orders, sales, operations, and team activity in one custom reporting view.", icon: Server, span: "col-span-12 lg:col-span-4", color: "from-cyan-500/20 to-blue-900/10" },
+    { title: "CRM & Internal Tools", desc: "Connect forms, customer data, handoffs, approvals, and internal workflows so work stops getting lost.", icon: Database, span: "col-span-12 lg:col-span-4", color: "from-emerald-500/20 to-emerald-900/10" },
+    { title: "Web Platforms & E-Commerce", desc: "Build websites, portals, storefronts, and business systems that support growth and day-to-day execution.", icon: Cloud, span: "col-span-12 lg:col-span-8", color: "from-rose-500/20 to-purple-900/10" }
   ];
 
   const specificServices = [
-    { name: "Appointment Confirmation Automation", detail: "Reduce no-shows with reminder logic, confirmations, rescheduling flows, and follow-up built around your clinic schedule." },
-    { name: "Missed-Call Recovery", detail: "Capture after-hours calls, route follow-up automatically, and recover opportunities that would otherwise sit in voicemail." },
-    { name: "Patient Intake & Routing", detail: "Send inquiries to the right workflow, team member, or next step without manual triage slowing everything down." },
-    { name: "Custom Reporting Dashboards", detail: "Give clinic owners and managers visibility into calls, bookings, no-shows, follow-up speed, and staff workload." }
+    { name: "Website & Platform Development", detail: "Build the website, portal, or web app your business needs for sales, customer experience, or internal operations." },
+    { name: "AI Automation & Workflow Systems", detail: "Automate follow-up, lead routing, repetitive admin, and internal handoffs so your team can focus on higher-value work." },
+    { name: "Dashboards, CRM & Reporting", detail: "Give owners and teams clearer visibility into performance, customer pipelines, reporting, and daily operations." },
+    { name: "E-Commerce & Business Systems", detail: "Connect storefronts, payment flows, order handling, customer data, and reporting into one cleaner digital system." }
   ];
 
   const differentiators = [
-    { title: "Built Around Clinic Workflows", text: "We focus on the real bottlenecks clinics deal with every week: missed calls, scheduling friction, no-shows, manual follow-up, and reporting gaps." },
+    { title: "Built Around Business Workflows", text: "We focus on the real bottlenecks teams deal with every week: manual tasks, slow response time, weak visibility, fragmented tools, and reporting gaps." },
     { title: "Clear Delivery Process", text: "You get a practical rollout plan, defined workflow scope, and clear communication from audit through launch." },
-    { title: "Outcome-Driven", text: "The goal is simple: reduce manual work, improve patient response time, and help your team book and manage appointments more efficiently." }
+    { title: "Outcome-Driven", text: "The goal is simple: save time, improve visibility, support growth, and make the business easier to run with better systems." }
   ];
 
   const timeline = [
-    { phase: "01. Audit", desc: "Review call handling, no-show patterns, scheduling flow, and manual admin work." },
-    { phase: "02. Plan", desc: "Map the right workflow, integrations, and rollout plan for your clinic." },
-    { phase: "03. Build", desc: "Set up the calling logic, dashboards, routing, or custom workflow system." },
-    { phase: "04. Test", desc: "Validate calls, handoffs, integrations, and staff workflows before launch." },
-    { phase: "05. Improve", desc: "Measure results and keep refining the system based on clinic performance." }
+    { phase: "01. Audit", desc: "Review your current tools, bottlenecks, reporting gaps, and workflow pain points." },
+    { phase: "02. Plan", desc: "Map the right website, automation, dashboard, or custom system for the business." },
+    { phase: "03. Build", desc: "Develop the pages, workflows, integrations, reporting, or custom software." },
+    { phase: "04. Test", desc: "Validate user journeys, handoffs, integrations, and team workflows before launch." },
+    { phase: "05. Improve", desc: "Measure results and keep refining the system based on real business performance." }
   ];
 
   const faqs = [
     { 
       category: "Best Fit",
-      q: "What kinds of clinics do you work with?", 
-      a: "We work best with dental, medical, specialty, and multi-location clinics that need better call handling, scheduling support, intake workflows, or operations visibility."
+      q: "What kinds of businesses do you work with?", 
+      a: "We work with healthcare teams, e-commerce brands, finance businesses, service companies, small businesses, and growing operations that need stronger digital systems."
     },
     { 
       category: "Integrations",
-      q: "Can you connect with our existing scheduling or EHR system?", 
-      a: "Yes. We can work with common scheduling and healthcare systems depending on access, workflow requirements, and the specific tools your clinic already uses."
+      q: "Can you connect with our existing tools?", 
+      a: "Yes. We can work with your current CRM, e-commerce stack, dashboards, forms, email tools, internal systems, or other business software depending on access and workflow requirements."
     },
     { 
-      category: "Calls",
-      q: "Can calls transfer to our staff?", 
-      a: "Yes. Calls can be routed based on urgency, time of day, caller intent, or any workflow rules your clinic needs."
+      category: "Web",
+      q: "Do you build websites and web apps?", 
+      a: "Yes. We build business websites, portals, landing pages, internal tools, and custom web applications based on the scope and goals of the project."
+    },
+    { 
+      category: "Automation",
+      q: "Can you automate internal workflows and customer communication?", 
+      a: "Yes. We build automations around lead handling, follow-up, internal approvals, reporting, notifications, customer workflows, and industry-specific operational tasks."
     },
     { 
       category: "Timeline",
       q: "How long does implementation take?", 
-      a: "Most projects take a few weeks to scope, connect, test, and launch. The exact timeline depends on the workflow complexity and how many systems need to be integrated."
+      a: "Most projects take a few weeks to scope, build, test, and launch. The exact timeline depends on complexity, integrations, and whether you need a focused build or a broader custom system."
     },
     { 
       category: "Scope",
-      q: "Do you only build AI calling systems?", 
-      a: "No. We also build custom dashboards, CRM workflows, intake systems, reporting tools, and automation around scheduling and follow-up."
+      q: "Do you only build automation systems?", 
+      a: "No. We also build websites, dashboards, CRM workflows, internal tools, reporting systems, e-commerce features, and broader custom software."
     },
     { 
       category: "Pricing",
       q: "How is pricing structured?", 
-      a: "Pricing depends on the workflow scope, integrations, and whether you need a focused automation or a broader custom system. We usually start with an audit so we can recommend the right level of build."
+      a: "Pricing depends on the scope, integrations, timeline, and whether you need a focused delivery or a larger business system. We usually start with a consultation so we can recommend the right level of build."
     },
     { 
       category: "Support",
       q: "What support do you provide after launch?", 
-      a: "We support rollout, bug fixes, workflow adjustments, and ongoing improvements so the system keeps working well as your clinic changes."
+      a: "We support rollout, bug fixes, workflow adjustments, and ongoing improvements so the system keeps working well as the business evolves."
     },
     { 
       category: "Ownership",
-      q: "Do we own the workflow and software after delivery?", 
+      q: "Do we own the software after delivery?", 
       a: "Yes. We build custom systems for your business needs, and ownership terms are defined clearly in the project agreement."
     },
   ];
@@ -126,7 +131,7 @@ const Solutions = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#6F3DFF] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#6F3DFF]"></span>
             </div>
-            <span className="text-[11px] font-black text-slate-300 tracking-[0.2em] uppercase">Clinic Automation Services</span>
+            <span className="text-[11px] font-black text-slate-300 tracking-[0.2em] uppercase">Business Technology Services</span>
           </motion.div>
           
           <motion.h1 
@@ -135,8 +140,8 @@ const Solutions = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
             className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-8 tracking-tighter leading-[1.05] drop-shadow-2xl"
           >
-            AI Automation, Calling Agents, <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F3DFF] via-cyan-400 to-blue-500">And Custom Software For Clinics.</span>
+            Custom Software, AI Automation, <br className="hidden md:block"/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F3DFF] via-cyan-400 to-blue-500">And Web Solutions For Businesses.</span>
           </motion.h1>
           
           <motion.p 
@@ -145,7 +150,7 @@ const Solutions = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             className="text-base sm:text-xl lg:text-2xl text-slate-400 font-light max-w-3xl mx-auto mb-10 sm:mb-14 leading-relaxed"
           >
-            We help clinics reduce no-shows, recover missed calls, automate follow-up, and give staff better systems for scheduling, intake, reporting, and daily operations.
+            We help healthcare teams, e-commerce brands, finance businesses, service companies, and growing operations build better websites, automations, dashboards, CRM workflows, and digital systems.
           </motion.p>
           
           <motion.div 
@@ -160,7 +165,7 @@ const Solutions = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#6F3DFF]/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out" />
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                   Book Clinic Automation Audit
+                   Book Free Consultation
                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </button>
@@ -176,8 +181,8 @@ const Solutions = () => {
            viewport={{ once: true }}
            className="mb-24 text-center lg:text-left"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-xl">What We Build For Clinics</h2>
-          <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl leading-relaxed">The systems clinics usually need when calls, follow-up, intake, and reporting start slowing the business down.</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-xl">What We Build For Businesses</h2>
+          <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl leading-relaxed">The systems teams usually need when websites, workflows, customer journeys, reporting, and operations start slowing the business down.</p>
         </motion.div>
 
         <motion.div 
@@ -221,7 +226,7 @@ const Solutions = () => {
              >
                <div className="sticky top-28">
                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 sm:mb-8 tracking-tight drop-shadow-lg">Common Automation Needs</h2>
-                 <p className="text-base sm:text-xl text-slate-400 font-light mb-8 sm:mb-12 leading-relaxed">These are the workflow problems clinic owners and managers usually want solved first.</p>
+                 <p className="text-base sm:text-xl text-slate-400 font-light mb-8 sm:mb-12 leading-relaxed">These are the business problems owners and operators usually want solved first.</p>
                  <div className="space-y-4">
                    {specificServices.map((service, i) => (
                      <button 
@@ -290,7 +295,7 @@ const Solutions = () => {
            viewport={{ once: true }}
            className="text-center mb-20 sm:mb-24"
         >
-           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">Why Clinics Hire Nexol</h2>
+           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">Why Businesses Hire Nexol</h2>
            <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">Clear workflows, practical implementation, and custom systems built around how your team actually works.</p>
         </motion.div>
 
@@ -379,8 +384,8 @@ const Solutions = () => {
            viewport={{ once: true }}
            className="text-center mb-24"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">Common Clinic Use Cases</h2>
-          <p className="text-base sm:text-xl text-slate-400 font-light max-w-3xl mx-auto leading-relaxed">Examples of the systems clinics usually ask us to improve first.</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">Common Business Use Cases</h2>
+          <p className="text-base sm:text-xl text-slate-400 font-light max-w-3xl mx-auto leading-relaxed">Examples of the systems businesses usually ask us to improve first.</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-10">
@@ -394,14 +399,14 @@ const Solutions = () => {
             <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all ease-out" style={{ backgroundImage: "url('/case-ecommerce.png')", transitionDuration: '1.5s' }}></div>
              <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/80 to-transparent"></div>
              <div className="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-               <span className="px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">AI Calling Agent</span>
-               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">Medical Clinic Call Handling</h3>
-               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Handle inbound calls, automate appointment confirmations, and reduce manual front-desk follow-up.</p>
+               <span className="px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">E-Commerce System</span>
+               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">E-Commerce Operations & Automation</h3>
+               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Improve customer flow, order handling, reporting, and internal operations with a cleaner connected system.</p>
                <div className="inline-flex items-center gap-4 bg-black/50 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-xl">
                  <Zap className="w-6 h-6 text-cyan-400" />
                  <div>
                     <span className="block text-3xl font-black text-white leading-none mb-1">40%</span>
-                    <span className="block text-[10px] text-slate-400 uppercase tracking-widest font-bold">Fewer No-Shows</span>
+                    <span className="block text-[10px] text-slate-400 uppercase tracking-widest font-bold">More Efficient Order Flow</span>
                  </div>
                </div>
              </div>
@@ -418,14 +423,14 @@ const Solutions = () => {
             <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all ease-out" style={{ backgroundImage: "url('/case-trading.png')", transitionDuration: '1.5s' }}></div>
              <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/80 to-transparent"></div>
              <div className="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-               <span className="px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">Custom Dashboard</span>
-               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">Clinic Operations Visibility</h3>
-               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Track missed calls, response time, bookings, and front-desk workload in one reporting dashboard.</p>
+               <span className="px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">Business Dashboard</span>
+               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">Finance & Reporting Dashboard</h3>
+               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Give teams real-time visibility into reporting, performance, approvals, and operational trends with one custom dashboard.</p>
                <div className="inline-flex items-center gap-4 bg-black/50 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-xl">
                  <ShieldCheck className="w-6 h-6 text-emerald-400" />
                  <div>
                     <span className="block text-3xl font-black text-white leading-none mb-1">99.9%</span>
-                    <span className="block text-[10px] text-slate-400 uppercase tracking-widest font-bold">Clearer Reporting</span>
+                    <span className="block text-[10px] text-slate-400 uppercase tracking-widest font-bold">Clearer Performance Visibility</span>
                  </div>
                </div>
              </div>
@@ -556,7 +561,7 @@ const Solutions = () => {
           >
             <div>
               <p className="text-white font-bold text-lg tracking-tight mb-1">Need help choosing the right starting point?</p>
-              <p className="text-slate-500 text-sm font-light">We can review your workflow and recommend what to automate first.</p>
+              <p className="text-slate-500 text-sm font-light">We can review your goals and recommend what to build first.</p>
             </div>
             <button 
               onClick={() => navigate('/contact')}

@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const AboutPage = () => {
   const navigate = useNavigate();
-  usePageTitle('About Nexol | Clinic Automation & Custom Software');
+  usePageTitle('About Nexol | Custom Software & AI Solutions');
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -26,7 +26,7 @@ const AboutPage = () => {
     },
     {
       title: "Business-First Systems",
-      desc: "We focus on systems that reduce no-shows, improve patient response time, and remove manual admin work instead of building technology for its own sake.",
+      desc: "We focus on systems that improve operations, visibility, customer experience, and growth instead of building technology for its own sake.",
       icon: Rocket,
       color: "from-[#6F3DFF]/20",
       border: "hover:border-[#6F3DFF]/50",
@@ -36,7 +36,7 @@ const AboutPage = () => {
     },
     {
       title: "Hands-On Delivery",
-      desc: "We work closely with your team from audit through launch so the final system fits real clinic operations, not a generic template.",
+      desc: "We work closely with your team from discovery through launch so the final system fits real business operations, not a generic template.",
       icon: ShieldCheck,
       color: "from-emerald-500/20",
       border: "hover:border-emerald-500/50",
@@ -47,16 +47,16 @@ const AboutPage = () => {
   ];
 
   const processPhases = [
-    { name: "Audit The Workflow", icon: Lightbulb, desc: "We review how calls, follow-up, scheduling, intake, and reporting work today." },
-    { name: "Map The System", icon: Layers, desc: "We define the automation, dashboard, or custom software workflow that best fits your clinic." },
-    { name: "Build & Integrate", icon: Code2, desc: "We connect the right tools, build the workflow, and test how it works with your staff." },
+    { name: "Audit The Opportunity", icon: Lightbulb, desc: "We review your current tools, workflows, customer journey, reporting gaps, and biggest operational bottlenecks." },
+    { name: "Map The System", icon: Layers, desc: "We define the website, automation, dashboard, CRM, or custom software build that best fits your business." },
+    { name: "Build & Integrate", icon: Code2, desc: "We connect the right tools, build the system, and test how it works with your team." },
     { name: "Launch & Improve", icon: Rocket, desc: "We go live, monitor results, and keep improving the system based on real usage." }
   ];
 
   const milestones = [
-    { number: "Clear", label: "Workflow Planning" },
+    { number: "Clear", label: "Discovery & Planning" },
     { number: "Custom", label: "Software & Automation" },
-    { number: "Secure", label: "Healthcare-Minded Delivery" },
+    { number: "Flexible", label: "Multi-Industry Delivery" },
     { number: "Hands-On", label: "Launch Support" },
   ];
 
@@ -82,7 +82,7 @@ const AboutPage = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-5xl lg:text-7xl font-black text-white mb-6 tracking-tighter leading-[1.1]"
           >
-            Why Clinics Choose <br className="hidden md:block"/>
+            Why Businesses Choose <br className="hidden md:block"/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F3DFF] to-cyan-400">Nexol</span>
           </motion.h1>
           <motion.p 
@@ -91,7 +91,7 @@ const AboutPage = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg lg:text-xl text-slate-400 font-light max-w-3xl mx-auto mb-10"
           >
-            Nexol builds AI automation and custom software for clinics that need fewer manual tasks, faster patient response, and better visibility into daily operations.
+            Nexol builds custom software, automation, websites, dashboards, and digital systems for businesses that need clearer operations, stronger execution, and better growth infrastructure.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -126,7 +126,7 @@ const AboutPage = () => {
             transition={{ delay: 0.1 }}
             className="text-lg text-slate-400 max-w-3xl mx-auto font-light leading-relaxed opacity-60"
           >
-            The way we scope, build, and launch systems so they solve real clinic problems instead of adding more software complexity.
+            The way we scope, build, and launch systems so they solve real business problems instead of adding more software complexity.
           </motion.p>
         </div>
 
@@ -293,15 +293,15 @@ const AboutPage = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-[#6F3DFF]">Build Around.</span>
               </h2>
               <p className="text-slate-400 font-light mt-4 max-w-xl leading-relaxed">
-                We connect calling, scheduling, dashboards, and workflow automation around the systems your clinic already uses.
+                We connect websites, dashboards, automations, customer workflows, and internal tools around the systems your business already uses.
               </p>
             </div>
 
             {/* Trust stat chips */}
             <div className="flex flex-wrap gap-3 lg:justify-end shrink-0">
               {[
-                { val: "Calling", label: "Workflows" },
-                { val: "Scheduling", label: "Integrations" },
+                { val: "Web", label: "Platforms" },
+                { val: "Automation", label: "Workflows" },
                 { val: "Reporting", label: "Visibility" },
               ].map((s, i) => (
                 <motion.div 
@@ -361,7 +361,7 @@ const AboutPage = () => {
                transition={{ delay: 0.3, duration: 0.8 }}
                className="text-lg text-slate-300 font-light mb-10 leading-relaxed"
             >
-              If your clinic needs clearer systems for calls, follow-up, scheduling, intake, or reporting, we can help map the right starting point and build it with your team.
+              If your business needs a better website, cleaner workflows, stronger reporting, or automation that actually saves time, we can help map the right starting point and build it with your team.
             </motion.p>
             
             <ul className="space-y-4 mb-12">

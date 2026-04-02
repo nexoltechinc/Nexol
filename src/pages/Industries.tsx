@@ -6,7 +6,7 @@ import TrustedBy from '../sections/TrustedBy';
 
 const IndustriesPage = () => {
     const navigate = useNavigate();
-    usePageTitle('Industries We Serve | Dental, Medical & Multi-Location Clinics');
+    usePageTitle('Industries We Serve | E-Commerce, Finance, Healthcare & Small Business');
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -14,28 +14,28 @@ const IndustriesPage = () => {
 
     const sectors = [
         {
-            title: "Dental Practices",
-            desc: "Great fit for clinics that need help with appointment confirmations, missed-call recovery, patient follow-up, and front-desk workload.",
+            title: "Healthcare",
+            desc: "A strong fit for healthcare businesses that need better websites, patient workflows, dashboards, secure portals, and operational systems.",
             icon: Stethoscope,
-            capabilities: ["Appointment confirmations", "Missed-call recovery", "Follow-up automation"]
+            capabilities: ["Patient workflows", "Operational dashboards", "Custom systems"]
         },
         {
-            title: "Medical Clinics",
-            desc: "We support practices that need better call handling, intake workflows, scheduling support, and day-to-day operations visibility.",
+            title: "E-Commerce & Retail",
+            desc: "We support brands that need faster storefront experiences, cleaner order workflows, stronger reporting, and better customer journeys.",
             icon: Building2,
-            capabilities: ["Call handling", "Patient intake routing", "Operations dashboards"]
+            capabilities: ["Storefront systems", "Order workflows", "Reporting dashboards"]
         },
         {
-            title: "Specialty Clinics",
-            desc: "Useful for clinics with more complex scheduling, referral handling, or follow-up workflows that do not fit generic software well.",
+            title: "Banking & Financial Services",
+            desc: "Useful for finance businesses that need secure dashboards, internal tools, workflow automation, portals, and stronger reporting systems.",
             icon: Users,
-            capabilities: ["Referral workflows", "Custom CRM logic", "Staff handoff automation"]
+            capabilities: ["Internal tools", "Reporting systems", "Workflow automation"]
         },
         {
-            title: "Multi-Location Practice Groups",
-            desc: "We help growing clinic groups centralize call handling, follow-up, reporting, and lead routing across multiple locations.",
+            title: "Small Business & Local Services",
+            desc: "We help small and growing businesses upgrade websites, automate customer handling, and build systems that support day-to-day growth.",
             icon: Calendar,
-            capabilities: ["Centralized reporting", "Location-based routing", "Shared workflow visibility"]
+            capabilities: ["Better websites", "Lead workflows", "Growth systems"]
         }
     ];
 
@@ -45,13 +45,13 @@ const IndustriesPage = () => {
         <div className="mb-24">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-8">
             <span className="flex h-1.5 w-1.5 rounded-full bg-cyan-400" />
-            <span className="text-[11px] font-semibold text-cyan-400 tracking-wider uppercase">Best-Fit Clinics</span>
+            <span className="text-[11px] font-semibold text-cyan-400 tracking-wider uppercase">Industries We Serve</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-7xl font-extrabold text-white mb-6 sm:mb-8 leading-tight">
-            Clinic Types We <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Support Best.</span>
+            Business Sectors We <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Support Best.</span>
           </h1>
           <p className="text-base sm:text-xl text-slate-300 max-w-3xl leading-relaxed font-light">
-            Nexol works best with dental, medical, specialty, and multi-location clinics that need better call handling, follow-up, scheduling, intake, and reporting.
+            Nexol supports healthcare, e-commerce, finance, small business, and service operations that need stronger digital systems, automations, dashboards, and custom software.
           </p>
         </div>
 
@@ -90,22 +90,22 @@ const IndustriesPage = () => {
       <TrustedBy />
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24">
-        {/* Healthcare Readiness Note */}
+        {/* Delivery Note */}
         <div className="mt-20 sm:mt-32 p-6 sm:p-10 bg-slate-900/40 border border-slate-800 rounded-[2rem] flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
            <div className="flex items-center gap-6">
               <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
                  <Globe className="w-6 h-6 text-blue-400" />
               </div>
               <div>
-                <p className="text-white font-bold">Healthcare-Minded Delivery</p>
-                <p className="text-xs text-slate-500">We focus on secure integrations, HIPAA-ready workflows, and practical systems clinics can actually use.</p>
+                <p className="text-white font-bold">Flexible Multi-Industry Delivery</p>
+                <p className="text-xs text-slate-500">We adapt the system to your industry, workflows, growth stage, and operational needs instead of forcing a generic setup.</p>
               </div>
            </div>
            <button 
              onClick={() => navigate('/contact')}
              className="h-12 border border-slate-700 hover:border-white text-white px-8 rounded-full text-xs font-black uppercase tracking-widest transition-colors mb-2 md:mb-0"
            >
-               Book Clinic Audit
+               Book Free Consultation
             </button>
          </div>
        </div>

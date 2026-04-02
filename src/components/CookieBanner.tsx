@@ -31,7 +31,7 @@ const CookieBanner = () => {
             <div className="max-w-xl">
               <h4 className="text-white font-bold text-lg sm:text-xl mb-2 tracking-tight">Privacy & Performance</h4>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Nexol uses essential cookies to keep the site secure, remember your preferences, and improve performance for visitors exploring our clinic automation services.
+                Nexol uses essential cookies to keep the site secure, remember your preferences, and improve performance for visitors exploring our technology services.
                 <a href="#" className="text-blue-400 hover:text-blue-300 font-bold underline ml-1">Privacy Policy.</a>
               </p>
             </div>

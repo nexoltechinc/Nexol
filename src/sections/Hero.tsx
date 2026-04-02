@@ -56,13 +56,13 @@ const Hero = () => {
                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                  <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </div>
-              <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase drop-shadow-md">Dental &amp; Medical Clinic Automation</span>
+              <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase drop-shadow-md">Custom Software &amp; AI Solutions</span>
             </motion.div>
 
             <motion.h1 variants={itemVariants} className="text-[2rem] sm:text-4xl lg:text-5xl xl:text-[4rem] font-black text-white mb-6 sm:mb-8 leading-[1.05] tracking-tighter drop-shadow-2xl">
-              AI Automation And <br className="hidden md:block"/> 
+              Custom Software And <br className="hidden md:block"/> 
               <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">
-                 Custom Software For Dental And Medical Clinics.
+                 AI Automation For Modern Businesses.
                  <motion.span 
                    animate={{ x: ["0%", "100%", "0%"] }}
                    transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
@@ -72,7 +72,7 @@ const Hero = () => {
             </motion.h1>
 
             <motion.p variants={itemVariants} className="text-[15px] sm:text-lg lg:text-xl text-slate-300 font-light mb-8 max-w-xl leading-relaxed drop-shadow-md">
-              Nexol helps dental offices, medical clinics, and multi-location practices reduce no-shows, recover missed calls, automate appointment reminders, and improve staff visibility with AI calling agents, custom dashboards, and workflow automation.
+              Nexol helps e-commerce brands, finance teams, healthcare businesses, small businesses, and growing companies build better websites, dashboards, automations, CRM workflows, and digital systems that save time and scale operations.
             </motion.p>
 
             {/* CTAs */}
@@ -83,7 +83,7 @@ const Hero = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#6F3DFF]/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out" />
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                   Book Automation Audit
+                   Book Free Consultation
                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </button>
@@ -92,7 +92,7 @@ const Hero = () => {
                 onClick={() => navigate('/portfolio')}
                 className="w-full sm:w-auto h-14 sm:h-16 px-8 sm:px-10 rounded-full font-bold text-sm uppercase tracking-widest text-slate-400 hover:text-white hover:bg-white/5 border border-transparent hover:border-white/10 transition-all flex items-center justify-center gap-3 group"
               >
-                See Clinic Use Cases
+                See Use Cases
                 <span className="w-6 h-px bg-slate-600 group-hover:w-10 group-hover:bg-cyan-400 transition-all duration-500 block" />
               </button>
             </motion.div>
@@ -100,15 +100,15 @@ const Hero = () => {
             <motion.div variants={itemVariants} className="grid gap-3 sm:grid-cols-3">
               <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                 <Brain className="h-4 w-4 text-cyan-400" />
-                <span className="text-xs font-semibold text-slate-200">AI calling agents for clinics</span>
+                <span className="text-xs font-semibold text-slate-200">Custom web and app development</span>
               </div>
               <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                 <ShieldCheck className="h-4 w-4 text-emerald-400" />
-                <span className="text-xs font-semibold text-slate-200">Appointment reminders and confirmations</span>
+                <span className="text-xs font-semibold text-slate-200">AI automation and workflow systems</span>
               </div>
               <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                 <Server className="h-4 w-4 text-blue-400" />
-                <span className="text-xs font-semibold text-slate-200">Custom dashboards for dental and medical teams</span>
+                <span className="text-xs font-semibold text-slate-200">Dashboards, CRM, and e-commerce systems</span>
               </div>
             </motion.div>
           </motion.div>
@@ -182,7 +182,7 @@ const Hero = () => {
                        <Server className="w-3 h-3 text-cyan-400" />
                        <span className="absolute inset-0 rounded-full bg-cyan-400 opacity-20 group-hover:animate-ping" />
                     </div>
-                    <span className="text-xs font-black text-white tracking-[0.2em] uppercase drop-shadow-md">Clinic Ops Online</span>
+                    <span className="text-xs font-black text-white tracking-[0.2em] uppercase drop-shadow-md">Business Systems Online</span>
                     <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_10px_rgba(34,211,238,0.8)]" />
                  </div>
               </motion.div>

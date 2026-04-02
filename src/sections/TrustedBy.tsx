@@ -4,35 +4,35 @@ import { useNavigate } from 'react-router-dom';
 
 const outcomeCards = [
   {
-    eyebrow: 'Scheduling Workflows',
-    title: 'Reduce no-shows before they hit revenue.',
+    eyebrow: 'Operations Automation',
+    title: 'Remove repetitive manual work across your business.',
     description:
-      'Automate reminders, confirmations, and follow-up logic so appointments stop slipping through manual processes.',
+      'Automate follow-up, routing, reporting, and internal tasks so your team spends less time on repetitive work.',
     icon: Calendar,
   },
   {
-    eyebrow: 'Lead Handling',
-    title: 'Respond to missed calls and after-hours leads faster.',
+    eyebrow: 'Revenue Systems',
+    title: 'Build cleaner sales, support, and customer workflows.',
     description:
-      'Capture inbound demand, route urgent requests, and give front-desk teams cleaner handoffs instead of voicemail chaos.',
+      'Connect websites, CRM, e-commerce, call flows, and handoffs so leads and customers do not get stuck between tools.',
     icon: Phone,
   },
   {
-    eyebrow: 'Ops Visibility',
-    title: 'Give staff dashboards built for the way clinics operate.',
+    eyebrow: 'Reporting & Visibility',
+    title: 'Give decision-makers dashboards built around real operations.',
     description:
-      'Track response time, booked appointments, follow-up gaps, and pipeline bottlenecks in one custom view.',
+      'Track sales, orders, support performance, workflow gaps, and team activity in one custom reporting view.',
     icon: LayoutDashboard,
   },
 ];
 
 const workflowChips = [
-  'Appointment reminders',
-  'AI calling agents',
-  'Missed-call recovery',
-  'Intake routing',
-  'Custom CRM logic',
+  'Web development',
+  'AI automation',
+  'CRM workflows',
+  'E-commerce systems',
   'Operations dashboards',
+  'Internal tools',
 ];
 
 const TrustedBy = () => {
@@ -79,19 +79,19 @@ const TrustedBy = () => {
           <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl">
             <span className="h-2 w-2 rounded-full bg-cyan-400" />
             <span className="text-[10px] font-black uppercase tracking-[0.35em] text-slate-300">
-              What Dental And Medical Clinics Hire Nexol To Fix
+              What Businesses Hire Nexol To Solve
             </span>
           </div>
           <h2 className="mx-auto mb-6 max-w-4xl text-3xl font-black tracking-tighter text-white sm:text-4xl lg:text-6xl">
-            More booked appointments.
+            Better systems.
             <br />
             <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF] bg-clip-text text-transparent">
-              Less front-desk friction.
+              Faster execution.
             </span>
           </h2>
           <p className="mx-auto max-w-3xl text-base font-light leading-relaxed text-slate-400 sm:text-lg lg:text-xl">
-            We build systems around the workflows that usually leak time and revenue in clinics:
-            scheduling, follow-up, intake, missed calls, handoffs, and reporting.
+            We build systems around the workflows that usually slow businesses down:
+            websites, lead handling, e-commerce, follow-up, operations, dashboards, and internal reporting.
           </p>
         </div>
 
@@ -128,15 +128,15 @@ const TrustedBy = () => {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-3 py-1.5">
               <Bot className="h-3.5 w-3.5 text-cyan-400" />
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-400">
-                Common Workflow Stack
+                Common Solution Stack
               </span>
             </div>
             <h3 className="mb-4 text-2xl font-black tracking-tight text-white">
-              Built for the jobs generic tools do badly.
+              Built for the business problems generic tools do badly.
             </h3>
             <p className="mb-6 max-w-2xl text-sm font-light leading-relaxed text-slate-400 sm:text-base">
-              Nexol is strongest when a clinic has manual admin load, slow lead response, fragmented tools,
-              or no clear visibility into what is happening between inquiry and appointment.
+              Nexol is strongest when a business has fragmented tools, slow response time, manual admin work,
+              weak visibility, or growth systems that no longer fit the way the team actually operates.
             </p>
             <div className="flex flex-wrap gap-3">
               {workflowChips.map((chip) => (
@@ -156,22 +156,22 @@ const TrustedBy = () => {
                 <ShieldCheck className="h-5 w-5 text-emerald-400" />
               </div>
               <div>
-                <p className="text-sm font-black tracking-tight text-white">Why this converts better</p>
+                <p className="text-sm font-black tracking-tight text-white">Why this works better</p>
                 <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-slate-500">
-                  Clearer trust structure
+                  Clearer business positioning
                 </p>
               </div>
             </div>
             <ul className="space-y-3 text-sm font-light leading-relaxed text-slate-300">
-              <li>Focused on clinic workflows instead of generic tech claims.</li>
-              <li>Explains outcomes in buyer language: bookings, response time, admin load.</li>
+              <li>Focused on business outcomes instead of broad agency claims.</li>
+              <li>Explains value in buyer language: revenue, operations, reporting, and efficiency.</li>
               <li>Shows what Nexol actually builds before asking for the call.</li>
             </ul>
             <button
               onClick={() => navigate('/contact')}
               className="mt-6 inline-flex h-12 w-full items-center justify-center gap-3 rounded-full bg-white px-6 text-[12px] font-black uppercase tracking-widest text-[#020205] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(255,255,255,0.18)]"
             >
-              Book Clinic Audit
+              Book Free Consultation
               <ArrowRight className="h-4 w-4" />
             </button>
           </div>

@@ -19,20 +19,20 @@ type Project = {
 
 const PortfolioPage = () => {
   const navigate = useNavigate();
-  usePageTitle('Clinic Automation Case Studies | AI Calling Agents, Dashboards & Workflow Systems');
+  usePageTitle('Business Technology Use Cases | Websites, Automation & Dashboards');
   const [filter, setFilter] = useState('All');
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const categories = ['All', 'Medical Clinics', 'Clinic Operations', 'Dashboards & CRM', 'Workflow Automation'];
+  const categories = ['All', 'E-Commerce', 'Finance', 'Healthcare', 'Small Business', 'Automation'];
 
   const projects: Project[] = [
     {
       eyebrow: "AI Voice Calling System for Medical Clinics",
       title: "Automate Patient Calls and Reduce No-Shows at Scale",
-      category: "Healthcare Systems",
+      category: "Healthcare",
       desc: "Help clinics manage inbound calls, confirm appointments, recover missed calls, and reduce front-desk workload with an AI-powered calling system built for healthcare operations.",
       resultLabel: "Result Snapshot",
       results: [
@@ -51,44 +51,44 @@ const PortfolioPage = () => {
       link: "/ai-calling-agent"
     },
     {
-      eyebrow: "Custom Dashboard for Clinic Managers",
-      title: "Track Bookings, Missed Calls, and Staff Workload in One View",
-      category: "Dashboards & CRM",
-      desc: "Give practice managers clearer visibility into response time, appointment flow, missed calls, and front-desk bottlenecks with a dashboard built around daily clinic operations.",
-      metric: "Clearer Team Visibility",
+      eyebrow: "E-Commerce Operations Dashboard",
+      title: "Track Orders, Sales, and Team Performance in One View",
+      category: "E-Commerce",
+      desc: "Give e-commerce teams clearer visibility into orders, customer flow, sales activity, and operational bottlenecks with a dashboard built around daily business performance.",
+      metric: "Faster Operational Decisions",
       icon: Globe,
-      image: "/case-crm.png",
-      tags: ["Operations dashboard", "Booking visibility", "Staff reporting", "Custom views"]
+      image: "/case-ecommerce.png",
+      tags: ["Order reporting", "Sales visibility", "Ops dashboard", "Custom views"]
     },
     {
-      eyebrow: "Patient Intake & Routing Workflow",
-      title: "Move New Inquiries to the Right Next Step Faster",
-      category: "Workflow Automation",
-      desc: "Connect intake forms, scheduling requests, and internal handoffs so patient inquiries are routed correctly without manual triage slowing the team down.",
-      metric: "Less Manual Intake Work",
+      eyebrow: "Finance Reporting Platform",
+      title: "Turn Complex Financial Data Into Clear Daily Reporting",
+      category: "Finance",
+      desc: "Build dashboards and internal tools that help finance teams track KPIs, approvals, reporting, and operations with less spreadsheet chaos.",
+      metric: "Clearer Reporting Visibility",
       icon: Zap,
-      image: "/case-ml.png",
-      tags: ["Intake routing", "Workflow automation", "Team handoffs", "Follow-up logic"]
+      image: "/case-trading.png",
+      tags: ["Reporting tools", "Internal dashboard", "Finance workflows", "Performance visibility"]
     },
     {
-      eyebrow: "Custom CRM for Multi-Location Practices",
-      title: "Manage Follow-Up and Reporting Across Multiple Clinics",
-      category: "Dashboards & CRM",
-      desc: "Centralize lead handling, follow-up tasks, and reporting for growing clinic groups that need one system across multiple locations.",
-      metric: "Unified Follow-Up Across Locations",
+      eyebrow: "Customer Inquiry Workflow Automation",
+      title: "Move New Leads and Requests to the Right Next Step Faster",
+      category: "Automation",
+      desc: "Automate form routing, follow-up, team notifications, and internal handoffs so opportunities stop stalling in inboxes or spreadsheets.",
+      metric: "Less Manual Follow-Up",
       icon: Globe,
-      image: "/case-crm.png",
-      tags: ["Multi-location CRM", "Shared reporting", "Lead tracking", "Operations workflow"]
+      image: "/case-ml.png",
+      tags: ["Lead routing", "Workflow automation", "Team handoffs", "Follow-up logic"]
     },
     {
-      eyebrow: "Missed-Call Recovery System",
-      title: "Recover After-Hours Calls Before They Turn Into Lost Bookings",
-      category: "Medical Clinics",
-      desc: "Capture missed demand, trigger faster follow-up, and help more callers convert into booked appointments instead of sitting in voicemail.",
-      metric: "More Recovered Appointments",
+      eyebrow: "Custom CRM for Growing Businesses",
+      title: "Manage Sales, Support, and Reporting From One Custom System",
+      category: "Small Business",
+      desc: "Centralize customer data, pipeline status, internal tasks, and reporting for businesses that have outgrown simple off-the-shelf tools.",
+      metric: "Better Team Visibility",
       icon: Database,
-      image: "/case-healthcare.png",
-      tags: ["After-hours calls", "Lead recovery", "Follow-up automation", "Booking support"]
+      image: "/case-crm.png",
+      tags: ["Custom CRM", "Sales tracking", "Support workflows", "Business reporting"]
     }
   ];
 
@@ -102,10 +102,10 @@ const PortfolioPage = () => {
         <div className="absolute inset-0 bg-[#0a0a0f] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-[#0B0B12] to-[#0B0B12]"></div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black text-white mb-6 tracking-tighter animate-fade-in-up">
-            Clinic Automation <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F3DFF] to-cyan-400">Use Cases.</span>
+            Business Technology <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F3DFF] to-cyan-400">Use Cases.</span>
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-slate-400 font-light max-w-3xl mx-auto mb-10 animate-fade-in-up [animation-delay:100ms]">
-            See the kinds of AI calling agents, dashboards, intake workflows, and custom CRM systems Nexol builds to help clinics reduce manual work and improve patient response.
+            See the kinds of websites, dashboards, automations, CRM systems, and industry-specific software Nexol builds for healthcare, finance, e-commerce, and growing businesses.
           </p>
 
           {/* Filters */}
@@ -222,9 +222,9 @@ const PortfolioPage = () => {
       {/* 3. Unique Portfolio Closing CTA */}
       <section className="py-16 sm:py-24 border-t border-slate-800/50 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#141423] to-[#0B0B12]">
         <div className="max-w-4xl mx-auto px-6 text-center">
-             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">Want A System Like This <br className="hidden sm:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 italic font-medium">In Your Clinic?</span></h2>
+             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">Want A System Like This <br className="hidden sm:block"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 italic font-medium">For Your Business?</span></h2>
              <p className="text-base sm:text-xl text-slate-400 font-light leading-relaxed mb-10 sm:mb-12 max-w-2xl mx-auto">
-               We can review your workflow, identify the biggest bottleneck, and recommend the best automation or custom software starting point.
+               We can review your workflow, identify the biggest bottleneck, and recommend the best website, automation, dashboard, or custom software starting point.
              </p>
              <button 
                onClick={() => navigate('/contact')}

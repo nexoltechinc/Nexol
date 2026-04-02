@@ -7,7 +7,7 @@ import GlobalCTA from '../sections/GlobalCTA';
 import usePageTitle from '../hooks/usePageTitle';
 
 const Home = () => {
-    usePageTitle('Dental & Medical Clinic Automation Services');
+    usePageTitle('Custom Software, AI Automation & Web Solutions');
 
     useEffect(() => {
         const observerOptions = {

@@ -5,7 +5,7 @@ import TrustedBy from '../sections/TrustedBy';
 import usePageTitle from '../hooks/usePageTitle';
 
 const ContactPage = () => {
-  usePageTitle('Book A Clinic Automation Audit');
+  usePageTitle('Book A Free Consultation');
   
   const targetRef = useRef<HTMLDivElement>(null);
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -16,7 +16,7 @@ const ContactPage = () => {
 
   const contactMethods = [
     {
-      label: "Clinic Inquiries",
+      label: "Business Inquiries",
       val: "solutions@nexol.tech",
       icon: Mail,
       sub: "Average response: < 2 hours",
@@ -92,7 +92,7 @@ const ContactPage = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
             </div>
-            <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase">Clinic Discovery Call</span>
+            <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase">Discovery Call</span>
           </motion.div>
           
           <motion.h1 
@@ -119,7 +119,7 @@ const ContactPage = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             className="text-base sm:text-lg lg:text-xl text-slate-400 max-w-2xl leading-relaxed font-light"
           >
-            Tell us where follow-up, missed calls, scheduling, or reporting is breaking down. We will help you identify the best first automation or custom system to build.
+            Tell us where your website, operations, customer workflow, reporting, or manual admin is breaking down. We will help you identify the best first system, automation, or custom build to move forward with.
           </motion.p>
         </div>
 
@@ -206,7 +206,7 @@ const ContactPage = () => {
                       <div className="relative">
                         <input 
                           type="text" 
-                          placeholder="e.g. Dr. Alexander Pierce" 
+                          placeholder="e.g. Alex Morgan" 
                           className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-5 sm:px-6 text-white text-base sm:text-lg font-medium focus:outline-none focus:border-cyan-400 focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl"
                         />
                       </div>
@@ -218,7 +218,7 @@ const ContactPage = () => {
                       </label>
                       <input 
                         type="email" 
-                          placeholder="ops@yourclinic.com" 
+                          placeholder="team@yourbusiness.com" 
                         className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-5 sm:px-6 text-white text-base sm:text-lg font-medium focus:outline-none focus:border-cyan-400 focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl"
                       />
                     </div>
@@ -234,17 +234,17 @@ const ContactPage = () => {
                         <input 
                           type="text"
                           list="services-list"
-                          placeholder="Choose a clinic automation need..."
+                          placeholder="Choose the service you need..."
                           className="w-full h-14 bg-[#141423]/50 border-b-2 border-slate-700/50 px-5 sm:px-6 text-white text-base sm:text-lg font-medium focus:outline-none focus:border-[#6F3DFF] focus:bg-[#141423] transition-all duration-300 placeholder:text-slate-500 rounded-t-xl"
                         />
                         <datalist id="services-list">
-                          <option value="AI calling agent deployment" />
-                          <option value="Missed-call recovery" />
-                          <option value="Appointment reminder automation" />
-                          <option value="Patient intake and routing" />
-                          <option value="Custom clinic dashboard or CRM" />
-                          <option value="HIPAA-aware workflow automation" />
-                          <option value="General automation audit" />
+                          <option value="Business website or web app" />
+                          <option value="AI automation or workflow system" />
+                          <option value="Dashboard or reporting platform" />
+                          <option value="CRM or internal tool" />
+                          <option value="E-commerce system" />
+                          <option value="AI calling agent" />
+                          <option value="General consultation" />
                         </datalist>
                         <ChevronDown className="absolute right-6 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 pointer-events-none opacity-50" />
                       </div>
@@ -268,7 +268,7 @@ const ContactPage = () => {
                  <div className="space-y-3 group">
                     <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.15em] ml-2 flex items-center gap-2 group-focus-within:text-blue-400 transition-colors">
                       <MessageSquare className="w-3.5 h-3.5" />
-                      What Is Happening In The Clinic Today?
+                      What Is Happening In The Business Today?
                     </label>
                     <textarea 
                       rows={5}
@@ -285,7 +285,7 @@ const ContactPage = () => {
                     <div className="absolute top-0 -inset-full h-full w-1/2 block z-5 [transform:skewX(-20deg)] bg-white/20 group-hover:animate-[slide_1.5s_ease-in-out_infinite]" />
                     <span className="relative z-10 flex items-center justify-center gap-3 drop-shadow-md">
                        <Send className="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:rotate-12 transition-transform duration-300" />
-                       Request Audit
+                       Request Consultation
                     </span>
                  </button>
 

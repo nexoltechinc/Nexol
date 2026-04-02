@@ -32,7 +32,7 @@ const GlobalCTA = () => {
                             className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 backdrop-blur-xl"
                         >
                             <Zap className="w-3.5 h-3.5 text-cyan-400 group-hover:animate-pulse" />
-                            <span className="text-[10px] font-black text-slate-300 uppercase tracking-[0.4em]">Clinic Automation Audit</span>
+                            <span className="text-[10px] font-black text-slate-300 uppercase tracking-[0.4em]">Free Consultation</span>
                         </motion.div>
                         
                         <motion.h2 
@@ -42,8 +42,8 @@ const GlobalCTA = () => {
                             transition={{ delay: 0.3 }}
                             className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 sm:mb-8 tracking-tighter leading-[1.05] drop-shadow-2xl"
                         >
-                            Book A Workflow Audit <br/> 
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">For Your Clinic.</span>
+                            Book A Strategy Call <br/> 
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">For Your Business.</span>
                         </motion.h2>
                         
                         <motion.p 
@@ -53,7 +53,7 @@ const GlobalCTA = () => {
                             transition={{ delay: 0.4 }}
                             className="text-base sm:text-lg md:text-xl text-slate-400 font-light mb-10 sm:mb-12 leading-relaxed max-w-2xl mx-auto"
                         >
-                            We will map where no-shows, missed calls, slow response time, and manual admin are costing your clinic time and revenue, then show you where automation or custom software can help first.
+                            We will review where your business is losing time, leads, visibility, or efficiency, then recommend the right website, automation, dashboard, CRM, or custom software starting point.
                         </motion.p>
                         
                         <motion.div 
@@ -75,7 +75,7 @@ const GlobalCTA = () => {
                                 onClick={() => navigate('/portfolio')}
                                 className="w-full sm:w-auto h-16 bg-transparent text-white border border-white/10 hover:bg-white/5 px-10 py-5 rounded-full font-black text-[12px] uppercase tracking-widest transition-all hover:border-white/30"
                             >
-                                Review Clinic Use Cases
+                                Review Use Cases
                             </button>
                         </motion.div>
                     </div>

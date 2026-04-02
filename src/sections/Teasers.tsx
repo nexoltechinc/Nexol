@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 export const ServicesHighlight = () => {
     const navigate = useNavigate();
     const highlights = [
-        { title: "AI Calling & Follow-Up", desc: "Handle reminders, confirmations, missed-call recovery, and after-hours lead capture without adding front-desk load.", icon: Brain },
-        { title: "Clinic Ops Dashboards", desc: "Give managers clear visibility into response time, booking flow, and admin bottlenecks instead of scattered spreadsheets.", icon: Cpu },
-        { title: "Custom Intake & CRM Logic", desc: "Connect forms, calendars, staff handoffs, and patient pipelines so requests stop falling between tools.", icon: Database }
+        { title: "Custom Websites & Platforms", desc: "Build fast, modern business websites, portals, and web apps that support sales, operations, and customer experience.", icon: Brain },
+        { title: "AI Automation & Dashboards", desc: "Automate repetitive workflows and give teams clear reporting across sales, support, operations, and performance.", icon: Cpu },
+        { title: "CRM, E-Commerce & Internal Tools", desc: "Connect customer workflows, order systems, reporting, and internal processes so the business runs from one smarter system.", icon: Database }
     ];
 
     return (
@@ -22,7 +22,7 @@ export const ServicesHighlight = () => {
                     >
                         <p className="text-[11px] text-cyan-400 font-black uppercase tracking-[0.4em] mb-6 mb-4">What Nexol Builds</p>
                         <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white tracking-tighter leading-tight">
-                            Systems Clinics <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">Actually Need.</span>
+                            Systems Businesses <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">Actually Need.</span>
                         </h2>
                     </motion.div>
                     <motion.button 
@@ -32,7 +32,7 @@ export const ServicesHighlight = () => {
                         onClick={() => navigate('/solutions')} 
                         className="w-full sm:w-auto flex items-center justify-center gap-3 text-white font-bold bg-white/5 hover:bg-white hover:text-black px-6 sm:px-8 py-4 rounded-full border border-white/10 transition-all duration-300 group"
                     >
-                        Explore Clinic Systems <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        Explore Solutions <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </motion.button>
                 </div>
                 <div className="grid md:grid-cols-3 gap-8">
