@@ -69,7 +69,7 @@ const PortfolioPage = () => {
     <div className="bg-[#0B0B12] min-h-screen text-slate-300 font-sans selection:bg-blue-500/30">
       
       {/* 1. Impactful Hero Section */}
-      <section className="relative pt-28 sm:pt-40 pb-16 sm:pb-24 overflow-hidden border-b border-white/5">
+      <section className="relative overflow-hidden border-b border-white/5 pt-28 pb-14 sm:pt-32 sm:pb-16 lg:pt-36">
         <div className="absolute inset-0 bg-[#0a0a0f] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-[#0B0B12] to-[#0B0B12]"></div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12 text-center">
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black text-white mb-6 tracking-tighter animate-fade-in-up">

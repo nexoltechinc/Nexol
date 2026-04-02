@@ -72,7 +72,7 @@ const ContactPage = () => {
          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTAgNDBoNDBWMEgwem0zOS0xdmgtMzhWM2gtMzhWMHoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMikiLz4KPC9zdmc+')] opacity-40" />
       </div>
 
-      <div className="pt-28 sm:pt-40 pb-16 sm:pb-24 max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 pt-28 pb-14 lg:px-12 relative z-10 sm:pt-32 sm:pb-16 lg:pt-36">
         
         {/* Hero Section */}
         <div className="mb-16 sm:mb-24 relative">

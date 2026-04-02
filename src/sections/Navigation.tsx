@@ -60,17 +60,13 @@ const Navigation = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-700 ${
-          isScrolled
-            ? 'py-3 px-3 sm:px-6'
-            : 'py-4 px-3 sm:px-8'
-        }`}
+        className="fixed top-0 left-0 right-0 z-[60] px-3 py-3 sm:px-6"
       >
         <div 
-          className={`max-w-[100rem] mx-auto transition-all duration-500 rounded-full px-3 sm:px-8 flex items-center justify-between gap-3 border ${
+          className={`max-w-[100rem] mx-auto h-16 sm:h-[72px] transition-all duration-500 rounded-full px-4 sm:px-8 flex items-center justify-between gap-3 border ${
             isScrolled 
-            ? 'bg-[#0B0B12]/60 backdrop-blur-3xl border-white/5 py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)]' 
-            : 'bg-transparent border-transparent py-0'
+            ? 'bg-[#0B0B12]/70 backdrop-blur-3xl border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]' 
+            : 'bg-transparent border-transparent'
           }`}
         >
           {/* Logo */}
@@ -80,7 +76,6 @@ const Navigation = () => {
             className="flex min-w-0 items-center gap-3 sm:gap-4 group"
           >
             <motion.div 
-               animate={{ scale: isScrolled ? 1.15 : 1 }}
                whileHover={{ rotate: 5, scale: 1.2 }}
                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                className="relative"
@@ -93,8 +88,6 @@ const Navigation = () => {
                 />
             </motion.div>
             <motion.div 
-              animate={{ scale: isScrolled ? 1.1 : 1 }}
-              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="hidden sm:block origin-left"
             >
               <span className="text-white font-black text-xl tracking-tighter block leading-none">
@@ -123,11 +116,7 @@ const Navigation = () => {
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
                 )}
-                <motion.span 
-                  animate={{ scale: isScrolled ? 1.05 : 1 }}
-                  transition={{ duration: 0.7 }}
-                  className="relative z-10 block"
-                >
+                <motion.span className="relative z-10 block">
                   {link.name}
                 </motion.span>
               </button>
@@ -141,10 +130,7 @@ const Navigation = () => {
                 <span className="text-xs text-white font-medium">Islandia, NY Hub</span>
             </div>
             
-            <motion.div
-              animate={{ scale: isScrolled ? 1.1 : 1 }}
-              transition={{ duration: 0.7 }}
-            >
+            <motion.div>
               <Button 
                   onClick={() => navigate('/contact')}
                   className="hidden sm:flex h-11 bg-white hover:bg-slate-200 text-black px-6 rounded-full font-black text-xs uppercase tracking-widest border-none transition-transform hover:scale-105"

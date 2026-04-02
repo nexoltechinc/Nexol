@@ -46,7 +46,7 @@ const IndustriesPage = () => {
 
   return (
     <div className="bg-[#0B0B12]">
-      <div className="pt-32 pb-24 max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-6 pt-28 pb-16 lg:px-12 sm:pt-32 sm:pb-20 lg:pt-36">
         <div className="mb-24">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-8">
             <span className="flex h-1.5 w-1.5 rounded-full bg-cyan-400" />

@@ -37,7 +37,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative pt-24 sm:pt-32 lg:pt-48 pb-16 sm:pb-20 bg-[#020205] border-t border-white/[0.05] overflow-hidden">
+    <footer className="relative pt-16 sm:pt-24 lg:pt-32 pb-16 sm:pb-20 bg-[#020205] border-t border-white/[0.05] overflow-hidden">
       {/* Deep Space Background / Grid */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBoMjB2MjBIMHoiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPgo8L3N2Zz4=')] opacity-20 pointer-events-none mix-blend-screen" />
       

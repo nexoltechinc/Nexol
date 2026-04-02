@@ -21,7 +21,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-x-hidden bg-[#020205] selection:bg-cyan-500/30">
+    <section id="home" className="relative flex min-h-[calc(100svh-2rem)] items-center overflow-x-hidden bg-[#020205] pt-28 pb-10 selection:bg-cyan-500/30 sm:pt-32 sm:pb-12 lg:pt-36 lg:pb-14">
       
       {/* Abstract Architectural Grid Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -39,7 +39,7 @@ const Hero = () => {
          />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full pt-10 lg:pt-0">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-4 sm:px-8 sm:pt-6 lg:px-12 lg:pt-0">
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column - Content */}
@@ -114,8 +114,8 @@ const Hero = () => {
           </motion.div>
 
           {/* Right Column - Physics Simulation Data Nodes */}
-          <div className="hidden lg:block col-span-1 lg:col-span-6 xl:col-span-5 relative h-full min-h-[600px]">
-            <div className="absolute inset-0 flex items-center justify-center translate-x-10">
+          <div className="hidden lg:block col-span-1 lg:col-span-6 xl:col-span-5 relative h-full min-h-[460px] xl:min-h-[520px]">
+            <div className="absolute inset-0 flex items-center justify-center lg:translate-x-4 xl:translate-x-8">
               
               {/* Outer Orbital Rings */}
               <div className="absolute inset-0 rounded-full border border-white/[0.03] animate-[spin_60s_linear_infinite] scale-110" />

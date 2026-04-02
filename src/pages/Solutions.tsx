@@ -109,7 +109,7 @@ const Solutions = () => {
     <div className="bg-[#020205] min-h-screen text-slate-300 font-sans selection:bg-[#6F3DFF]/30 overflow-hidden" ref={targetRef}>
       
       {/* 1. Services Hero: The Architectural Gateway */}
-      <section className="relative pt-28 sm:pt-40 pb-12 sm:pb-24 border-b border-white/5">
+      <section className="relative border-b border-white/5 pt-28 pb-14 sm:pt-32 sm:pb-16 lg:pt-36 lg:pb-20">
         <div className="absolute inset-0 z-0 pointer-events-none">
            <motion.div 
              animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -174,7 +174,7 @@ const Solutions = () => {
       </section>
 
       {/* 2. Signature Solutions Overview: Deep Bento Box */}
-      <section className="py-20 sm:py-28 lg:py-40 max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+      <section className="py-16 sm:py-20 lg:py-28 max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <motion.div 
            initial={{ opacity: 0, y: 40 }}
            whileInView={{ opacity: 1, y: 0 }}
@@ -213,7 +213,7 @@ const Solutions = () => {
       </section>
 
       {/* 3. Interactive Service Showcase */}
-      <section className="py-20 sm:py-28 lg:py-40 bg-[#06060A] border-y border-white/[0.03] relative overflow-hidden">
+      <section className="py-16 sm:py-20 lg:py-28 bg-[#06060A] border-y border-white/[0.03] relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBoMjB2MjBIMHoiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPgo8L3N2Zz4=')] opacity-20 pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
@@ -224,7 +224,7 @@ const Solutions = () => {
                 viewport={{ once: true }}
                 className="lg:col-span-5 relative"
              >
-               <div className="sticky top-40">
+               <div className="sticky top-28">
                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 sm:mb-8 tracking-tight drop-shadow-lg">The Engineering Matrix</h2>
                  <p className="text-base sm:text-xl text-slate-400 font-light mb-8 sm:mb-12 leading-relaxed">Explore the targeted technical capabilities we deploy to completely eradicate complex enterprise bottlenecks.</p>
                  <div className="space-y-4">
@@ -288,12 +288,12 @@ const Solutions = () => {
       </section>
 
       {/* 4. The Nexol Edge */}
-      <section className="py-20 sm:py-28 lg:py-40 max-w-7xl mx-auto px-6 lg:px-12 relative overflow-hidden">
+      <section className="py-16 sm:py-20 lg:py-28 max-w-7xl mx-auto px-6 lg:px-12 relative overflow-hidden">
         <motion.div 
            initial={{ opacity: 0, y: 30 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
-           className="text-center mb-32"
+           className="text-center mb-20 sm:mb-24"
         >
            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">The Nexol Advantage</h2>
            <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">Why Fortune 500s and immensely ambitious scale-ups trust us with their most sensitive, mission-critical infrastructure logic.</p>
@@ -340,7 +340,7 @@ const Solutions = () => {
       </section>
 
       {/* 5. Service Delivery Pipeline */}
-      <section className="py-20 sm:py-28 lg:py-40 bg-[#06060A] border-y border-slate-800/50 relative overflow-hidden">
+      <section className="py-16 sm:py-20 lg:py-28 bg-[#06060A] border-y border-slate-800/50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
           <motion.div 
              initial={{ opacity: 0, y: 30 }}
@@ -377,7 +377,7 @@ const Solutions = () => {
       </section>
 
       {/* 6. Impact Innovation (Case Studies) */}
-      <section className="py-20 sm:py-28 lg:py-40 max-w-7xl mx-auto px-6 lg:px-12 relative">
+      <section className="py-16 sm:py-20 lg:py-28 max-w-7xl mx-auto px-6 lg:px-12 relative">
         <motion.div 
            initial={{ opacity: 0, y: 30 }}
            whileInView={{ opacity: 1, y: 0 }}

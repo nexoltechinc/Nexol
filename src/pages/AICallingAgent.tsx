@@ -79,7 +79,7 @@ const AICallingAgent = () => {
     <div className="bg-[#020205] min-h-screen text-slate-300 font-sans selection:bg-[#6F3DFF]/30 overflow-hidden" ref={targetRef}>
       
       {/* 1. Ultra-Premium Kinetic Hero Section */}
-      <section className="relative pt-32 sm:pt-40 lg:pt-48 pb-20 sm:pb-24 lg:pb-32 border-b border-white/5">
+      <section className="relative border-b border-white/5 pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24">
         {/* Deep Field Ambient Particles */}
         <div className="absolute inset-0 z-0">
            {/* Core Glow */}
@@ -169,13 +169,13 @@ const AICallingAgent = () => {
       </section>
 
       {/* 2. Problem / Solution Matrix (Asymmetric Animated Depth) */}
-      <section className="py-20 sm:py-28 lg:py-40 relative max-w-7xl mx-auto px-6 lg:px-12 z-10">
+      <section className="py-16 sm:py-20 lg:py-28 relative max-w-7xl mx-auto px-6 lg:px-12 z-10">
          <motion.div 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-32"
+            className="text-center mb-20 sm:mb-24"
           >
             <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">Engineering Friction <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-orange-500">Out of Existence.</span></h2>
             <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto">We identified the massive operational leaks in modern clinics and built an autonomous cognitive layer to plug them permanently.</p>
@@ -227,7 +227,7 @@ const AICallingAgent = () => {
       </section>
 
       {/* 3. Deep Architectural Bento Box (Features) */}
-      <section className="py-20 sm:py-28 lg:py-40 bg-[#06060A] border-y border-white/[0.03] relative z-20">
+      <section className="py-16 sm:py-20 lg:py-28 bg-[#06060A] border-y border-white/[0.03] relative z-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div 
              initial={{ opacity: 0, x: -50 }}
@@ -274,7 +274,7 @@ const AICallingAgent = () => {
       </section>
 
       {/* 4. Security & Compliance Protocol: Zero-Trust Architecture */}
-      <section className="py-20 sm:py-28 lg:py-40 relative overflow-hidden bg-[#020205]">
+      <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden bg-[#020205]">
           {/* Deep Grid & Laser Scanners */}
          <div className="absolute inset-0 z-0">
            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTAgNDBoNDBWMEgwem0zOS0xdmgtMzhWM2gtMzhWMHoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMSkiLz4KPC9zdmc+')] opacity-50" />
@@ -391,13 +391,13 @@ const AICallingAgent = () => {
       </section>
 
       {/* 5. The Integration Pipeline (As designed in About page) */}
-      <section className="py-20 sm:py-28 lg:py-40 relative px-6 lg:px-12 overflow-hidden bg-[#06060A] border-y border-white/[0.03]">
+      <section className="py-16 sm:py-20 lg:py-28 relative px-6 lg:px-12 overflow-hidden bg-[#06060A] border-y border-white/[0.03]">
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-32"
+            className="text-center mb-20 sm:mb-24"
           >
              <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tighter">Your Path to Production</h2>
              <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">A strategic, zero-downtime deployment process architected specifically for high-volume medical workflows.</p>
@@ -442,7 +442,7 @@ const AICallingAgent = () => {
       </section>
 
       {/* 6. Executive FAQ */}
-      <section className="py-20 sm:py-28 lg:py-40 max-w-4xl mx-auto px-6 lg:px-12">
+      <section className="py-16 sm:py-20 lg:py-28 max-w-4xl mx-auto px-6 lg:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -483,7 +483,7 @@ const AICallingAgent = () => {
       </section>
 
       {/* 7. Final Deep Architectural CTA */}
-      <section className="py-20 sm:py-28 lg:py-32 max-w-7xl mx-auto px-6 lg:px-12 pb-24 sm:pb-32 lg:pb-40">
+      <section className="py-16 sm:py-20 lg:py-24 max-w-7xl mx-auto px-6 lg:px-12 pb-16 sm:pb-24 lg:pb-28">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

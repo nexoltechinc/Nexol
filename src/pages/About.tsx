@@ -64,7 +64,7 @@ const AboutPage = () => {
     <div className="bg-[#0B0B12] min-h-screen text-slate-300 font-sans selection:bg-blue-500/30">
       
       {/* 1. Hero Section: The Nexol Story */}
-      <section className="relative pt-24 pb-16 overflow-hidden">
+      <section className="relative pt-28 pb-14 overflow-hidden sm:pt-32 sm:pb-16 lg:pt-36">
         <div className="absolute inset-0 bg-[url('/about-office.jpg')] bg-cover bg-center opacity-10 blur-sm mix-blend-luminosity"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B0B12]/80 via-[#0B0B12]/95 to-[#0B0B12]"></div>
         
