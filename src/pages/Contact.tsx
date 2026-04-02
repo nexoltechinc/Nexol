@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Mail, Phone, MapPin, Send, Clock, Shield, Terminal, Network, ChevronDown, MessageSquare } from 'lucide-react';
 import { motion, type Variants } from 'framer-motion';
-import TrustedBy from '../sections/TrustedBy';
 import usePageTitle from '../hooks/usePageTitle';
 
 const ContactPage = () => {
@@ -299,10 +298,6 @@ const ContactPage = () => {
             </div>
           </motion.div>
         </div>
-      </div>
-
-      <div className="relative z-10 border-t border-white/[0.03] bg-[#06060A]">
-        <TrustedBy />
       </div>
     </div>
   );

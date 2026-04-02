@@ -21,7 +21,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative flex min-h-[calc(100svh-2rem)] items-center overflow-x-hidden bg-[#020205] pt-28 pb-10 selection:bg-cyan-500/30 sm:pt-32 sm:pb-12 lg:pt-36 lg:pb-14">
+    <section id="home" className="relative flex min-h-[calc(100svh-4.5rem)] items-start overflow-x-hidden bg-[#020205] pt-24 pb-8 selection:bg-cyan-500/30 sm:min-h-[calc(100svh-5rem)] sm:pt-28 sm:pb-10 lg:min-h-[760px] lg:items-center lg:pt-28 lg:pb-10">
       
       {/* Abstract Architectural Grid Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -39,8 +39,8 @@ const Hero = () => {
          />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-4 sm:px-8 sm:pt-6 lg:px-12 lg:pt-0">
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-2 sm:px-8 sm:pt-4 lg:px-12 lg:pt-0">
+        <div className="grid lg:grid-cols-12 gap-6 lg:gap-10 items-center">
           
           {/* Left Column - Content */}
           <motion.div 
@@ -50,7 +50,7 @@ const Hero = () => {
              className="col-span-1 lg:col-span-6 xl:col-span-7 flex flex-col"
           >
             
-            <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-4 sm:px-5 py-2.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-8 sm:mb-10 w-fit backdrop-blur-xl shadow-[0_0_30px_rgba(34,211,238,0.1)] relative overflow-hidden group">
+            <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-4 sm:px-5 py-2.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-6 sm:mb-8 w-fit backdrop-blur-xl shadow-[0_0_30px_rgba(34,211,238,0.1)] relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent -translate-x-[100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
               <div className="relative flex h-2 w-2">
                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
@@ -59,7 +59,7 @@ const Hero = () => {
               <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase drop-shadow-md">Custom Software &amp; AI Solutions</span>
             </motion.div>
 
-            <motion.h1 variants={itemVariants} className="text-[2rem] sm:text-4xl lg:text-5xl xl:text-[4rem] font-black text-white mb-6 sm:mb-8 leading-[1.05] tracking-tighter drop-shadow-2xl">
+            <motion.h1 variants={itemVariants} className="text-[2rem] sm:text-4xl lg:text-5xl xl:text-[4rem] font-black text-white mb-5 sm:mb-6 leading-[1.05] tracking-tighter drop-shadow-2xl">
               Custom Software And <br className="hidden md:block"/> 
               <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">
                  AI Automation For Modern Businesses.
@@ -71,12 +71,12 @@ const Hero = () => {
               </span>
             </motion.h1>
 
-            <motion.p variants={itemVariants} className="text-[15px] sm:text-lg lg:text-xl text-slate-300 font-light mb-8 max-w-xl leading-relaxed drop-shadow-md">
+            <motion.p variants={itemVariants} className="text-[15px] sm:text-lg lg:text-xl text-slate-300 font-light mb-6 sm:mb-7 max-w-xl leading-relaxed drop-shadow-md">
               Nexol helps e-commerce brands, finance teams, healthcare businesses, small businesses, and growing companies build better websites, dashboards, automations, CRM workflows, and digital systems that save time and scale operations.
             </motion.p>
 
             {/* CTAs */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-6 sm:mb-7">
               <button 
                 onClick={() => navigate('/contact')}
                 className="w-full sm:w-auto group relative h-14 sm:h-16 px-8 sm:px-10 rounded-full bg-white text-[#020205] font-black tracking-tight text-base sm:text-lg shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.3)] transition-all duration-300 overflow-hidden flex items-center justify-center gap-3"
@@ -114,7 +114,7 @@ const Hero = () => {
           </motion.div>
 
           {/* Right Column - Physics Simulation Data Nodes */}
-          <div className="hidden lg:block col-span-1 lg:col-span-6 xl:col-span-5 relative h-full min-h-[460px] xl:min-h-[520px]">
+          <div className="hidden lg:block col-span-1 lg:col-span-6 xl:col-span-5 relative h-full min-h-[380px] xl:min-h-[430px]">
             <div className="absolute inset-0 flex items-center justify-center lg:translate-x-4 xl:translate-x-8">
               
               {/* Outer Orbital Rings */}

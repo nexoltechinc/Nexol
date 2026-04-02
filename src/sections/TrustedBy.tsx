@@ -1,4 +1,3 @@
-import { useRef, useEffect, useState } from 'react';
 import { ArrowRight, Bot, Calendar, LayoutDashboard, Phone, ShieldCheck } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -37,45 +36,16 @@ const workflowChips = [
 
 const TrustedBy = () => {
   const navigate = useNavigate();
-  const sectionRef = useRef<HTMLElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative overflow-hidden border-y border-white/5 bg-[#020205] py-16 sm:py-20"
-    >
+    <section className="relative overflow-hidden border-y border-white/5 bg-[#020205] py-14 sm:py-16">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute left-1/4 top-0 h-[420px] w-[420px] rounded-full bg-cyan-500/5 blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 h-[420px] w-[420px] rounded-full bg-[#6F3DFF]/5 blur-[120px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-        <div
-          className={`mb-12 text-center transition-all duration-1000 ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
-          }`}
-        >
+        <div className="mb-10 text-center">
           <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-xl">
             <span className="h-2 w-2 rounded-full bg-cyan-400" />
             <span className="text-[10px] font-black uppercase tracking-[0.35em] text-slate-300">
@@ -96,15 +66,12 @@ const TrustedBy = () => {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
-          {outcomeCards.map((card, index) => {
+          {outcomeCards.map((card) => {
             const Icon = card.icon;
             return (
               <div
                 key={card.title}
-                className={`rounded-[2rem] border border-white/10 bg-[#0a0a0f] p-6 shadow-2xl transition-all duration-700 sm:p-8 ${
-                  isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
-                }`}
-                style={{ transitionDelay: `${index * 120}ms` }}
+                className="rounded-[2rem] border border-white/10 bg-[#0a0a0f] p-6 shadow-2xl transition-all duration-300 sm:p-8"
               >
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
                   <Icon className="h-6 w-6 text-cyan-400" />
@@ -123,7 +90,7 @@ const TrustedBy = () => {
           })}
         </div>
 
-        <div className="mt-12 grid gap-8 rounded-[2rem] border border-white/10 bg-[#0a0a0f] p-6 shadow-2xl sm:p-8 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="mt-10 grid gap-6 rounded-[2rem] border border-white/10 bg-[#0a0a0f] p-6 shadow-2xl sm:p-8 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-3 py-1.5">
               <Bot className="h-3.5 w-3.5 text-cyan-400" />

@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { Stethoscope, Building2, Users, Calendar, Globe, ShieldCheck } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import usePageTitle from '../hooks/usePageTitle';
-import TrustedBy from '../sections/TrustedBy';
 
 const IndustriesPage = () => {
     const navigate = useNavigate();
@@ -86,10 +85,7 @@ const IndustriesPage = () => {
           ))}
         </div>
       </div>
-
-      <TrustedBy />
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 sm:py-20">
         {/* Delivery Note */}
         <div className="mt-20 sm:mt-32 p-6 sm:p-10 bg-slate-900/40 border border-slate-800 rounded-[2rem] flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
            <div className="flex items-center gap-6">

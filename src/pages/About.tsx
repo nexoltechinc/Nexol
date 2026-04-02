@@ -2,7 +2,6 @@ import usePageTitle from '../hooks/usePageTitle';
 import { Target, Rocket, CheckCircle2, ChevronRight, ShieldCheck, BrainCircuit, ArrowRight, Code2, Lightbulb, Layers } from 'lucide-react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import TrustedBy from '../sections/TrustedBy';
 import { motion } from 'framer-motion';
 
 const AboutPage = () => {
@@ -319,8 +318,6 @@ const AboutPage = () => {
             </div>
           </motion.div>
         </div>
-          
-        <TrustedBy />
       </section>
 
 
