@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
-import { Stethoscope, LineChart, Truck, Factory, Globe, ShieldCheck } from 'lucide-react';
+import { Stethoscope, Building2, Users, Calendar, Globe, ShieldCheck } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import usePageTitle from '../hooks/usePageTitle';
 import TrustedBy from '../sections/TrustedBy';
-import Testimonials from '../sections/Testimonials';
 
 const IndustriesPage = () => {
     const navigate = useNavigate();
-    usePageTitle('Industries We Serve');
+    usePageTitle('Industries We Serve | Dental, Medical & Multi-Location Clinics');
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -15,32 +14,28 @@ const IndustriesPage = () => {
 
     const sectors = [
         {
-            title: "Healthcare & MedTech",
-            desc: "HIPAA-compliant infrastructures and AI-driven diagnostic pipelines. We engineer for zero-latency patient care and absolute data integrity.",
+            title: "Dental Practices",
+            desc: "Great fit for clinics that need help with appointment confirmations, missed-call recovery, patient follow-up, and front-desk workload.",
             icon: Stethoscope,
-            color: "emerald",
-            capabilities: ["Cloud EHR Systems", "AI Diagnostics", "Telehealth Backbone"]
+            capabilities: ["Appointment confirmations", "Missed-call recovery", "Follow-up automation"]
         },
         {
-            title: "FinTech & Banking",
-            desc: "Ultra-low latency matching engines and secure API layers. We build the technical architecture for the next generation of global capital.",
-            icon: LineChart,
-            color: "blue",
-            capabilities: ["Ledger Engineering", "Fraud Detection AI", "Banking API Stacks"]
+            title: "Medical Clinics",
+            desc: "We support practices that need better call handling, intake workflows, scheduling support, and day-to-day operations visibility.",
+            icon: Building2,
+            capabilities: ["Call handling", "Patient intake routing", "Operations dashboards"]
         },
         {
-            title: "Logistics & Supply Chain",
-            desc: "Global fleet orchestration and warehouse robotics. We transform physical movement into digital intelligence.",
-            icon: Truck,
-            color: "cyan",
-            capabilities: ["Asset Tracking ML", "Route Optimization", "IoT Mesh Networks"]
+            title: "Specialty Clinics",
+            desc: "Useful for clinics with more complex scheduling, referral handling, or follow-up workflows that do not fit generic software well.",
+            icon: Users,
+            capabilities: ["Referral workflows", "Custom CRM logic", "Staff handoff automation"]
         },
         {
-            title: "Industrial Manufacturing",
-            desc: "Predictive maintenance and IoT sensor arrays. Engineering the factory of the future with cognitive automation.",
-            icon: Factory,
-            color: "violet",
-            capabilities: ["IIoT Integration", "Digital Twin Systems", "Quality Control ML"]
+            title: "Multi-Location Practice Groups",
+            desc: "We help growing clinic groups centralize call handling, follow-up, reporting, and lead routing across multiple locations.",
+            icon: Calendar,
+            capabilities: ["Centralized reporting", "Location-based routing", "Shared workflow visibility"]
         }
     ];
 
@@ -50,14 +45,13 @@ const IndustriesPage = () => {
         <div className="mb-24">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-8">
             <span className="flex h-1.5 w-1.5 rounded-full bg-cyan-400" />
-            <span className="text-[11px] font-semibold text-cyan-400 tracking-wider uppercase">Strategic Sectors</span>
+            <span className="text-[11px] font-semibold text-cyan-400 tracking-wider uppercase">Best-Fit Clinics</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-7xl font-extrabold text-white mb-6 sm:mb-8 leading-tight">
-            Vertical Technical <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Intelligence.</span>
+            Clinic Types We <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Support Best.</span>
           </h1>
           <p className="text-base sm:text-xl text-slate-300 max-w-3xl leading-relaxed font-light">
-            Generic code fails in specialized industries. We deploy architects who deeply understand 
-            the regulatory, security, and operational complexities of your specific sector.
+            Nexol works best with dental, medical, specialty, and multi-location clinics that need better call handling, follow-up, scheduling, intake, and reporting.
           </p>
         </div>
 
@@ -95,28 +89,26 @@ const IndustriesPage = () => {
 
       <TrustedBy />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-32">
-        <Testimonials />
-
-        {/* Global Compliance Note */}
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24">
+        {/* Healthcare Readiness Note */}
         <div className="mt-20 sm:mt-32 p-6 sm:p-10 bg-slate-900/40 border border-slate-800 rounded-[2rem] flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
            <div className="flex items-center gap-6">
               <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
                  <Globe className="w-6 h-6 text-blue-400" />
               </div>
               <div>
-                <p className="text-white font-bold">Global Regulatory Adherence</p>
-                <p className="text-xs text-slate-500">GDPR, HIPAA, and ISO 27001 standard engineering across all industrial sectors.</p>
+                <p className="text-white font-bold">Healthcare-Minded Delivery</p>
+                <p className="text-xs text-slate-500">We focus on secure integrations, HIPAA-ready workflows, and practical systems clinics can actually use.</p>
               </div>
            </div>
            <button 
              onClick={() => navigate('/contact')}
              className="h-12 border border-slate-700 hover:border-white text-white px-8 rounded-full text-xs font-black uppercase tracking-widest transition-colors mb-2 md:mb-0"
            >
-              Consult Our Architects
-           </button>
-        </div>
-      </div>
+               Book Clinic Audit
+            </button>
+         </div>
+       </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const AboutPage = () => {
   const navigate = useNavigate();
-  usePageTitle('About Nexol');
+  usePageTitle('About Nexol | Clinic Automation & Custom Software');
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,8 +15,8 @@ const AboutPage = () => {
 
   const values = [
     {
-      title: "Absolute Precision",
-      desc: "Good enough is never an option. We operate with an engineering-first mindset, ensuring every structural decision is backed by rigorous validation and built for unparalleled stability.",
+      title: "Clear Communication",
+      desc: "We keep scope, workflow decisions, and delivery steps easy to understand so your team always knows what is being built and why.",
       icon: Target,
       color: "from-cyan-500/20",
       border: "hover:border-cyan-500/50",
@@ -25,8 +25,8 @@ const AboutPage = () => {
       glow: "shadow-[0_0_50px_rgba(34,211,238,0.1)]"
     },
     {
-      title: "Strategic Impact",
-      desc: "Technical excellence is only valuable when it drives business growth. We prioritize ROI, scaling capabilities, and strategic market advantages in every single engagement.",
+      title: "Business-First Systems",
+      desc: "We focus on systems that reduce no-shows, improve patient response time, and remove manual admin work instead of building technology for its own sake.",
       icon: Rocket,
       color: "from-[#6F3DFF]/20",
       border: "hover:border-[#6F3DFF]/50",
@@ -35,8 +35,8 @@ const AboutPage = () => {
       glow: "shadow-[0_0_50px_rgba(111,61,255,0.1)]"
     },
     {
-      title: "Shared Ownership",
-      desc: "We don't view ourselves merely as vendors, but as an extension of your own leadership team. Your mission-critical goals become our primary directive and shared reality.",
+      title: "Hands-On Delivery",
+      desc: "We work closely with your team from audit through launch so the final system fits real clinic operations, not a generic template.",
       icon: ShieldCheck,
       color: "from-emerald-500/20",
       border: "hover:border-emerald-500/50",
@@ -47,17 +47,17 @@ const AboutPage = () => {
   ];
 
   const processPhases = [
-    { name: "Discovery & Strategy", icon: Lightbulb, desc: "Deep-dive analysis of your business logic, market position, and technical bottlenecks." },
-    { name: "Design & Prototyping", icon: Layers, desc: "Architecting the solution blueprint with a focus on scalable UI/UX and system topology." },
-    { name: "Development & Iteration", icon: Code2, desc: "Agile, high-velocity engineering with continuous CI/CD pipelines and rigorous QA." },
-    { name: "Deployment & Scale", icon: Rocket, desc: "Seamless launch, cloud infrastructure provisioning, and performance optimization." }
+    { name: "Audit The Workflow", icon: Lightbulb, desc: "We review how calls, follow-up, scheduling, intake, and reporting work today." },
+    { name: "Map The System", icon: Layers, desc: "We define the automation, dashboard, or custom software workflow that best fits your clinic." },
+    { name: "Build & Integrate", icon: Code2, desc: "We connect the right tools, build the workflow, and test how it works with your staff." },
+    { name: "Launch & Improve", icon: Rocket, desc: "We go live, monitor results, and keep improving the system based on real usage." }
   ];
 
   const milestones = [
-    { number: "250+", label: "Enterprise Deployments" },
-    { number: "98%", label: "Client Retention Rate" },
-    { number: "$120M+", label: "Client ROI Generated" },
-    { number: "15+", label: "Global Awards" },
+    { number: "Clear", label: "Workflow Planning" },
+    { number: "Custom", label: "Software & Automation" },
+    { number: "Secure", label: "Healthcare-Minded Delivery" },
+    { number: "Hands-On", label: "Launch Support" },
   ];
 
   return (
@@ -74,7 +74,7 @@ const AboutPage = () => {
             animate={{ opacity: 1, scale: 1 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 mb-8"
           >
-            <span className="text-[10px] font-black text-slate-300 tracking-[0.2em] mb-3 block">WHY NEXOL</span>
+            <span className="text-[10px] font-black text-slate-300 tracking-[0.2em] mb-3 block">ABOUT NEXOL</span>
           </motion.div>
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
@@ -82,8 +82,8 @@ const AboutPage = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-5xl lg:text-7xl font-black text-white mb-6 tracking-tighter leading-[1.1]"
           >
-            Architecting Tomorrow's <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F3DFF] to-cyan-400">Digital Legacy</span>
+            Why Clinics Choose <br className="hidden md:block"/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F3DFF] to-cyan-400">Nexol</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 30 }}
@@ -91,7 +91,7 @@ const AboutPage = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg lg:text-xl text-slate-400 font-light max-w-3xl mx-auto mb-10"
           >
-            We build the mission-critical software and AI infrastructure that powers the world's most ambitious enterprises. Precision engineering for a digital-first reality.
+            Nexol builds AI automation and custom software for clinics that need fewer manual tasks, faster patient response, and better visibility into daily operations.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -100,7 +100,7 @@ const AboutPage = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
             <button onClick={() => window.scrollBy({ top: 800, behavior: 'smooth' })} className="h-12 sm:h-14 px-6 sm:px-8 rounded-full bg-[#6F3DFF] hover:bg-[#7C52FF] text-white font-bold transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(111,61,255,0.4)] flex items-center justify-center gap-2 text-sm sm:text-base">
-              Explore Our Journey <ChevronRight className="w-5 h-5" />
+              See How We Work <ChevronRight className="w-5 h-5" />
             </button>
           </motion.div>
         </div>
@@ -117,7 +117,7 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-6 tracking-tight"
           >
-            Our Guiding Principles
+            How We Approach Client Work
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -126,7 +126,7 @@ const AboutPage = () => {
             transition={{ delay: 0.1 }}
             className="text-lg text-slate-400 max-w-3xl mx-auto font-light leading-relaxed opacity-60"
           >
-            The foundational ethos that drives our operations, strategic partnerships, and structural architecture.
+            The way we scope, build, and launch systems so they solve real clinic problems instead of adding more software complexity.
           </motion.p>
         </div>
 
@@ -167,10 +167,10 @@ const AboutPage = () => {
           <div className="text-center mb-24 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
               <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-ping" />
-              <span className="text-[10px] font-bold text-blue-400 tracking-[0.2em] uppercase">The Implementation Blueprint</span>
+              <span className="text-[10px] font-bold text-blue-400 tracking-[0.2em] uppercase">How We Deliver</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white via-slate-200 to-slate-500 mb-6 tracking-tight drop-shadow-lg">Engineering Success Together</h2>
-            <p className="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">A transparent, rigorous methodology designed to eliminate risk and guarantee scalable enterprise outcomes.</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white via-slate-200 to-slate-500 mb-6 tracking-tight drop-shadow-lg">A Practical Delivery Process</h2>
+            <p className="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">The goal is to make rollout easier for your team: clear workflow planning, clean implementation, and steady support through launch.</p>
           </div>
 
           <div className="relative mt-12 sm:mt-20">
@@ -229,8 +229,8 @@ const AboutPage = () => {
               <span className="flex h-1.5 w-1.5 rounded-full bg-cyan-400" />
               <span className="text-[10px] font-black text-white tracking-[0.2em] uppercase">Validated Performance</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-7xl font-black text-white mb-6 sm:mb-8 tracking-tighter drop-shadow-2xl">Our Journey of Impact</h2>
-            <p className="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">Numbers that speak to our commitment to absolute precision and continuous growth.</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-7xl font-black text-white mb-6 sm:mb-8 tracking-tighter drop-shadow-2xl">What You Can Expect</h2>
+            <p className="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">We keep the work focused on useful systems, practical delivery, and a rollout process your team can actually follow.</p>
           </motion.div>
 
           <motion.div 
@@ -286,23 +286,23 @@ const AboutPage = () => {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.08] mb-6 backdrop-blur-xl">
                 <span className="flex h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse" />
-                <span className="text-[10px] font-black text-slate-400 tracking-[0.35em] uppercase">Live Enterprise Stack</span>
+              <span className="text-[10px] font-black text-slate-400 tracking-[0.35em] uppercase">Tools & Integrations</span>
               </div>
               <h2 className="text-4xl lg:text-5xl font-black tracking-tighter leading-tight">
-                <span className="text-white">Automation & </span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-[#6F3DFF]">Architecture Stack.</span>
+                <span className="text-white">Systems We </span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-[#6F3DFF]">Build Around.</span>
               </h2>
               <p className="text-slate-400 font-light mt-4 max-w-xl leading-relaxed">
-                The complete ecosystem of tools, frameworks, and platforms we deploy across enterprise engagements globally.
+                We connect calling, scheduling, dashboards, and workflow automation around the systems your clinic already uses.
               </p>
             </div>
 
             {/* Trust stat chips */}
             <div className="flex flex-wrap gap-3 lg:justify-end shrink-0">
               {[
-                { val: "40+", label: "Technologies" },
-                { val: "SOC-2", label: "Aligned" },
-                { val: "99.9%", label: "Uptime SLA" },
+                { val: "Calling", label: "Workflows" },
+                { val: "Scheduling", label: "Integrations" },
+                { val: "Reporting", label: "Visibility" },
               ].map((s, i) => (
                 <motion.div 
                   key={i}
@@ -324,7 +324,7 @@ const AboutPage = () => {
       </section>
 
 
-      {/* 7. Careers / Culture */}
+      {/* 7. Partner CTA */}
       <section className="py-16 max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div 
            initial={{ opacity: 0, y: 40 }}
@@ -352,7 +352,7 @@ const AboutPage = () => {
                transition={{ delay: 0.2, duration: 0.8 }}
                className="text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight drop-shadow-xl"
             >
-               Innovate. Grow. Thrive.
+               Need A Practical Build Partner?
             </motion.h2>
             <motion.p 
                initial={{ opacity: 0, x: -30 }}
@@ -361,11 +361,11 @@ const AboutPage = () => {
                transition={{ delay: 0.3, duration: 0.8 }}
                className="text-lg text-slate-300 font-light mb-10 leading-relaxed"
             >
-              We are a collective of obsessed engineers, designers, and strategists. We believe in continuous learning, deep technical challenges, and a culture that rewards merit over hierarchy.
+              If your clinic needs clearer systems for calls, follow-up, scheduling, intake, or reporting, we can help map the right starting point and build it with your team.
             </motion.p>
             
             <ul className="space-y-4 mb-12">
-              {['Continuous R&D Budgets', 'Global Remote-First Flexibility', 'Equity & Profit-Sharing Tracks'].map((item, i) => (
+              {['Clear workflow planning', 'Custom software and automation', 'Support through launch and iteration'].map((item, i) => (
                 <motion.li 
                    key={i} 
                    initial={{ opacity: 0, x: -20 }}
@@ -390,7 +390,7 @@ const AboutPage = () => {
                onClick={() => navigate('/contact')}
                className="h-14 inline-flex items-center justify-center gap-3 bg-white text-[#020205] px-8 rounded-full font-bold text-[13px] tracking-wide shadow-[0_0_30px_rgba(255,255,255,0.15)] hover:shadow-[0_0_50px_rgba(255,255,255,0.3)] hover:scale-105 border border-transparent transition-all duration-300 group/btn"
             >
-              Book Strategic Consultation <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+              Book A Consultation <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
             </motion.button>
           </div>
         </motion.div>

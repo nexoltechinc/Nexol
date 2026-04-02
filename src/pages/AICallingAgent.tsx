@@ -6,7 +6,7 @@ import usePageTitle from '../hooks/usePageTitle';
 
 const AICallingAgent = () => {
   const navigate = useNavigate();
-  usePageTitle('AI Calling Agent For Clinics');
+  usePageTitle('AI Calling Agent For Medical Clinics');
   const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
   
   const targetRef = useRef<HTMLDivElement>(null);
@@ -19,47 +19,48 @@ const AICallingAgent = () => {
 
   const problems = [
     { 
-      pain: 'Crippling No-Show Rates', 
-      painDesc: 'Lost revenue and disrupted schedules due to unconfirmed appointments.',
-      solution: 'Automated Outreach', 
-      solutionDesc: 'Intelligent, conversational reminders driving a 99% confirmation rate.',
+      pain: 'High No-Show Rates', 
+      painDesc: 'Appointments fall through when confirmations and reminders depend on manual staff follow-up.',
+      solution: 'Automated Appointment Confirmation', 
+      solutionDesc: 'Confirm visits automatically, send reminders at the right time, and reduce preventable no-shows.',
       icon: TrendingDown
     },
     { 
-      pain: 'Staff Burnout', 
-      painDesc: 'Front desk teams overwhelmed by endless outbound confirmation calls.',
-      solution: '24/7 Virtual Receptionist', 
-      solutionDesc: 'Offloads routine calls entirely, freeing staff for high-value patient care.',
+      pain: 'Overloaded Front Desk Teams', 
+      painDesc: 'Staff lose hours every week answering repeat questions, confirming appointments, and returning calls.',
+      solution: '24/7 Call Handling', 
+      solutionDesc: 'Handle routine patient calls automatically so your team can stay focused on the people in the clinic.',
       icon: Users
     },
     { 
-      pain: 'Missed After-Hours Leads', 
-      painDesc: 'New patients calling after 5 PM are lost to voicemail or competitors.',
-      solution: 'Always-On Availability', 
-      solutionDesc: 'Capture, qualify, and seamlessly schedule new patients at any hour.',
+      pain: 'Missed Calls After Hours', 
+      painDesc: 'Voicemails and dropped calls turn into missed bookings, delayed follow-up, and lost revenue.',
+      solution: 'Missed-Call Recovery', 
+      solutionDesc: 'Capture demand after hours, respond faster, and help more callers turn into scheduled appointments.',
       icon: Clock
     }
   ];
 
   const features = [
-    { title: "24/7 Autonomous Scheduling", desc: "Integrates directly with your calendar to book, reschedule, or cancel appointments without human intervention.", icon: CalendarHeart, size: "col-span-12 lg:col-span-8", color: "from-[#6F3DFF]/20 to-[#6F3DFF]/5" },
-    { title: "Multi-parameter Routing", desc: "Instantly categorizes urgency and intent, transferring 911-level inquiries immediately.", icon: Fingerprint, size: "col-span-12 lg:col-span-4", color: "from-cyan-500/20 to-blue-500/5" },
-    { title: "EMR / EHR Synchronization", desc: "Bi-directional syncing directly writes appointment data into Open Dental, Dentrix, Epic, and Athena.", icon: ActivitySquare, size: "col-span-12 lg:col-span-5", color: "from-emerald-500/20 to-emerald-900/10" },
-    { title: "Empathetic Voice Cloning", desc: "Utterances, breaths, and emotional cadence engineered to sound indistinguishable from your top receptionist.", icon: Sparkles, size: "col-span-12 lg:col-span-7", color: "from-[#141423] to-[#6F3DFF]/10" }
+    { title: "24/7 Appointment Handling", desc: "Answer calls, confirm visits, reschedule appointments, and manage common patient requests even when your front desk is busy.", icon: CalendarHeart, size: "col-span-12 lg:col-span-8", color: "from-[#6F3DFF]/20 to-[#6F3DFF]/5" },
+    { title: "Smart Call Routing", desc: "Route urgent calls, new patient inquiries, and scheduling requests to the right workflow or staff member faster.", icon: Fingerprint, size: "col-span-12 lg:col-span-4", color: "from-cyan-500/20 to-blue-500/5" },
+    { title: "EHR / PMS Integration", desc: "Connect with systems like Open Dental, Dentrix, Epic, Athena, and modern schedulers to keep appointment data aligned.", icon: ActivitySquare, size: "col-span-12 lg:col-span-5", color: "from-emerald-500/20 to-emerald-900/10" },
+    { title: "Natural Human-Like Voice", desc: "Deliver clear, empathetic patient conversations that sound professional, easy to follow, and aligned with your clinic experience.", icon: Sparkles, size: "col-span-12 lg:col-span-7", color: "from-[#141423] to-[#6F3DFF]/10" }
   ];
 
   const processStages = [
-    { step: "01", name: "Audit & Strategy", desc: "Analyzing current call volume and defining precise conversational scripts." },
-    { step: "02", name: "Custom Voice Cloning", desc: "Crafting a professional, empathetic agency voice tailored to your brand." },
-    { step: "03", name: "EHR Integration", desc: "Establishing secure, HIPAA-compliant bridges to your scheduling software." },
-    { step: "04", name: "Deployment & Training", desc: "Shadow-mode testing followed by full autonomous patient outreach." }
+    { step: "01", name: "Workflow Review", desc: "We review your call flow, scheduling process, missed-call gaps, and front-desk workload." },
+    { step: "02", name: "Call Flow Setup", desc: "We build the scripts, routing logic, and patient call experience around how your clinic operates." },
+    { step: "03", name: "Integration & Testing", desc: "We connect your scheduling or EHR tools, test handoffs, and validate HIPAA-ready workflows." },
+    { step: "04", name: "Go Live & Improve", desc: "We launch, monitor call performance, and keep improving confirmations, routing, and call outcomes." }
   ];
 
   const faqs = [
-    { q: "Is the AI Calling Agent HIPAA Compliant?", a: "Absolutely. Our architecture utilizes end-to-end encryption, BAA agreements, and secure isolated VPCs to ensure all patient health information (PHI) is strictly protected according to federal regulations." },
-    { q: "Does it sound like a robot?", a: "No. We utilize state-of-the-art Voice Generation models that include realistic breaths, pauses, and empathetic tonal shifts. Patients rarely realize they are speaking to an AI." },
-    { q: "What Practice Management systems do you integrate with?", a: "We feature deep integrations with Dentrix, Open Dental, Eaglesoft, Epic, AthenaHealth, and modern cloud-based schedulers via specialized APIs." },
-    { q: "How fast can we deploy this?", a: "A standard integration takes between 2 to 4 weeks, largely depending on the complexity of your EHR system's API access and custom script requirements." }
+    { q: "Is this HIPAA compliant?", a: "The system is designed with HIPAA-ready workflows, encrypted data handling, controlled access, and secure integration practices to support healthcare operations safely." },
+    { q: "Can it connect with our existing EHR or scheduling system?", a: "Yes. We can integrate with common systems such as Dentrix, Open Dental, Epic, AthenaHealth, and other scheduling platforms depending on access and workflow requirements." },
+    { q: "Will patients know they are speaking with AI?", a: "The voice experience is designed to sound natural, clear, and professional. The goal is to make patient communication easy to follow and comfortable, not robotic." },
+    { q: "Can calls transfer to a human receptionist?", a: "Yes. Calls can be routed to staff based on urgency, call type, time of day, or any workflow rules your clinic needs." },
+    { q: "How long does implementation take?", a: "Most deployments take about 2 to 4 weeks depending on integrations, call complexity, and how much customization your clinic needs." }
   ];
 
   const containerVariants: Variants = {
@@ -78,7 +79,7 @@ const AICallingAgent = () => {
   return (
     <div className="bg-[#020205] min-h-screen text-slate-300 font-sans selection:bg-[#6F3DFF]/30 overflow-hidden" ref={targetRef}>
       
-      {/* 1. Ultra-Premium Kinetic Hero Section */}
+      {/* 1. Hero Section */}
       <section className="relative border-b border-white/5 pt-28 pb-16 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24">
         {/* Deep Field Ambient Particles */}
         <div className="absolute inset-0 z-0">
@@ -105,7 +106,7 @@ const AICallingAgent = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-[100%] animate-[slide_2s_infinite]" />
             <Bot className="w-4 h-4 text-cyan-400" />
-            <span className="text-xs font-bold text-white tracking-[0.2em] uppercase">Next-Gen Patient Engagement</span>
+            <span className="text-xs font-bold text-white tracking-[0.2em] uppercase">AI Calling Agents For Medical Clinics</span>
           </motion.div>
           
           <motion.h1 
@@ -114,8 +115,8 @@ const AICallingAgent = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-black text-white mb-6 sm:mb-8 tracking-tighter leading-[1.05] drop-shadow-2xl"
           >
-            Automating Healthcare <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-[#6F3DFF] to-blue-500">With Cognitive Precision.</span>
+            Reduce No-Shows, <br className="hidden md:block"/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-[#6F3DFF] to-blue-500">Handle More Patient Calls.</span>
           </motion.h1>
           
           <motion.p 
@@ -124,7 +125,7 @@ const AICallingAgent = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             className="text-base sm:text-xl lg:text-2xl text-slate-400 font-light max-w-3xl mx-auto mb-10 sm:mb-14"
           >
-            Deploy hyper-realistic, HIPAA-compliant voice agents that effortlessly handle 10,000+ inbound calls, eradicate no-shows, and autonomously synchronize with your EHR.
+            Automate appointment confirmations, recover missed calls, answer routine patient requests, and reduce front-desk pressure with an AI calling system built for healthcare operations.
           </motion.p>
           
           <motion.div 
@@ -139,7 +140,7 @@ const AICallingAgent = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#6F3DFF]/20 to-cyan-400/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                   Request a Strategic Briefing 
+                   Book a Demo
                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </button>
@@ -153,9 +154,9 @@ const AICallingAgent = () => {
             className="flex flex-wrap justify-center gap-8 md:gap-16 pt-10 border-t border-white/[0.05]"
           >
             {[
-              { icon: ShieldCheck, text: "End-to-End Encryption" },
-              { icon: Activity, text: "99% Confirmation Rate" },
-              { icon: Lock, text: "SOC2 & HIPAA Ready" }
+              { icon: Activity, text: "10,000+ Calls Managed Monthly" },
+              { icon: CalendarHeart, text: "Appointment Confirmations" },
+              { icon: Lock, text: "HIPAA-Ready Workflows" }
             ].map((trust, i) => (
               <div key={i} className="flex items-center gap-3 text-slate-400 group cursor-default">
                 <div className="w-10 h-10 rounded-full bg-white/[0.03] border border-white/[0.08] flex items-center justify-center group-hover:bg-[#6F3DFF]/20 group-hover:border-[#6F3DFF]/50 transition-colors duration-500">
@@ -168,7 +169,7 @@ const AICallingAgent = () => {
         </div>
       </section>
 
-      {/* 2. Problem / Solution Matrix (Asymmetric Animated Depth) */}
+      {/* 2. Problem / Solution Matrix */}
       <section className="py-16 sm:py-20 lg:py-28 relative max-w-7xl mx-auto px-6 lg:px-12 z-10">
          <motion.div 
             initial={{ opacity: 0, y: 50 }}
@@ -177,8 +178,8 @@ const AICallingAgent = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-20 sm:mb-24"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">Engineering Friction <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-orange-500">Out of Existence.</span></h2>
-            <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto">We identified the massive operational leaks in modern clinics and built an autonomous cognitive layer to plug them permanently.</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">Fix the Call Bottlenecks <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-orange-500">Slowing Your Practice.</span></h2>
+            <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto">This system is built to solve the everyday call problems that create extra admin work, missed bookings, and slower patient response.</p>
          </motion.div>
 
          <motion.div 
@@ -204,7 +205,7 @@ const AICallingAgent = () => {
                     </div>
                  </div>
                  
-                 {/* The Solution Frame - Antigravity Float */}
+                 {/* The Solution Frame */}
                  <div className="p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-[#141423] to-[#0A0A10] border border-[#6F3DFF]/20 flex flex-col justify-center relative overflow-hidden transition-all duration-700 hover:-translate-y-2 hover:border-[#6F3DFF]/50 hover:shadow-[0_20px_60px_-15px_rgba(111,61,255,0.3)] will-change-transform z-20">
                     <motion.div 
                       animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -226,7 +227,7 @@ const AICallingAgent = () => {
          </motion.div>
       </section>
 
-      {/* 3. Deep Architectural Bento Box (Features) */}
+      {/* 3. Capabilities */}
       <section className="py-16 sm:py-20 lg:py-28 bg-[#06060A] border-y border-white/[0.03] relative z-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div 
@@ -238,10 +239,10 @@ const AICallingAgent = () => {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-6">
               <Cpu className="w-3 h-3 text-cyan-400" />
-              <span className="text-[10px] font-bold text-cyan-400 tracking-[0.2em] uppercase">System Architecture</span>
+              <span className="text-[10px] font-bold text-cyan-400 tracking-[0.2em] uppercase">Calling System Capabilities</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-7xl font-black text-white mb-6 sm:mb-8 tracking-tighter">Autonomous Operations. <br/>Unlimited Scale.</h2>
-            <p className="text-base sm:text-xl text-slate-400 font-light leading-relaxed">A strictly engineered, highly concurrent ecosystem capable of managing your entire front-of-house communications suite.</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-7xl font-black text-white mb-6 sm:mb-8 tracking-tighter">Built for High-Volume <br/>Patient Communication.</h2>
+            <p className="text-base sm:text-xl text-slate-400 font-light leading-relaxed">From appointment confirmations to call routing and scheduling support, the system is designed to help clinics respond faster without growing front-desk workload.</p>
           </motion.div>
 
           <motion.div 
@@ -273,7 +274,7 @@ const AICallingAgent = () => {
         </div>
       </section>
 
-      {/* 4. Security & Compliance Protocol: Zero-Trust Architecture */}
+      {/* 4. Security & Compliance */}
       <section className="py-16 sm:py-20 lg:py-28 relative overflow-hidden bg-[#020205]">
           {/* Deep Grid & Laser Scanners */}
          <div className="absolute inset-0 z-0">
@@ -337,8 +338,8 @@ const AICallingAgent = () => {
                viewport={{ once: true }}
                className="text-3xl sm:text-4xl lg:text-7xl font-black text-white mb-6 tracking-tighter drop-shadow-2xl"
             >
-               Zero-Trust Architecture.<br/>
-               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500">Uncompromising PHI Security.</span>
+               HIPAA-Ready Security <br/>
+               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500">For Patient Calls.</span>
             </motion.h2>
             
             <motion.p 
@@ -348,8 +349,7 @@ const AICallingAgent = () => {
                transition={{ delay: 0.1 }}
                className="text-base sm:text-xl text-slate-400 font-light max-w-3xl mx-auto mb-12 sm:mb-24 leading-relaxed"
             >
-              Every API call and data packet is heavily guarded by advanced cryptographic protocols inside isolated VPC instances. 
-              We bridge natively with top-tier Practice Management systems ensuring strict HIPAA compliance without latency.
+              We support encrypted data handling, secure integrations, controlled access, and audit-ready workflows so clinics can adopt automation with more confidence.
             </motion.p>
             
             {/* Complex Data Mesh Interface */}
@@ -390,7 +390,7 @@ const AICallingAgent = () => {
          </div>
       </section>
 
-      {/* 5. The Integration Pipeline (As designed in About page) */}
+      {/* 5. Setup Process */}
       <section className="py-16 sm:py-20 lg:py-28 relative px-6 lg:px-12 overflow-hidden bg-[#06060A] border-y border-white/[0.03]">
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div 
@@ -399,8 +399,8 @@ const AICallingAgent = () => {
             viewport={{ once: true }}
             className="text-center mb-20 sm:mb-24"
           >
-             <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tighter">Your Path to Production</h2>
-             <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">A strategic, zero-downtime deployment process architected specifically for high-volume medical workflows.</p>
+             <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tighter">Simple Setup for Your Clinic</h2>
+             <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">We keep implementation practical: review the workflow, connect the right systems, test the calls, and launch with a clear rollout plan.</p>
           </motion.div>
 
           <div className="relative mt-20">
@@ -441,7 +441,7 @@ const AICallingAgent = () => {
         </div>
       </section>
 
-      {/* 6. Executive FAQ */}
+      {/* 6. FAQ */}
       <section className="py-16 sm:py-20 lg:py-28 max-w-4xl mx-auto px-6 lg:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -449,8 +449,8 @@ const AICallingAgent = () => {
           viewport={{ once: true }}
           className="text-center mb-24"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">Executive Briefing</h2>
-          <p className="text-base sm:text-xl text-slate-400 font-light">Transparency regarding compliance, architecture, and network scalability.</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">Frequently Asked Questions</h2>
+          <p className="text-base sm:text-xl text-slate-400 font-light">The questions clinic teams usually ask before moving forward.</p>
         </motion.div>
         
         <div className="space-y-4 relative z-10">
@@ -482,7 +482,7 @@ const AICallingAgent = () => {
         </div>
       </section>
 
-      {/* 7. Final Deep Architectural CTA */}
+      {/* 7. Final CTA */}
       <section className="py-16 sm:py-20 lg:py-24 max-w-7xl mx-auto px-6 lg:px-12 pb-16 sm:pb-24 lg:pb-28">
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
@@ -503,13 +503,13 @@ const AICallingAgent = () => {
              <div className="w-20 h-20 rounded-2xl bg-[#6F3DFF]/10 flex items-center justify-center mx-auto mb-10 border border-[#6F3DFF]/30 drop-shadow-2xl backdrop-blur-xl group-hover:scale-110 transition-transform duration-500">
                <Bot className="w-10 h-10 text-white" />
              </div>
-             <h2 className="text-3xl sm:text-5xl lg:text-7xl font-black text-white mb-6 sm:mb-8 tracking-tighter drop-shadow-2xl">Ready to Transform Your Practice?</h2>
-             <p className="text-base sm:text-xl text-slate-300 font-light mb-10 sm:mb-16 leading-relaxed">Book a zero-obligation strategic briefing with our lead architects to verify Nexol's cognitive capabilities for your exact workflows.</p>
+             <h2 className="text-3xl sm:text-5xl lg:text-7xl font-black text-white mb-6 sm:mb-8 tracking-tighter drop-shadow-2xl">Ready to Reduce Missed Calls and No-Shows?</h2>
+             <p className="text-base sm:text-xl text-slate-300 font-light mb-10 sm:mb-16 leading-relaxed">Book a demo and we will show how the calling system can fit your clinic, handle patient calls, and reduce manual follow-up work.</p>
              <button 
                onClick={() => navigate('/contact')}
                 className="w-full sm:w-auto h-14 sm:h-16 inline-flex items-center justify-center gap-4 bg-white text-[#020205] px-8 sm:px-14 rounded-full font-black text-base sm:text-lg shadow-[0_0_50px_rgba(255,255,255,0.15)] hover:-translate-y-1 transition-all group-hover:shadow-[0_0_80px_rgba(111,61,255,0.4)]"
              >
-               Initiate Deployment <ArrowRight className="w-5 h-5"/>
+               Book a Demo <ArrowRight className="w-5 h-5"/>
              </button>
           </div>
         </motion.div>

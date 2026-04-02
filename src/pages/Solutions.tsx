@@ -6,7 +6,7 @@ import usePageTitle from '../hooks/usePageTitle';
 
 const Solutions = () => {
   const navigate = useNavigate();
-  usePageTitle('Clinic Automation Solutions');
+  usePageTitle('Clinic Automation Services | AI Calling Agents, Dashboards & Workflow Automation');
   const [activeFAQ, setActiveFAQ] = useState<number | null>(null);
   const [activeService, setActiveService] = useState<number>(0);
 
@@ -17,78 +17,73 @@ const Solutions = () => {
   }, []);
 
   const coreArchitectures = [
-    { title: "Bespoke AI Orchestration", desc: "Specialized cognitive layers integrating directly into your operational core for autonomous workflow intelligence.", icon: Bot, span: "col-span-12 lg:col-span-8", color: "from-[#6F3DFF]/20 to-indigo-900/10" },
-    { title: "Enterprise Ecosystems", desc: "Mission-critical software designed for massive throughput and absolute reliability.", icon: Server, span: "col-span-12 lg:col-span-4", color: "from-cyan-500/20 to-blue-900/10" },
-    { title: "Strategic CRM", desc: "Transform your sales engine into a predictive architectural asset.", icon: Database, span: "col-span-12 lg:col-span-4", color: "from-emerald-500/20 to-emerald-900/10" },
-    { title: "Cloud Infrastructure", desc: "Zero-latency, globally distributed database scaling and AWS/Azure provisioning.", icon: Cloud, span: "col-span-12 lg:col-span-8", color: "from-rose-500/20 to-purple-900/10" }
+    { title: "AI Calling Agents", desc: "Handle inbound calls, confirm appointments, recover missed calls, and reduce front-desk workload.", icon: Bot, span: "col-span-12 lg:col-span-8", color: "from-[#6F3DFF]/20 to-indigo-900/10" },
+    { title: "Clinic Dashboards", desc: "Track bookings, no-shows, call response, and team workload in one custom view.", icon: Server, span: "col-span-12 lg:col-span-4", color: "from-cyan-500/20 to-blue-900/10" },
+    { title: "Custom CRM & Intake", desc: "Connect forms, follow-up, lead routing, and patient intake so requests stop getting lost.", icon: Database, span: "col-span-12 lg:col-span-4", color: "from-emerald-500/20 to-emerald-900/10" },
+    { title: "Workflow Automation", desc: "Connect scheduling, EHR, phone, email, and internal operations to reduce manual admin work.", icon: Cloud, span: "col-span-12 lg:col-span-8", color: "from-rose-500/20 to-purple-900/10" }
   ];
 
   const specificServices = [
-    { name: "Custom LLM Training", detail: "We fine-tune open-source models (Llama, Falcon) on your proprietary datasets ensuring 100% data sovereignty and hyperspecific accuracy." },
-    { name: "Microservice Migrations", detail: "De-risking legacy monoliths by carefully extracting logic into highly available, independent, and secure microservices." },
-    { name: "High-Frequency APIs", detail: "REST and GraphQL gateways built predominantly in Go and Rust, engineered to handle millions of requests per second." },
-    { name: "Real-Time DevSecOps", detail: "Continuous integration pipelines armed with automated penetration testing and rigorous zero-day vulnerability scanning." }
+    { name: "Appointment Confirmation Automation", detail: "Reduce no-shows with reminder logic, confirmations, rescheduling flows, and follow-up built around your clinic schedule." },
+    { name: "Missed-Call Recovery", detail: "Capture after-hours calls, route follow-up automatically, and recover opportunities that would otherwise sit in voicemail." },
+    { name: "Patient Intake & Routing", detail: "Send inquiries to the right workflow, team member, or next step without manual triage slowing everything down." },
+    { name: "Custom Reporting Dashboards", detail: "Give clinic owners and managers visibility into calls, bookings, no-shows, follow-up speed, and staff workload." }
   ];
 
   const differentiators = [
-    { title: "Architectural Precision", text: "We measure twice and cut once. Every line of code is backed by rigorous scaling blueprints and zero-trust security logic." },
-    { title: "Shared Ownership", text: "We embed into your leadership layer. Your mission-critical objectives become our primary performance indicators." },
-    { title: "Outcome-Driven", text: "We don't sell iterative hours. We guarantee throughput increase, latency reduction, and massive operational ROI." }
+    { title: "Built Around Clinic Workflows", text: "We focus on the real bottlenecks clinics deal with every week: missed calls, scheduling friction, no-shows, manual follow-up, and reporting gaps." },
+    { title: "Clear Delivery Process", text: "You get a practical rollout plan, defined workflow scope, and clear communication from audit through launch." },
+    { title: "Outcome-Driven", text: "The goal is simple: reduce manual work, improve patient response time, and help your team book and manage appointments more efficiently." }
   ];
 
   const timeline = [
-    { phase: "01. Architecture", desc: "Deep technical due-diligence & system topology map." },
-    { phase: "02. Prototyping", desc: "Rapid UI/UX wireframing and proof-of-concept testing." },
-    { phase: "03. Engineering", desc: "High-velocity Agile sprints with continuous CI/CD." },
-    { phase: "04. Hardening", desc: "Penetration loops, load balancing, SLA verification." },
-    { phase: "05. Scale", desc: "Zero-downtime deploy & global continuous optimization." }
+    { phase: "01. Audit", desc: "Review call handling, no-show patterns, scheduling flow, and manual admin work." },
+    { phase: "02. Plan", desc: "Map the right workflow, integrations, and rollout plan for your clinic." },
+    { phase: "03. Build", desc: "Set up the calling logic, dashboards, routing, or custom workflow system." },
+    { phase: "04. Test", desc: "Validate calls, handoffs, integrations, and staff workflows before launch." },
+    { phase: "05. Improve", desc: "Measure results and keep refining the system based on clinic performance." }
   ];
 
   const faqs = [
     { 
-      category: "Team & Process",
-      q: "Do you offer dedicated engineering teams?", 
-      a: "Yes. For enterprise clients, we assemble fully autonomous, cross-functional pods — Architect, DevOps, Backend, Frontend — embedded directly into your Slack and Jira environments with daily async standup reports."
+      category: "Best Fit",
+      q: "What kinds of clinics do you work with?", 
+      a: "We work best with dental, medical, specialty, and multi-location clinics that need better call handling, scheduling support, intake workflows, or operations visibility."
     },
     { 
-      category: "Security & Compliance",
-      q: "What is your stance on data sovereignty and compliance?", 
-      a: "We engineer strictly within private, isolated VPCs. All AI models are deployed internally — your proprietary training data never touches shared hosting or external APIs. We are SOC-2 aligned by default."
+      category: "Integrations",
+      q: "Can you connect with our existing scheduling or EHR system?", 
+      a: "Yes. We can work with common scheduling and healthcare systems depending on access, workflow requirements, and the specific tools your clinic already uses."
     },
     { 
-      category: "Architecture",
-      q: "How do you handle legacy system migrations?", 
-      a: "We utilize the 'Strangler Fig' architectural pattern — wrapping your monolith in a modern API layer and incrementally extracting functionality over time to guarantee absolute zero-downtime migrations."
+      category: "Calls",
+      q: "Can calls transfer to our staff?", 
+      a: "Yes. Calls can be routed based on urgency, time of day, caller intent, or any workflow rules your clinic needs."
     },
     { 
-      category: "Delivery",
-      q: "What does your sprint and delivery cadence look like?", 
-      a: "We operate in 2-week engineering sprints with weekly stakeholder demos. Each sprint includes a QA gate, automated regression testing, and a production-ready release candidate before merging to main."
+      category: "Timeline",
+      q: "How long does implementation take?", 
+      a: "Most projects take a few weeks to scope, connect, test, and launch. The exact timeline depends on the workflow complexity and how many systems need to be integrated."
     },
     { 
-      category: "AI & Automation",
-      q: "Can you integrate AI into our existing enterprise stack?", 
-      a: "Absolutely. We specialize in augmenting existing platforms with cognitive layers — whether it's embedding GPT-4o for document processing, building custom ML pipelines, or deploying voice AI agents with real-time knowledge bases."
+      category: "Scope",
+      q: "Do you only build AI calling systems?", 
+      a: "No. We also build custom dashboards, CRM workflows, intake systems, reporting tools, and automation around scheduling and follow-up."
     },
     { 
-      category: "Pricing & Scale",
-      q: "How is pricing structured for enterprise engagements?", 
-      a: "We offer three models: Fixed-Scope (projects with defined deliverables), Time & Materials (agile exploration), and Retainer-Based (ongoing engineering capacity). All tiers include a dedicated client success director."
+      category: "Pricing",
+      q: "How is pricing structured?", 
+      a: "Pricing depends on the workflow scope, integrations, and whether you need a focused automation or a broader custom system. We usually start with an audit so we can recommend the right level of build."
     },
     { 
-      category: "Support & SLA",
-      q: "What level of post-deployment support do you provide?", 
-      a: "All production deployments are covered by a minimum 90-day hyper-care SLA. Enterprise retainers include 24/7 monitoring dashboards, automated alerting, and guaranteed 2-hour critical incident response time."
+      category: "Support",
+      q: "What support do you provide after launch?", 
+      a: "We support rollout, bug fixes, workflow adjustments, and ongoing improvements so the system keeps working well as your clinic changes."
     },
     { 
-      category: "Infrastructure",
-      q: "Which cloud providers do you work with?", 
-      a: "We are cloud-agnostic and hold expertise across AWS, Azure, and GCP. We also architect hybrid and private cloud environments for clients with strict regulatory requirements around data residency."
-    },
-    { 
-      category: "IP & Ownership",
-      q: "Who owns the IP and source code upon delivery?", 
-      a: "100% of all IP, source code, and architectural documentation transfers to you upon project completion or at defined milestone checkpoints. We sign strict NDAs and IP assignment agreements before any work begins."
+      category: "Ownership",
+      q: "Do we own the workflow and software after delivery?", 
+      a: "Yes. We build custom systems for your business needs, and ownership terms are defined clearly in the project agreement."
     },
   ];
 
@@ -131,7 +126,7 @@ const Solutions = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#6F3DFF] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#6F3DFF]"></span>
             </div>
-            <span className="text-[11px] font-black text-slate-300 tracking-[0.2em] uppercase">Enterprise Engineering</span>
+            <span className="text-[11px] font-black text-slate-300 tracking-[0.2em] uppercase">Clinic Automation Services</span>
           </motion.div>
           
           <motion.h1 
@@ -140,8 +135,8 @@ const Solutions = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
             className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-8 tracking-tighter leading-[1.05] drop-shadow-2xl"
           >
-            Architecting Tomorrow's <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F3DFF] via-cyan-400 to-blue-500">Enterprise Core.</span>
+            AI Automation, Calling Agents, <br className="hidden md:block"/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F3DFF] via-cyan-400 to-blue-500">And Custom Software For Clinics.</span>
           </motion.h1>
           
           <motion.p 
@@ -150,7 +145,7 @@ const Solutions = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             className="text-base sm:text-xl lg:text-2xl text-slate-400 font-light max-w-3xl mx-auto mb-10 sm:mb-14 leading-relaxed"
           >
-            We move significantly beyond generic development. We build precision-engineered digital ecosystems, highly-sovereign cognitive AI layers, and hyper-available operational infrastructures.
+            We help clinics reduce no-shows, recover missed calls, automate follow-up, and give staff better systems for scheduling, intake, reporting, and daily operations.
           </motion.p>
           
           <motion.div 
@@ -165,7 +160,7 @@ const Solutions = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#6F3DFF]/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out" />
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                   Request Strategic Briefing
+                   Book Clinic Automation Audit
                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </button>
@@ -173,7 +168,7 @@ const Solutions = () => {
         </div>
       </section>
 
-      {/* 2. Signature Solutions Overview: Deep Bento Box */}
+      {/* 2. Signature Solutions Overview */}
       <section className="py-16 sm:py-20 lg:py-28 max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <motion.div 
            initial={{ opacity: 0, y: 40 }}
@@ -181,8 +176,8 @@ const Solutions = () => {
            viewport={{ once: true }}
            className="mb-24 text-center lg:text-left"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-xl">The Core Architectures</h2>
-          <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl leading-relaxed">High-level strategic domains where we engineer absolute dominance for ambitious enterprises.</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-xl">What We Build For Clinics</h2>
+          <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl leading-relaxed">The systems clinics usually need when calls, follow-up, intake, and reporting start slowing the business down.</p>
         </motion.div>
 
         <motion.div 
@@ -225,8 +220,8 @@ const Solutions = () => {
                 className="lg:col-span-5 relative"
              >
                <div className="sticky top-28">
-                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 sm:mb-8 tracking-tight drop-shadow-lg">The Engineering Matrix</h2>
-                 <p className="text-base sm:text-xl text-slate-400 font-light mb-8 sm:mb-12 leading-relaxed">Explore the targeted technical capabilities we deploy to completely eradicate complex enterprise bottlenecks.</p>
+                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 sm:mb-8 tracking-tight drop-shadow-lg">Common Automation Needs</h2>
+                 <p className="text-base sm:text-xl text-slate-400 font-light mb-8 sm:mb-12 leading-relaxed">These are the workflow problems clinic owners and managers usually want solved first.</p>
                  <div className="space-y-4">
                    {specificServices.map((service, i) => (
                      <button 
@@ -270,7 +265,7 @@ const Solutions = () => {
                   >
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-400/10 border border-cyan-400/20 mb-8 backdrop-blur-md">
                       <Terminal className="w-3 h-3 text-cyan-400" />
-                      <span className="text-[10px] font-bold text-cyan-400 tracking-widest uppercase">Kernel Capability</span>
+                      <span className="text-[10px] font-bold text-cyan-400 tracking-widest uppercase">Workflow Focus</span>
                     </div>
                     <h3 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white mb-6 sm:mb-8 tracking-tighter leading-tight drop-shadow-2xl">{specificServices[activeService].name}</h3>
                     <p className="text-base sm:text-xl text-slate-300 font-light leading-relaxed mb-8 sm:mb-12">{specificServices[activeService].detail}</p>
@@ -278,7 +273,7 @@ const Solutions = () => {
                        onClick={() => navigate('/contact')}
                        className="group flex items-center gap-3 text-white font-bold text-sm uppercase tracking-widest w-fit border-b border-white/30 pb-2 hover:border-cyan-400 hover:text-cyan-400 transition-colors"
                     >
-                      Audit this specific protocol <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform"/>
+                      Talk about this workflow <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform"/>
                     </button>
                   </motion.div>
                </div>
@@ -287,7 +282,7 @@ const Solutions = () => {
         </div>
       </section>
 
-      {/* 4. The Nexol Edge */}
+      {/* 4. Why Nexol */}
       <section className="py-16 sm:py-20 lg:py-28 max-w-7xl mx-auto px-6 lg:px-12 relative overflow-hidden">
         <motion.div 
            initial={{ opacity: 0, y: 30 }}
@@ -295,8 +290,8 @@ const Solutions = () => {
            viewport={{ once: true }}
            className="text-center mb-20 sm:mb-24"
         >
-           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">The Nexol Advantage</h2>
-           <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">Why Fortune 500s and immensely ambitious scale-ups trust us with their most sensitive, mission-critical infrastructure logic.</p>
+           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-lg">Why Clinics Hire Nexol</h2>
+           <p className="text-base sm:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">Clear workflows, practical implementation, and custom systems built around how your team actually works.</p>
         </motion.div>
 
         <div className="space-y-32 relative">
@@ -348,8 +343,8 @@ const Solutions = () => {
              viewport={{ once: true }}
              className="mb-24 lg:w-2/3"
           >
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight drop-shadow-xl">Method of execution.</h2>
-            <p className="text-base sm:text-xl text-slate-400 font-light leading-relaxed">A completely transparent, fiercely risk-averse methodology precisely architected to guarantee highly scalable operational outcomes.</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight drop-shadow-xl">How Implementation Works</h2>
+            <p className="text-base sm:text-xl text-slate-400 font-light leading-relaxed">We keep rollout practical: review the workflow, map the right system, test it with your team, and improve it after launch.</p>
           </motion.div>
 
           <div className="relative overflow-hidden w-full before:absolute before:left-0 before:top-0 before:w-32 before:h-full before:bg-gradient-to-r before:from-[#06060a] before:to-transparent before:z-10 after:absolute after:right-0 after:top-0 after:w-32 after:h-full after:bg-gradient-to-l after:from-[#06060a] after:to-transparent after:z-10">
@@ -376,7 +371,7 @@ const Solutions = () => {
         </div>
       </section>
 
-      {/* 6. Impact Innovation (Case Studies) */}
+      {/* 6. Common Use Cases */}
       <section className="py-16 sm:py-20 lg:py-28 max-w-7xl mx-auto px-6 lg:px-12 relative">
         <motion.div 
            initial={{ opacity: 0, y: 30 }}
@@ -384,8 +379,8 @@ const Solutions = () => {
            viewport={{ once: true }}
            className="text-center mb-24"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">Proven Impact Metrics</h2>
-          <p className="text-base sm:text-xl text-slate-400 font-light max-w-3xl mx-auto leading-relaxed">We strictly do not measure success by lines of code deployed; we measure it by total revenue velocity injected and absolute milliseconds saved.</p>
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">Common Clinic Use Cases</h2>
+          <p className="text-base sm:text-xl text-slate-400 font-light max-w-3xl mx-auto leading-relaxed">Examples of the systems clinics usually ask us to improve first.</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-10">
@@ -399,14 +394,14 @@ const Solutions = () => {
             <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all ease-out" style={{ backgroundImage: "url('/case-ecommerce.png')", transitionDuration: '1.5s' }}></div>
              <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/80 to-transparent"></div>
              <div className="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-               <span className="px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">E-Commerce Architecture</span>
-               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">NexolBazzar Scalability</h3>
-               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Zero-latency, globally available marketplace search cluster targeting massive holiday demand curves.</p>
+               <span className="px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">AI Calling Agent</span>
+               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">Medical Clinic Call Handling</h3>
+               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Handle inbound calls, automate appointment confirmations, and reduce manual front-desk follow-up.</p>
                <div className="inline-flex items-center gap-4 bg-black/50 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-xl">
                  <Zap className="w-6 h-6 text-cyan-400" />
                  <div>
                     <span className="block text-3xl font-black text-white leading-none mb-1">40%</span>
-                    <span className="block text-[10px] text-slate-400 uppercase tracking-widest font-bold">Throughput Jump</span>
+                    <span className="block text-[10px] text-slate-400 uppercase tracking-widest font-bold">Fewer No-Shows</span>
                  </div>
                </div>
              </div>
@@ -423,14 +418,14 @@ const Solutions = () => {
             <div className="absolute inset-0 bg-[#0a0a0f] bg-cover bg-center opacity-30 mix-blend-luminosity group-hover:opacity-60 group-hover:scale-105 transition-all ease-out" style={{ backgroundImage: "url('/case-trading.png')", transitionDuration: '1.5s' }}></div>
              <div className="absolute inset-0 bg-gradient-to-t from-[#020205] via-[#020205]/80 to-transparent"></div>
              <div className="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-               <span className="px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">Enterprise AI Node</span>
-               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">QuantFlow Security</h3>
-               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Predictive sentiment engine running exclusively within isolated VPC architecture.</p>
+               <span className="px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-black uppercase tracking-[0.2em] mb-6 inline-block backdrop-blur-md">Custom Dashboard</span>
+               <h3 className="text-2xl sm:text-4xl font-black text-white mb-3 tracking-tight">Clinic Operations Visibility</h3>
+               <p className="text-slate-300 font-light mb-6 sm:mb-8 text-base sm:text-lg">Track missed calls, response time, bookings, and front-desk workload in one reporting dashboard.</p>
                <div className="inline-flex items-center gap-4 bg-black/50 border border-white/10 px-6 py-4 rounded-2xl backdrop-blur-xl">
                  <ShieldCheck className="w-6 h-6 text-emerald-400" />
                  <div>
                     <span className="block text-3xl font-black text-white leading-none mb-1">99.9%</span>
-                    <span className="block text-[10px] text-slate-400 uppercase tracking-widest font-bold">Model Accuracy</span>
+                    <span className="block text-[10px] text-slate-400 uppercase tracking-widest font-bold">Clearer Reporting</span>
                  </div>
                </div>
              </div>
@@ -448,7 +443,7 @@ const Solutions = () => {
               onClick={() => navigate('/portfolio')}
               className="h-14 inline-flex items-center justify-center gap-3 border border-white/10 hover:border-white/30 bg-[#141423] text-white px-10 rounded-full font-bold text-[13px] uppercase tracking-widest shadow-[0_0_30px_rgba(255,255,255,0.02)] hover:bg-white hover:text-[#020205] transition-all duration-300 group cursor-pointer"
             >
-              Access Complete Portfolio <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              See More Use Cases <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
          </motion.div>
       </section>
@@ -471,10 +466,10 @@ const Solutions = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#6F3DFF]/10 border border-[#6F3DFF]/20 mb-8 backdrop-blur-xl">
               <span className="flex h-1.5 w-1.5 rounded-full bg-[#6F3DFF] animate-pulse" />
-              <span className="text-[10px] font-black text-[#9f7aea] tracking-[0.35em] uppercase">CTO & Director Intelligence</span>
+              <span className="text-[10px] font-black text-[#9f7aea] tracking-[0.35em] uppercase">Common Questions</span>
             </div>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tighter drop-shadow-xl relative inline-block">
-              Technical Briefing.
+              Common Questions.
               <motion.span 
                 animate={{ x: ["0%", "100%", "0%"] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
@@ -482,7 +477,7 @@ const Solutions = () => {
               />
             </h2>
             <p className="text-lg text-slate-400 font-light leading-relaxed max-w-2xl mx-auto">
-              Absolute transparency addressing the most critical concerns of CTOs, VPs of Engineering, and enterprise directors.
+              Straight answers about fit, integrations, rollout, support, and ownership.
             </p>
           </motion.div>
 
@@ -560,14 +555,14 @@ const Solutions = () => {
             className="mt-16 flex flex-col sm:flex-row items-center justify-between gap-6 p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
           >
             <div>
-              <p className="text-white font-bold text-lg tracking-tight mb-1">Have a more specific technical question?</p>
-              <p className="text-slate-500 text-sm font-light">Our senior architects respond within 2 business hours.</p>
+              <p className="text-white font-bold text-lg tracking-tight mb-1">Need help choosing the right starting point?</p>
+              <p className="text-slate-500 text-sm font-light">We can review your workflow and recommend what to automate first.</p>
             </div>
             <button 
               onClick={() => navigate('/contact')}
               className="shrink-0 h-12 inline-flex items-center gap-3 bg-[#6F3DFF] hover:bg-[#7C52FF] text-white px-8 rounded-full font-black text-[12px] uppercase tracking-widest transition-all hover:shadow-[0_0_30px_rgba(111,61,255,0.4)] hover:scale-105"
             >
-              Start a Briefing <ArrowRight className="w-4 h-4" />
+              Book a Demo <ArrowRight className="w-4 h-4" />
             </button>
           </motion.div>
         </div>

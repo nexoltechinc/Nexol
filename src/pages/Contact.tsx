@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Mail, Phone, MapPin, Send, Clock, Shield, Terminal, Network, ChevronDown, MessageSquare } from 'lucide-react';
 import { motion, type Variants } from 'framer-motion';
-import Testimonials from '../sections/Testimonials';
 import TrustedBy from '../sections/TrustedBy';
 import usePageTitle from '../hooks/usePageTitle';
 
@@ -304,12 +303,6 @@ const ContactPage = () => {
 
       <div className="relative z-10 border-t border-white/[0.03] bg-[#06060A]">
         <TrustedBy />
-      </div>
-      
-      <div className="relative z-10 bg-[#020205] border-t border-white/[0.03]">
-        <div className="py-8 sm:py-16">
-          <Testimonials />
-        </div>
       </div>
     </div>
   );

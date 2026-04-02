@@ -56,13 +56,13 @@ const Hero = () => {
                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                  <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </div>
-              <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase drop-shadow-md">AI Automation For Clinics</span>
+              <span className="text-[11px] font-black text-cyan-400 tracking-[0.2em] uppercase drop-shadow-md">AI Automation For Medical Clinics</span>
             </motion.div>
 
             <motion.h1 variants={itemVariants} className="text-[2rem] sm:text-4xl lg:text-5xl xl:text-[4rem] font-black text-white mb-6 sm:mb-8 leading-[1.05] tracking-tighter drop-shadow-2xl">
-              Custom Software And <br className="hidden md:block"/> 
+              AI Automation And <br className="hidden md:block"/> 
               <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-[#6F3DFF]">
-                 AI Workflows For Clinics.
+                 Custom Software For Clinics.
                  <motion.span 
                    animate={{ x: ["0%", "100%", "0%"] }}
                    transition={{ duration: 7, repeat: Infinity, ease: "linear" }}
@@ -72,7 +72,7 @@ const Hero = () => {
             </motion.h1>
 
             <motion.p variants={itemVariants} className="text-[15px] sm:text-lg lg:text-xl text-slate-300 font-light mb-8 max-w-xl leading-relaxed drop-shadow-md">
-              Nexol helps dental, medical, and multi-location practices reduce no-shows, speed up patient response, and remove manual admin with AI calling agents, custom dashboards, and workflow systems built around your staff.
+              Nexol helps dental, medical, and multi-location clinics reduce no-shows, recover missed calls, automate appointment confirmations, and improve staff visibility with AI calling agents, custom dashboards, and workflow automation.
             </motion.p>
 
             {/* CTAs */}
@@ -100,15 +100,15 @@ const Hero = () => {
             <motion.div variants={itemVariants} className="grid gap-3 sm:grid-cols-3">
               <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                 <Brain className="h-4 w-4 text-cyan-400" />
-                <span className="text-xs font-semibold text-slate-200">AI calling and follow-up</span>
+                <span className="text-xs font-semibold text-slate-200">AI calling agents</span>
               </div>
               <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                 <ShieldCheck className="h-4 w-4 text-emerald-400" />
-                <span className="text-xs font-semibold text-slate-200">HIPAA-aware workflow design</span>
+                <span className="text-xs font-semibold text-slate-200">Appointment reminders and follow-up</span>
               </div>
               <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                 <Server className="h-4 w-4 text-blue-400" />
-                <span className="text-xs font-semibold text-slate-200">Custom dashboards for staff</span>
+                <span className="text-xs font-semibold text-slate-200">Custom dashboards and CRM</span>
               </div>
             </motion.div>
           </motion.div>
