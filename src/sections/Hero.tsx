@@ -86,20 +86,6 @@ const Hero = () => {
               </button>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="grid max-w-2xl gap-3 sm:grid-cols-2 xl:grid-cols-3">
-              <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
-                <Brain className="h-4 w-4 text-cyan-400" />
-                <span className="text-xs font-semibold text-slate-200">Custom web and app development</span>
-              </div>
-              <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
-                <ShieldCheck className="h-4 w-4 text-emerald-400" />
-                <span className="text-xs font-semibold text-slate-200">AI automation and workflow systems</span>
-              </div>
-              <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
-                <Server className="h-4 w-4 text-blue-400" />
-                <span className="text-xs font-semibold text-slate-200">Dashboards, CRM, and e-commerce systems</span>
-              </div>
-            </motion.div>
           </motion.div>
 
           {/* Right Column - Physics Simulation Data Nodes */}
